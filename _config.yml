@@ -16,6 +16,13 @@ defaults:
     values:
       layout: "post"
 
+
+topics:
+  - name: PAXRay - Projected Anatomy Dataset
+    web_url: https://constantinseibold.github.io/paxray
+    image_url: https://raw.githubusercontent.com/ConstantinSeibold/constantinseibold.github.io/master/_images/RibFrac648_bones_frontal.png
+
+
 projects:
   sort_by: pushed
   # sort_by options:
@@ -45,8 +52,3 @@ social_media:
   # vk: your_username
   # website: http://your_website_url
   # youtube: your_username
-
-topics:
-  - name: PAXRay - Projected Anatomy Dataset
-    web_url: https://constantinseibold.github.io/paxray
-    image_url: https://raw.githubusercontent.com/ConstantinSeibold/constantinseibold.github.io/master/_images/RibFrac648_bones_frontal.png
