@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 ---
 
 <h1 id="paxray-a-projected-dataset-for-the-segmentation-of-anatomical-structures-in-x-ray-data">PAXRAY: A Projected dataset for the segmentation of Anatomical structures in X-RAY data</h1>
