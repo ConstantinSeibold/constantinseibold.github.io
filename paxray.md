@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 <h1 id="paxray-a-projected-dataset-for-the-segmentation-of-anatomical-structures-in-x-ray-data">PAXRAY: A Projected dataset for the segmentation of Anatomical structures in X-RAY data</h1>
@@ -40,6 +40,4 @@ Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Maye
 }
 </code></pre>
 
-table, th, td {
-  border: 1px solid black;
-}
+
