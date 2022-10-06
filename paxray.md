@@ -12,7 +12,7 @@ layout: default
 
 ## Dataset 
 
-<a href="https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing" rel="some text">![Foo](./_images/common/folder(1).png =250x)</a>
+<a href="https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing" rel="some text">![Foo](<img src="./_images/common/folder(1).png" width="250">)</a>
 
 ## Citation
 If you use this work or dataset, please cite:
