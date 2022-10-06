@@ -1,5 +1,9 @@
+---
+layout: default
+---
+
 #  PAXRAY: A Projected dataset for the segmentation of Anatomical structures in X-RAY data
-![Title Image](./_images/paxray//paxray_xample.png)
+![Title Image](./_images/paxray/paxray_xample.png)
 
 > [**Detailed Annotations of Chest X-Rays via CT Projection for Report Understanding.**](https://arxiv.org/pdf/1908.00274.pdf)<br>
 > Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Mayer, Jan Sellner, Moon Sung Kim, Klaus H. Maier-Hein, Jens Kleesiek and Rainer Stiefelhagen, <br>
@@ -8,7 +12,7 @@
 
 ## Dataset 
 
-<a href="http://google.com.au/" rel="some text">![Foo](http://www.google.com.au/images/nav_logo7.png)</a>
+<a href="https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing" rel="some text">![Foo](./_images/common/folder(1).svg)</a>
 
 ## Citation
 If you use this work or dataset, please cite:
