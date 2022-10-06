@@ -3,7 +3,7 @@ layout: null
 ---
 
 #  PAXRAY: A Projected dataset for the segmentation of Anatomical structures in X-RAY data
-![Title Image]({{site.baseurl}}/_images/paxray/paxray_xample.png)
+![Title Image](https://github.com/ConstantinSeibold/constantinseibold.github.io/_images/paxray/paxray_xample.png)
 
 > [**Detailed Annotations of Chest X-Rays via CT Projection for Report Understanding.**](https://arxiv.org/pdf/)<br>
 > Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Mayer, Jan Sellner, Moon Sung Kim, Klaus H. Maier-Hein, Jens Kleesiek and Rainer Stiefelhagen, <br>
@@ -13,7 +13,7 @@ layout: null
 ## Dataset 
 
 The dataset is available by clicking the folder:
-[<img src="{{site.baseurl}}/_images/common/folder(1).png" height="15">](https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing)
+[<img src="https://github.com/ConstantinSeibold/constantinseibold.github.io/_images/common/folder(1).png" height="15">](https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing)
 
 ## Pre-Trained Models
 
