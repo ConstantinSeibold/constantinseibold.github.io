@@ -12,7 +12,17 @@ layout: post
 
 ## Dataset 
 
-<a href="https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing" rel="some text">![Foo]("./_images/common/folder(1).png")</a>
+The dataset is available by clicking the folder below:
+[<img src="./_images/common/folder(1).png" height="200">](https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing)
+
+## Pre-Trained Models
+
+The pre-trained models are available by clicking the respective link below:
+
+| Model        | mIoU      | Link       |
+|--------------|-----------|------------|
+| UNet         |     -     |   [weights](https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing)       |
+
 
 ## Citation
 If you use this work or dataset, please cite:
