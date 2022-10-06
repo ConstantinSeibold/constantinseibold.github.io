@@ -1,9 +1,9 @@
 ---
-layout: stacked
+layout: default
 ---
 
 #  PAXRAY: A Projected dataset for the segmentation of Anatomical structures in X-RAY data
-![Title Image](https://github.com/ConstantinSeibold/constantinseibold.github.io/_images/paxray/paxray_xample.png)
+![Title Image](https://github.com/ConstantinSeibold/constantinseibold.github.io/blob/master/_images/paxray/paxray_xample.png?raw=true)
 
 > [**Detailed Annotations of Chest X-Rays via CT Projection for Report Understanding.**](https://arxiv.org/pdf/)<br>
 > Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Mayer, Jan Sellner, Moon Sung Kim, Klaus H. Maier-Hein, Jens Kleesiek and Rainer Stiefelhagen, <br>
@@ -13,7 +13,7 @@ layout: stacked
 ## Dataset 
 
 The dataset is available by clicking the folder:
-[<img src="https://github.com/ConstantinSeibold/constantinseibold.github.io/_images/common/folder(1).png" height="15">](https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing)
+[<img src="https://github.com/ConstantinSeibold/constantinseibold.github.io/_images/common/folder(1).png?raw=True" height="15">](https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing)
 
 ## Pre-Trained Models
 
@@ -27,7 +27,7 @@ The pre-trained models are available by clicking the respective link below:
 ## Citation
 If you use this work or dataset, please cite:
 ```latex
-@inproceedings{spl,
+@inproceedings{paxray,
     author    = {Seibold,Constantin and Reiß,Simon and Sarfraz,Saquib and Fink,Matthias A. and Mayer,Victoria and Sellner,Jan and Kim,Moon Sung and Maier-Hein, Klaus H.  and Kleesiek, Jens  and Stiefelhagen,Rainer}, 
     title     = {Detailed Annotations of Chest X-Rays via CT Projection for Report Understanding}, 
     booktitle = {Proceedings of the 33th British Machine Vision Conference (BMVC)},
