@@ -47,6 +47,6 @@ social_media:
   # youtube: your_username
 
 topics:
-  - name: Projected Anatomy Dataset
-    web_url: 
+  - name: PAXRay - Projected Anatomy Dataset
+    web_url: https://constantinseibold.github.io/paxray
     image_url: https://raw.githubusercontent.com/ConstantinSeibold/constantinseibold.github.io/master/_images/RibFrac648_bones_frontal.png
