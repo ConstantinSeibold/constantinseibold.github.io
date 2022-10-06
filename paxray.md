@@ -12,8 +12,8 @@ layout: post
 
 ## Dataset 
 
-The dataset is available by clicking the folder below:
-[<img src="./_images/common/folder(1).png" height="200">](https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing)
+The dataset is available by clicking the folder:
+[<img src="./_images/common/folder(1).png" height="15">](https://drive.google.com/drive/folders/1rzlsZ0bfByRMBoywOPWZW08GNgIwCU9P?usp=sharing)
 
 ## Pre-Trained Models
 
