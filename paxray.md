@@ -39,3 +39,7 @@ Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Maye
 </span>    year  = {<span class="hljs-number">2022</span>}
 }
 </code></pre>
+
+table, th, td {
+  border: 1px solid black;
+}
