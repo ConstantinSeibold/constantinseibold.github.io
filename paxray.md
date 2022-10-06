@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: default
 ---
 
 #  PAXRAY: A Projected dataset for the segmentation of Anatomical structures in X-RAY data
