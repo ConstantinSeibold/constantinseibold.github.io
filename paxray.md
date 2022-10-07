@@ -4,13 +4,33 @@ layout: post
 
 <head>
 <style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+table {
+	border-collapse: collapse;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+table td {
+	padding: 15px;
+}
+table thead td {
+	background-color: #54585d;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid #54585d;
+}
+table tbody td {
+	color: #636363;
+	border: 1px solid #dddfe1;
+}
+table tbody tr {
+	background-color: #f9fafb;
+}
+table tbody tr:nth-child(odd) {
+	background-color: #ffffff;
 }
 
 th:nth-child(even),td:nth-child(even) {
-  background-color: #D6EEEE;
+  background-color: #B8B8B8;
 }
 </style>
 </head>
