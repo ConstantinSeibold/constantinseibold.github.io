@@ -38,7 +38,7 @@ Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Maye
 </tr>
 <tr>
 <td>UNet (25%)</td>
-<td>-</td>
+<td> 52.77 </td>
 <td><a href="https://github.com/ConstantinSeibold/multilabel_segmentation_paxray">code</a></td>
 <td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
 </tr>
