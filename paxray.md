@@ -2,6 +2,19 @@
 layout: post
 ---
 
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+</head>
+
 <h1 id="paxray-a-projected-dataset-for-the-segmentation-of-anatomical-structures-in-x-ray-data">PAXRAY: A Projected dataset for the segmentation of Anatomical structures in X-RAY data</h1>
 <p><img src="https://github.com/ConstantinSeibold/constantinseibold.github.io/blob/master/_images/paxray/paxray_xample.png?raw=true" width=80% height=auto></p>
 <blockquote>
