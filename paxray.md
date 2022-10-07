@@ -28,19 +28,19 @@ Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Maye
 <td>UNet (100%)</td>
 <td>60.6</td>
 <td><a href="https://github.com/ConstantinSeibold/multilabel_segmentation_paxray">code</a></td>
-<td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
+<td><a href="https://drive.google.com/drive/folders/11KddnNdJGAGUW05IkEDaAaQyPrzAsM5P?usp=sharing">weights</a></td>
 </tr>
 <tr>
 <td>UNet (50%)</td>
-<td>-</td>
+<td>57.07</td>
 <td><a href="https://github.com/ConstantinSeibold/multilabel_segmentation_paxray">code</a></td>
-<td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
+<td><a href="https://drive.google.com/drive/folders/1SSMza24R-sirTcLCawanoXzlFzzsu5YJ?usp=sharing">weights</a></td>
 </tr>
 <tr>
 <td>UNet (25%)</td>
 <td> 52.77 </td>
 <td><a href="https://github.com/ConstantinSeibold/multilabel_segmentation_paxray">code</a></td>
-<td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
+<td><a href="https://drive.google.com/drive/folders/154B4GyeD0S2hUGBq5D5HKzte0r88AG_S?usp=sharing">weights</a></td>
 </tr>
 </tbody>
 </table>
