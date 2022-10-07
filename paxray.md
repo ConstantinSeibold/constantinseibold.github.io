@@ -19,6 +19,7 @@ Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Maye
 <tr>
 <th>Model</th>
 <th>mIoU</th>
+<th>Code</th>
 <th>Link</th>
 </tr>
 </thead>
@@ -26,16 +27,19 @@ Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Maye
 <tr>
 <td>UNet (100%)</td>
 <td>-</td>
+<td><a href="https://github.com/ConstantinSeibold/multilabel_segmentation_paxray">code</a></td>
 <td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
 </tr>
 <tr>
 <td>UNet (50%)</td>
 <td>-</td>
+<td><a href="https://github.com/ConstantinSeibold/multilabel_segmentation_paxray">code</a></td>
 <td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
 </tr>
 <tr>
 <td>UNet (25%)</td>
 <td>-</td>
+<td><a href="https://github.com/ConstantinSeibold/multilabel_segmentation_paxray">code</a></td>
 <td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
 </tr>
 </tbody>
