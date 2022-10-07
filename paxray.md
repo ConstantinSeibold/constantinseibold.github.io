@@ -24,7 +24,17 @@ Constantin Seibold, Simon Reiß, Saquib Sarfraz, Matthias A. Fink, Victoria Maye
 </thead>
 <tbody>
 <tr>
-<td>UNet</td>
+<td>UNet (100%)</td>
+<td>-</td>
+<td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
+</tr>
+<tr>
+<td>UNet (50%)</td>
+<td>-</td>
+<td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
+</tr>
+<tr>
+<td>UNet (25%)</td>
 <td>-</td>
 <td><a href="https://drive.google.com/drive/folders/1JjWv_Ips_8CKbREk68JY-YMpu_lXu5Sa?usp=sharing">weights</a></td>
 </tr>
