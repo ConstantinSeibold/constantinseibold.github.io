@@ -36,6 +36,7 @@ th:nth-child(even),td:nth-child(even) {
 </head>
 
 <h1 id="paxray-a-projected-dataset-for-the-segmentation-of-anatomical-structures-in-x-ray-data">PAXRAY: A Projected dataset for the segmentation of Anatomical structures in X-RAY data</h1>
+<p>[<a href="https://arxiv.org/abs/2210.03416"><code>arxiv</code></a>][<a href="https://github.com/ConstantinSeibold/constantinseibold.github.io/blob/master/pdfs/0058_Supplementary_Camera_Ready.pdf"><code>supplementary</code></a>][<a href="https://constantinseibold.github.io/paxray/"><code>project</code></a>]</p>
 <p><img src="https://github.com/ConstantinSeibold/constantinseibold.github.io/blob/master/_images/paxray/paxray_xample.png?raw=true" width=80% height=auto></p>
 <blockquote>
 <p><a href="https://arxiv.org/abs/2210.03416"><strong>Detailed Annotations of Chest X-Rays via CT Projection for Report Understanding.</strong></a><br>
