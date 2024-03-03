@@ -1,0 +1,52 @@
+{
+    "datasets": [
+        {
+            "title": "MedShapeNet",
+            "publications": ["arxiv.org/1","arxiv.org/2"],
+            "url": "https://medshapenet.ikim.nrw/",
+            "explore_url": "",
+            "short_description": "Prior to the deep learning era, the wide application of statistical shape model (SSM) in the medical domain is evidence that shapes are common in medical imaging. Inspired by the well-known ShapeNet and Princeton ModelNet in computer graphics (CG) and vision (CV), the goal of MedShapeNet is to promote the translation of methods developed in the context of CG/CV to clinical applications. MedShapeNet contains over 100,000 medical shapes, including bones, organs, vessels, muscles, etc., as well as surgical instruments.",
+            "dataset_icon": "assets/img/dataset_thumbnails/medshapenet.png"
+        },
+        {
+            "title": "DAP Atlas",
+            "publications": ["https://arxiv.org/abs/2307.13375"],
+            "url": "https://github.com/alexanderjaus/AtlasDataset",
+            "explore_url": "",
+            "short_description": "The Atlas Dataset utilizes the recently introduced AutoPET dataset and offers comprehensive anatomical masks for 533 CT scans from this dataset. These masks cover 142 distinct anatomical structures, facilitating the development of anatomical segmentation models for diverse downstream applications.",
+            "dataset_icon": "assets/img/dataset_thumbnails/template.png"
+        },
+        {
+            "title": "PAXRay(++)",
+            "publications": ["https://bmvc2022.mpi-inf.mpg.de/58/","https://arxiv.org/abs/2306.03934"],
+            "url": "paxray.html",
+            "explore_url": "#",
+            "short_description": "We created a large-scale dataset of 10,021 thoracic CTs, encompassing 157 labels, and applied an ensemble of 3D anatomy segmentation models to extract anatomical pseudo-labels. These labels were projected onto a two-dimensional plane, resembling CXR, enabling the training of detailed semantic segmentation models without any manual annotation effort.",
+            "dataset_icon": "assets/img/dataset_thumbnails/paxray.png"
+        },
+        {
+            "title": "Facial Cosmetic Content",
+            "publications": ["https://arxiv.org/pdf/1908.00274.pdf"],
+            "url": "https://github.com/ssarfraz/SPL/tree/master/FCC_dataset",
+            "explore_url": "",
+            "short_description": "The Facial Cosmetic Content [FCC] is a dataset for makeup-style transfer/removal applications described in our paper Content and Colour Distillation for Learning Image Translations with the Spatial Profile Loss. \n We gather a total of 18425 facial images containing strong, mild and no makeup images. The dataset have the low resolution (256x256) and the high-resolution (512x512) subsets. It contains diverse makeup styles and includes various races.",
+            "dataset_icon": "assets/img/dataset_thumbnails/fcc.png"
+        },
+        {
+            "title": "Synthetic Structured Visual Content",
+            "publications": ["https://ieeexplore.ieee.org/document/9956453"],
+            "url": "https://drive.google.com/drive/folders/1SgmUkd5XuZyxsBHZKEUysR-UsLxwdit6",
+            "explore_url": "",
+            "short_description": "Structured Visual Content (SVC) such as graphs, flow charts, or the like are used by authors to illustrate various concepts. While such depictions allow the average reader to better understand the contents, images containing SVCs are typically not machine-readable. This, in turn, not only hinders automated knowledge aggregation, but also the perception of displayed information for visually impaired people. In this work, we propose a synthetic dataset, containing SVCs in the form of images as well as ground truths. We show the usage of this dataset by an application that automatically extracts a graph representation from an SVC image. This is done by training a model via common supervised learning methods. As there currently exist no large-scale public datasets for the detailed analysis of SVC, we propose the Synthetic SVC (SSVC) dataset comprising 12,000 images with respective bounding box annotations and detailed graph representations. Our dataset enables the development of strong models for the interpretation of SVCs while skipping the time-consuming dense data annotation.",
+            "dataset_icon": "assets/img/dataset_thumbnails/structuredcontent.png"
+        },
+        {
+            "title": "Let'sPlay4Action",
+            "publications": ["https://arxiv.org/abs/2107.05617"],
+            "url": "https://github.com/aroitberg/sims4action",
+            "explore_url": "",
+            "short_description": "Sims4Action was built by specifically executing actions-of-interest in a top-down manner, while the gaming circumstances allowed us to freely switch between environments, camera angles and subject appearances. It features ten hours of video material of eight diverse characters in environments similar to the Toyota Smarthome household. Ten actions are performed which have a direct correspondence to actions described by Toyota Smarthome.",
+            "dataset_icon": "assets/img/dataset_thumbnails/letsplay4action.jpg"
+        }
+    ]
+}
