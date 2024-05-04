@@ -14,6 +14,22 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <script>
+    // Redirect function
+    function redirect() {
+        // Get the current URL
+        var currentUrl = window.location.href;
+        
+        // Check if the URL ends with .html, if not, redirect by appending .html
+        if (!currentUrl.endsWith('.html')) {
+        var redirectedUrl = currentUrl + '.html';
+        window.location.href = redirectedUrl;
+        }
+    }
+    
+    // Call redirect function on page load
+    redirect();
+    </script>
     <body>
         <header>
 
