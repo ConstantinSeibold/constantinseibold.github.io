@@ -15,20 +15,15 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <script>
-    // Redirect function
-    function redirect() {
-        // Get the current URL
-        var currentUrl = window.location.href;
-        
-        // Check if the URL ends with .html, if not, redirect by appending .html
-        if (!currentUrl.endsWith('.html')) {
-        var redirectedUrl = currentUrl + '.html';
-        window.location.href = redirectedUrl;
+        // Redirect function
+        function redirect() {
+            window.location.href = "https://constantinseibold.github.io/paxray.html";
         }
-    }
-    
-    // Call redirect function on page load
-    redirect();
+
+        // Check if the current URL is mywebsite.com/bla and redirect if so
+        if (window.location.href.indexOf("https://constantinseibold.github.io/paxray") !== -1) {
+            redirect();
+        }
     </script>
     <body>
         <header>
