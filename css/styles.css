@@ -11277,6 +11277,11 @@ button {
   flex-wrap: wrap;
 }
 
+#software-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .dataset {
   box-sizing: border-box;
   width: 48%;
