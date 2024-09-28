@@ -11035,6 +11035,7 @@ p {
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 5px; 
   background-color: #FFFFFF;
   border: 2px solid rgba(49, 80, 129, 0.9);
 }
@@ -11071,7 +11072,6 @@ p {
 }
 
 .filter-elem {
-  padding-bottom: 10px; 
   max-width: 60%;
   right: 0px;
   display: flex;

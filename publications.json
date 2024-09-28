@@ -116,7 +116,7 @@
       },
       {
         "title": "Flying guide dog: Walkable path discovery for the visually impaired utilizing drones and transformer-based semantic segmentation",
-        "authors": ["Matthias A. Fink" , "Victoria L. Mayer", "Thomas Schneider", "Constantin Seibold", "Rainer Stiefelhagen", "Jens Kleesiek", "Tim F. Weber", "Hans-Ulrich Kauczor"],
+        "authors": ["Haobin Tan","Chang Chen","Xinyu Luo","Jiaming Zhang","Constantin Seibold","Kailun Yang","Rainer Stiefelhagen"],
         "venue": "IEEE ROBIO",
         "image": "assets/img/thumbnails/guidedog.png",
         "arxivLink": "https://arxiv.org/abs/2108.07007",
