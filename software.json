@@ -1,0 +1,77 @@
+{
+    "software": [
+        {
+            "title": "Spatial Profile Loss",
+        "authors": ["M Saquib Sarfraz", 
+                    "Constantin Seibold", "Haroon Khalid", 
+                    "Rainer Stiefelhagen"],
+        "venue": "BMVC",
+        "image": "assets/img/thumbnails/spl.png",
+        "arxivLink": "https://arxiv.org/pdf/1908.00274",
+        "codeLink": "https://github.com/ssarfraz/SPL",
+        "paperLink": "",
+        "dataLink": "https://github.com/ssarfraz/SPL/tree/master/FCC_dataset",
+        "award": "Best Industry Paper",
+        "date": "2019",
+        "tags": ["Generative Networks", "Image Translation", "Dataset", "Makeup Transfer"],
+        "abstract": "Generative adversarial networks has emerged as a defacto standard for image translation problems. To successfully drive such models, one has to rely on additional networks e.g., discriminators and/or perceptual networks. Training these networks with pixel based losses alone are generally not sufficient to learn the target distribution. In this paper, we propose a novel method of computing the loss directly between the source and target images that enable proper distillation of shape/content and colour/style. We show that this is useful in typical image-to-image translations allowing us to successfully drive the generator without relying on additional networks. We demonstrate this on many difficult image translation problems such as image-to-image domain mapping, single image super-resolution and photo realistic makeup transfer. Our extensive evaluation shows the effectiveness of the proposed formulation and its ability to synthesize realistic images. "
+        },
+        {
+            "title": "Self-guided Loss",
+            "authors": ["Constantin Seibold", "Jens Kleesiek", "Heinz-Peter Schlemmer", "Rainer Stiefelhagen"],
+            "venue": "ACCV",
+            "image": "assets/img/thumbnails/sgl.png",
+            "arxivLink": "https://arxiv.org/abs/2010.00127",
+            "codeLink": "https://github.com/ConstantinSeibold/SGL",
+            "paperLink": "https://openaccess.thecvf.com/content/ACCV2020/papers/Seibold_Self-Guided_Multiple_Instance_Learning_for_Weakly_Supervised_Thoracic_DiseaseClassification_and_ACCV_2020_paper.pdf",
+            "dataLink": "",
+            "award": "",
+            "date": "2020",
+            "tags": ["Image classification", "classification","Chest X-ray", "Loss", "Localization"],
+            "abstract": "Due to the high complexity of medical images and the scarcity of trained personnel, most large-scale radiological datasets are lacking fine-grained annotations and are often only described on image-level. These shortcomings hinder the deployment of automated diagnosis systems, which require human-interpretable justification for their decision process. In this paper, we address the problem of weakly supervised identification and localization of abnormalities in chest radiographs in a multiple-instance learning setting. To that end, we introduce a novel loss function for training convolutional neural networks increasing the localization confidence and assisting the overall disease identification. The loss leverages both image-and patch-level predictions to generate auxiliary supervision and enables specific training at patch-level. Rather than forming strictly binary from the predictions as done in previous loss formulations, we create targets in a more customized manner. This way, the loss accounts for possible misclassification of less certain instances. We show that the supervision provided within the proposed learning scheme leads to better performance and more precise predictions on prevalent datasets for multiple-instance learning as well as on the NIH ChestX-Ray14 benchmark for disease recognition than previously used losses."
+        },
+        {
+            "title": "Accurate Fine-Grained Segmentation of Human Anatomy in Radiographs via Volumetric Pseudo-Labeling",
+            "authors": ["Constantin Seibold", "Alexander Jaus", "Matthias A Fink", "Moon Kim", "Simon Reiß", "Ken Herrmann", "Jens Kleesiek", "Rainer Stiefelhagen"],
+            "venue": "",
+            "image": "assets/img/thumbnails/paxray++.png",
+            "arxivLink": "https://arxiv.org/pdf/2306.03934",
+            "codeLink": "https://github.com/ConstantinSeibold/ChestXRayAnatomySegmentation/tree/main",
+            "paperLink": "",
+            "dataLink": "https://drive.google.com/drive/folders/1AEJAaPTxVMx9iofY4J4f2x5gpJqE61I2?usp=sharing",
+            "award": "",
+            "date": "2023",
+            "tags": ["Semantic Segmentation","Instance Segmentation","CT Projection", "Anatomy Segmentation", "Computer Tomography", "Semantic Segmentation", "Dataset", "Feature Extraction"],
+            "abstract": "Interpreting chest radiographs (CXR) remains challenging due to the ambiguity of overlapping structures such as the lungs, heart, and bones. To address this issue, we propose a novel method for extracting fine-grained anatomical structures in CXR using pseudo-labeling of three-dimensional computed tomography (CT) scans. "
+          },
+          {
+            "title": "Accurate Fine-Grained Segmentation of Human Anatomy in Radiographs via Volumetric Pseudo-Labeling",
+            "authors": ["Constantin Seibold", "Alexander Jaus", "Matthias A Fink", "Moon Kim", "Simon Reiß", "Ken Herrmann", "Jens Kleesiek", "Rainer Stiefelhagen"],
+            "venue": "",
+            "image": "assets/img/thumbnails/paxray++.png",
+            "arxivLink": "https://arxiv.org/pdf/2306.03934",
+            "codeLink": "https://github.com/ConstantinSeibold/ChestXRayAnatomySegmentation/tree/main",
+            "paperLink": "",
+            "dataLink": "https://drive.google.com/drive/folders/1AEJAaPTxVMx9iofY4J4f2x5gpJqE61I2?usp=sharing",
+            "award": "",
+            "date": "2023",
+            "tags": ["Semantic Segmentation","Instance Segmentation","CT Projection", "Anatomy Segmentation", "Computer Tomography", "Semantic Segmentation", "Dataset", "Feature Extraction"],
+            "abstract": "Interpreting chest radiographs (CXR) remains challenging due to the ambiguity of overlapping structures such as the lungs, heart, and bones. To address this issue, we propose a novel method for extracting fine-grained anatomical structures in CXR using pseudo-labeling of three-dimensional computed tomography (CT) scans. "
+          },
+          {
+            "title": "Accurate Fine-Grained Segmentation of Human Anatomy in Radiographs via Volumetric Pseudo-Labeling",
+            "authors": ["Constantin Seibold", "Alexander Jaus", "Matthias A Fink", "Moon Kim", "Simon Reiß", "Ken Herrmann", "Jens Kleesiek", "Rainer Stiefelhagen"],
+            "venue": "",
+            "image": "assets/img/thumbnails/paxray++.png",
+            "arxivLink": "https://arxiv.org/pdf/2306.03934",
+            "codeLink": "https://github.com/ConstantinSeibold/ChestXRayAnatomySegmentation/tree/main",
+            "paperLink": "",
+            "dataLink": "https://drive.google.com/drive/folders/1AEJAaPTxVMx9iofY4J4f2x5gpJqE61I2?usp=sharing",
+            "award": "",
+            "date": "2023",
+            "tags": ["Semantic Segmentation","Instance Segmentation","CT Projection", "Anatomy Segmentation", "Computer Tomography", "Semantic Segmentation", "Dataset", "Feature Extraction"],
+            "abstract": "Interpreting chest radiographs (CXR) remains challenging due to the ambiguity of overlapping structures such as the lungs, heart, and bones. To address this issue, we propose a novel method for extracting fine-grained anatomical structures in CXR using pseudo-labeling of three-dimensional computed tomography (CT) scans. "
+          }
+
+    ]
+}
