@@ -11327,8 +11327,55 @@ button {
   margin-top: 10px;
 }
 
+
+.software {
+  box-sizing: border-box;
+  width: 48%;
+  margin: 1%;
+  padding: 1em;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  position: relative;
+  transition: background-color 0.3s ease; /* Add transition effect for background color */
+}
+
+.software:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.software:nth-child(odd) {
+  float: left;
+  clear: left;
+}
+
+.software:nth-child(even) {
+  float: right;
+  clear: right;
+}
+
+.software img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  z-index: 1;
+  transition: opacity 0.3s ease; /* Add transition effect for opacity */
+}
+
+.software:hover img {
+  opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.software-details {
+  margin-top: 10px;
+}
+
 .title-link:hover,
-.dataset-icon:hover {
+.dataset-icon:hover,
+.software-icon:hover  {
   cursor: pointer;
   color: #0056b3; /* Change text color on hover */
 
