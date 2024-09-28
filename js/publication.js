@@ -84,27 +84,46 @@
         }
 
 
-        function filterPublications(data, selectedTags) {
-        // Clear existing publications
-        publicationsContainer.innerHTML = '';
-    
-        // Display filtered publications or all publications if no tags are selected
-        if (selectedTags.length === 0 || selectedTags.includes('all')) {
-            data.publications.forEach(publication => {
-            const publicationElement = createPublicationElement(publication);
-            publicationsContainer.appendChild(publicationElement);
-            });
-        } else {
-            const filteredPublications = data.publications.filter(publication =>
-            selectedTags.some(tag => publication.tags.includes(tag))
-            );
-    
-            filteredPublications.forEach(publication => {
-            const publicationElement = createPublicationElement(publication);
-            publicationsContainer.appendChild(publicationElement);
-            });
+        function filterPublications(data, selectedTags, selectedAuthors, selectedYears) {
+            // Clear existing publications
+            publicationsContainer.innerHTML = '';
+        
+            // Display all publications if no filters are selected
+            if (
+                (selectedTags.length === 0 || selectedTags.includes('all')) &&
+                (selectedAuthors.length === 0 || selectedAuthors.includes('all')) &&
+                (selectedYears.length === 0 || selectedYears.includes('all'))
+            ) {
+                data.publications.forEach(publication => {
+                    const publicationElement = createPublicationElement(publication);
+                    publicationsContainer.appendChild(publicationElement);
+                });
+            } else {
+                const filteredPublications = data.publications.filter(publication => {
+                    // Check if publication matches selected tags
+                    const tagMatch = selectedTags.length === 0 || selectedTags.includes('all') ||
+                                     selectedTags.some(tag => publication.tags.includes(tag));
+        
+                    // Check if publication matches selected authors
+                    const authorMatch = selectedAuthors.length === 0 || selectedAuthors.includes('all') ||
+                                        selectedAuthors.some(author => publication.authors.includes(author));
+        
+                    // Check if publication matches selected years
+                    const yearMatch = selectedYears.length === 0 || selectedYears.includes('all') ||
+                                      selectedYears.includes(publication.date);
+        
+                    // Return true if publication matches all selected filters
+                    return tagMatch && authorMatch && yearMatch;
+                });
+        
+                // Display the filtered publications
+                filteredPublications.forEach(publication => {
+                    const publicationElement = createPublicationElement(publication);
+                    publicationsContainer.appendChild(publicationElement);
+                });
+            }
         }
-        }
+        
     
         function createPublicationElement(publication) {
         const publicationDiv = document.createElement('div');
