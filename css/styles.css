@@ -11071,7 +11071,7 @@ p {
 }
 
 .filter-elem {
-  margin-bottom: 10px; 
+  padding-bottom: 10px; 
   max-width: 60%;
   right: 0px;
   display: flex;
