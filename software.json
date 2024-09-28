@@ -22,7 +22,7 @@
             "url": "https://github.com/ConstantinSeibold/ChestXRayAnatomySegmentation/",
             "explore_url": "",
             "short_description": "This repository provides a way to generate fine-grained segmentations and extract understandable features of Chest X-Rays.",
-            "software_icon": "assets/img/software_thumbnails/cxas.png"  
+            "software_icon": "assets/img/software_thumbnails/paxray.png"  
         },
         {
           "title": "Spacewalker",
@@ -30,7 +30,7 @@
           "url": "https://github.com/code-lukas/Spacewalker/tree/main",
           "explore_url": "",
           "short_description": "Unstructured data in industries such as healthcare, finance, and manufacturing presents significant challenges for efficient analysis and decision making. Detecting patterns within this data and understanding their impact is critical but complex without the right tools. Traditionally, these tasks relied on the expertise of data analysts or labor-intensive manual reviews. In response, we introduce Spacewalker, an interactive tool designed to explore and annotate data across multiple modalities. Spacewalker allows users to extract data representations and visualize them in low-dimensional spaces, enabling the detection of semantic similarities. Through extensive user studies, we assess Spacewalker's effectiveness in data annotation and integrity verification. Results show that the tool's ability to traverse latent spaces and perform multi-modal queries significantly enhances the user's capacity to quickly identify relevant data. Moreover, Spacewalker allows for annotation speed-ups far superior to conventional methods, making it a promising tool for efficiently navigating unstructured data and improving decision making processes. ",
-          "software_icon": "assets/img/software_thumbnails/Spacewalker.png"  
+          "software_icon": "assets/img/software_thumbnails/spacewalker.png"  
       }
     ]
 }
