@@ -28,61 +28,60 @@
         })
         .catch(error => console.error('Error fetching publications:', error));
     
+
         function populateTagFilter(data) {
-        const allTags = new Set();
-        data.publications.forEach(publication => {
-            publication.tags.forEach(tag => allTags.add(tag));
-        });
-        
-        // Add tag options dynamically
-        allTags.forEach(tag => {
-            tagFilter.append(new Option(tag, tag));
-        });
+            const allTags = new Set();
+            data.publications.forEach(publication => {
+                publication.tags.forEach(tag => allTags.add(tag));
+            });
+            
+            // Add tag options dynamically
+            allTags.forEach(tag => {
+                tagFilter.append(new Option(tag, tag));
+            });
     
-        // Initialize Select2 after updating options
-        tagFilter.select2();
+            // Initialize Select2 after updating options
+            tagFilter.select2();
     
-        // Set default selection to "Show All"
-        tagFilter.val('all').trigger('change');
+            // Set default selection to "Show All"
+            tagFilter.val('all').trigger('change');
         }
-
+    
         function populateAuthorFilter(data) {
-        const allAuthors = new Set();
-        data.publications.forEach(publication => {
-            publication.authors.forEach(author => allTags.add(author));
-        });
-        
-        // Add tag options dynamically
-        allAuthors.forEach(author => {
-            authorFilter.append(new Option(author, author));
-        });
+            const allAuthors = new Set();
+            data.publications.forEach(publication => {
+                publication.authors.forEach(author => allAuthors.add(author));
+            });
+            
+            // Add author options dynamically
+            allAuthors.forEach(author => {
+                authorFilter.append(new Option(author, author));
+            });
     
-        // Initialize Select2 after updating options
-        authorFilter.select2();
+            // Initialize Select2 after updating options
+            authorFilter.select2();
     
-        // Set default selection to "Show All"
-        authorFilter.val('all').trigger('change');
+            // Set default selection to "Show All"
+            authorFilter.val('all').trigger('change');
         }
-
+    
         function populateYearFilter(data) {
-        const allYears = new Set();
-        data.publications.forEach(publication => {
-            publication.tags.forEach(year => allYears.add(year));
-        });
-        
-        // Add tag options dynamically
-        allYears.forEach(year => {
-            yearFilter.append(new Option(year, year));
-        });
+            const allYears = new Set();
+            data.publications.forEach(publication => {
+                allYears.add(publication.date); // Add the date (year) directly
+            });
+            
+            // Add year options dynamically
+            allYears.forEach(year => {
+                yearFilter.append(new Option(year, year));
+            });
     
-        // Initialize Select2 after updating options
-        yearFilter.select2();
+            // Initialize Select2 after updating options
+            yearFilter.select2();
     
-        // Set default selection to "Show All"
-        yearFilter.val('all').trigger('change');
+            // Set default selection to "Show All"
+            yearFilter.val('all').trigger('change');
         }
-    
-
 
 
         function filterPublications(data, selectedTags) {
