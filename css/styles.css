@@ -11040,7 +11040,7 @@ p {
 }
 
 .js-example-basic-multiple {
-  max-width: 5em;
+  max-width: 100%;
 }
 
 .research-container {
@@ -11072,6 +11072,7 @@ p {
 
 .filter-elem {
   margin-right: 00%; 
+  max-width: 60%;
   right: 0px;
   display: flex;
   align-items: center;
