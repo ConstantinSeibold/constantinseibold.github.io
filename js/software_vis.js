@@ -2,19 +2,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const softwareContainer = document.getElementById('software-container');
 
     fetch('software.json')
-    .then(response => response.json())
+    .then(response => {
+        // Check if the response is OK (status code 200)
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        return response.json();
+    })
     .then(data => {
-        const softwares = data.softwares;
+        const softwares = data.software; // Corrected from 'softwares' to 'software'
 
         softwares.forEach(software => {
-            const softwareElement = createsoftwareElement(software);
+            const softwareElement = createSoftwareElement(software); // Corrected function name
             softwareContainer.appendChild(softwareElement);            
         });
         
     })
     .catch(error => console.error("Error fetching softwares: ", error));
 
-    function createsoftwareElement(software) {
+    function createSoftwareElement(software) { // Corrected function name
         const softwareDiv = document.createElement('div');
         softwareDiv.classList.add('software');
 
@@ -27,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         const img = document.createElement('img');
-        img.src = software.software_icon;
+        img.src = software.software_icon; 
         img.alt = 'Software Preview';
         img.classList.add('software-icon');
         img.addEventListener('click', function () {
@@ -44,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         publicationsContainer.appendChild(document.createTextNode('Paper: ['));
         software.publications.forEach((publication, index) => {
             const publicationLink = document.createElement('a');
-            publicationLink.textContent = index + 1;
+            publicationLink.textContent = index + 1; // Use index + 1 for numbering
             publicationLink.href = publication;
             publicationLink.target = "_blank"; // Open link in a new tab
             publicationsContainer.appendChild(publicationLink);
@@ -69,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
         shortDescription.textContent = software.short_description;
 
         // Append elements to softwareDiv
-
         const titleWrapper = document.createElement('div');
         titleWrapper.classList.add('title-wrapper');
 
