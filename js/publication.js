@@ -1,12 +1,16 @@
     document.addEventListener('DOMContentLoaded', function () {
         const publicationsContainer = document.getElementById('publications-container');
         const tagFilter = $('#tag-filter');
+        const yearFilter = $('#year-filter');
+        const authorFilter = $('#author-filter');
     
         fetch('publications.json')
         .then(response => response.json())
         .then(data => {
             // Populate the tag filter options dynamically
             populateTagFilter(data);
+            populateYearFilter(data);
+            populateAuthorFilter(data);
             
             const reversedPublications = data.publications.reverse();
             
@@ -29,9 +33,6 @@
         data.publications.forEach(publication => {
             publication.tags.forEach(tag => allTags.add(tag));
         });
-    
-        // Clear existing options
-        //   tagFilter.empty();
         
         // Add tag options dynamically
         allTags.forEach(tag => {
@@ -44,7 +45,46 @@
         // Set default selection to "Show All"
         tagFilter.val('all').trigger('change');
         }
+
+        function populateAuthorFilter(data) {
+        const allAuthors = new Set();
+        data.publications.forEach(publication => {
+            publication.authors.forEach(author => allTags.add(author));
+        });
+        
+        // Add tag options dynamically
+        allAuthors.forEach(author => {
+            authorFilter.append(new Option(author, author));
+        });
     
+        // Initialize Select2 after updating options
+        authorFilter.select2();
+    
+        // Set default selection to "Show All"
+        authorFilter.val('all').trigger('change');
+        }
+
+        function populateYearFilter(data) {
+        const allYears = new Set();
+        data.publications.forEach(publication => {
+            publication.tags.forEach(year => allYears.add(year));
+        });
+        
+        // Add tag options dynamically
+        allYears.forEach(year => {
+            yearFilter.append(new Option(year, year));
+        });
+    
+        // Initialize Select2 after updating options
+        yearFilter.select2();
+    
+        // Set default selection to "Show All"
+        yearFilter.val('all').trigger('change');
+        }
+    
+
+
+
         function filterPublications(data, selectedTags) {
         // Clear existing publications
         publicationsContainer.innerHTML = '';

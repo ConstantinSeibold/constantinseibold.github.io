@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Constantin Seibold - Personal Website</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
         <!-- Include Select2 CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
 
@@ -77,15 +77,27 @@
                 <div class="research-container">    
                     <div class="filter-elem" id="filter-container">
                         <!-- <label for="tag-filter">Filter by Tag:</label> -->
-                        <select id="year-filter" class="js-example-basic-multiple" multiple="multiple">
+                        <div class="filterblock">
+                            <div> Filter by Year:</div>
+                        
+                            <select id="year-filter" class="js-example-basic-multiple" multiple="multiple">
                             <!-- Add options dynamically using JavaScript -->
-                        </select>
-                        <select id="author-filter" class="js-example-basic-multiple" multiple="multiple">
-                            <!-- Add options dynamically using JavaScript -->
-                        </select>
-                        <select id="tag-filter" class="js-example-basic-multiple" multiple="multiple">
-                          <!-- Add options dynamically using JavaScript -->
-                        </select>
+                            </select>
+                        </div>
+                        <div class="filterblock">
+                            <div> Filter by Authors:</div>
+                            <select id="author-filter" class="js-example-basic-multiple" multiple="multiple">
+                                <!-- Add options dynamically using JavaScript -->
+                            </select>    
+                        </div>
+                        <div class="filterblock">
+                            <div> Filter by Tags:</div>
+                            <select id="tag-filter" class="js-example-basic-multiple" multiple="multiple" placeholder="Filter by text">
+                                <!-- Add options dynamically using JavaScript -->
+                                
+                              </select>
+                        </div>
+                        
                     </div>                                    
                     <div id="publications-container"></div>                    
                 </div>

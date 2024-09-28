@@ -11018,6 +11018,7 @@ p {
   background-color: #f6e1c5;
 }
 
+
 .btn-xl {
   font-weight: 700;
   font-size: 0.8rem;
@@ -11027,14 +11028,28 @@ p {
   padding-right: 2rem;
 }
 
-.research-container {
+.filterblock {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #FFFFFF;
+  border: 2px solid rgba(49, 80, 129, 0.9);
+}
+
+.js-example-basic-multiple {
+  max-width: 5em;
+}
+
+.research-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack filter elements vertically */
   margin-top: 10px;
-  /* margin-left: 20%; */
-  width: 100%;
-  align-self: center;
-  /* display: flex; */
-  /* align-items: center; */
+  width: auto; /* Remove 100% width to allow for natural centering */
 }
 
 .hidden-pub {
