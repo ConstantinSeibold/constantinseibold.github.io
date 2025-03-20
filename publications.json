@@ -171,6 +171,20 @@
         "abstract": "Structured Visual Content (SVC) such as graphs, flow charts, or the like are used by authors to illustrate various concepts. While such depictions allow the average reader to better understand the contents, images containing SVCs are typically not machine-readable. This, in turn, not only hinders automated knowledge aggregation, but also the perception of displayed information for visually impaired people. In this work, we propose a synthetic dataset, containing SVCs in the form of images as well as ground truths. We show the usage of this dataset by an application that automatically extracts a graph representation from an SVC image. This is done by training a model via common supervised learning methods. As there currently exist no large-scale public datasets for the detailed analysis of SVC, we propose the Synthetic SVC (SSVC) dataset comprising 12,000 images with respective bounding box annotations and detailed graph representations. Our dataset enables the development of strong models for the interpretation of SVCs while skipping the time-consuming dense data annotation.We evaluate our model on both synthetic and manually annotated data and show the transferability of synthetic to real via various metrics, given the presented application. Here, we evaluate that this proof of concept is possible to some extend and lay down a solid baseline for this task. We discuss the limitations of our approach for further improvements. Our utilized metrics can be used as a tool for future comparisons in this domain."
       },
       {
+        "title": "Deep Learning-basierte Synthese virtueller monoenergetischer Bilder zur Optimierung einer automatisierten Detektion von Lungenarterienembolien in konventionellen CT-Scans",
+        "authors": ["Matthias A Fink", "Constantin Seibold", "Hans-Ulrich Kauczor", "Rainer Stiefelhagen", "Jens Kleesiek"],
+        "venue": "RöFo-Fortschritte auf dem Gebiet der Röntgenstrahlen und der bildgebenden Verfahren",
+        "image": "assets/img/thumbnails/monodiagnostics.png",
+        "arxivLink": "",
+        "codeLink": "",
+        "paperLink": "RöFo-Fortschritte auf dem Gebiet der Röntgenstrahlen und der bildgebenden Verfahren",
+        "dataLink": "",
+        "award": "",
+        "date": "2022",
+        "tags": ["Synthetic Data","Image Translation", "Pulmonary Embolism", "dual energy CT", "Computer Tomography"],
+        "abstract": "Zielsetzung Unser Ziel war die Entwicklung eines Deep Learning (DL)-Modells, das virtuell-monoenergetische Bilder (VMI) auf Grundlage der spektralen Dual-Energy CT-Pulmonalisangiographie (DE-CTPA) erzeugt, um die automatische Detektion von Lungenarteriemembolien (LAE) in konventionellen Single-Energy CT-Scans zu verbessern."
+      },
+      {
         "title": "Jointly Optimized Deep Neural Networks to Synthesize Monoenergetic Images from Single-Energy CT Angiography for Improving Classification of Pulmonary Embolism",
         "authors": ["Matthias A Fink", "Constantin Seibold", "Hans-Ulrich Kauczor", "Rainer Stiefelhagen", "Jens Kleesiek"],
         "venue": "Diagnostics",
@@ -379,6 +393,20 @@
         "date": "2024",
         "tags": ["AR", "Photogrammetry", "Foot"],
         "abstract": "The acquisition of accurate 3D models of feet is crucial in fields such as chronic foot wound monitoring, prosthetics design, and orthopedic surgery. However, obtaining precise models of patients' feet typically relies on manual measurements, which is both costly and prone to error. Addressing this need, we introduce FootCapture, a mobile application designed to facilitate the acquisition of precise photographic measurements. Our solution employs augmented reality to intuitively guide untrained users to capture comprehensive photographic data from the correct positions and angles, suitable to create a high-fidelity 3D model of the patient's foot using photogrammetry. To validate our application's utility, we compared FootCapture with Apple's Guided Capture application in a user study with n=7 participants. The results showed FootCapture’s intuitive use and high robustness marking it as a tool worth considering for medical personnel."
+      },
+      {
+        "title": "Foreign object segmentation in chest x-rays through anatomy-guided shape insertion",
+        "authors": ["Constantin Seibold", "Hamza Kalisch", "Lukas Heine", "Simon Reiß", "Jens Kleesiek"],
+        "venue": "",
+        "image": "https://picsum.photos/200/300",
+        "arxivLink": "https://arxiv.org/abs/2501.12022",
+        "codeLink": "",
+        "paperLink": "",
+        "dataLink": "",
+        "award": "",
+        "date": "2025",
+        "tags": ["Synthetic Data", "Instance Segmentation"],
+        "abstract": "In this paper, we tackle the challenge of instance segmentation for foreign objects in chest radiographs, commonly seen in postoperative follow-ups with stents, pacemakers, or ingested objects in children. The diversity of foreign objects complicates dense annotation, as shown in insufficient existing datasets. To address this, we propose the simple generation of synthetic data through (1) insertion of arbitrary shapes (lines, polygons, ellipses) with varying contrasts and opacities, and (2) cut-paste augmentations from a small set of semi-automatically extracted labels. These insertions are guided by anatomy labels to ensure realistic placements, such as stents appearing only in relevant vessels. Our approach enables networks to segment complex structures with minimal manually labeled data. Notably, it achieves performance comparable to fully supervised models while using 93% fewer manual annotations."
       },
       {
         "title": "CLUE: A Clinical Language Understanding Evaluation for LLMs",
