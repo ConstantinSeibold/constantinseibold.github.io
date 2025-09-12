@@ -2,12 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('content/teaching.json')
         .then(response => response.json())
         .then(data => {
-            // Update page title if needed
-            if (data.page_info && data.page_info.title) {
-                const titleElement = document.getElementById('page-title');
-                if (titleElement) {
-                    titleElement.textContent = data.page_info.title;
-                }
+            // Populate teaching experience overview
+            if (data.page_info) {
+                populateTeachingExperience(data.page_info);
             }
 
             // Populate courses
@@ -23,6 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => {
             console.error('Error loading teaching content:', error);
         });
+
+    function populateTeachingExperience(pageInfo) {
+        const container = document.getElementById('teaching-experience');
+        if (!container) return;
+
+        let teachingHTML = `
+            <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">
+                <i class="fas fa-chalkboard-teacher" style="margin-right: 0.5rem;"></i>
+                ${pageInfo.title}
+            </h3>
+            <p style="color: var(--color-text-secondary); font-size: 1.1rem; margin-bottom: 1.5rem;">
+                ${pageInfo.description}
+            </p>
+        `;
+        
+        container.innerHTML = teachingHTML;
+    }
 
     function populateCourses(coursesData) {
         const container = document.getElementById('courses-container');
