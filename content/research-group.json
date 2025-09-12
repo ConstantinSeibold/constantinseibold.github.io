@@ -39,31 +39,11 @@
       }
     ],
     "research_areas": [
-      {
-        "area": "Medical Image Analysis",
-        "description": "Automated analysis of medical imaging data including CT, MRI, and X-ray images.",
-        "icon": "🔬"
-      },
-      {
-        "area": "Computer-Aided Diagnosis",
-        "description": "Development of AI systems to assist radiologists and medical professionals.",
-        "icon": "🏥"
-      },
-      {
-        "area": "Multi-Modal Learning",
-        "description": "Integration of imaging data with clinical reports and patient information.",
-        "icon": "📊"
-      },
-      {
-        "area": "Explainable AI",
-        "description": "Creating interpretable AI systems for medical decision-making.",
-        "icon": "🧠"
-      }
+      
     ],
     "facilities": {
-      "location": "University Medicine Essen",
-      "equipment": ["High-performance computing cluster", "Medical imaging workstations", "GPU computing resources"],
-      "collaborations": ["Karlsruhe Institute of Technology", "Helmholtz Association", "Clinical Partners"]
+      "location": "University Clinic Heidelberg",
+      "collaborations": ["Karlsruhe Institute of Technology", "University Medicine Essen"]
     }
   }
 }

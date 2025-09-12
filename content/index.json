@@ -5,9 +5,9 @@
     "description": "Homepage showcasing research in computer vision and machine learning with focus on automated diagnosis and interpretable AI systems."
   },
   "hero": {
-    "title": "Dr. Constantin Seibold",
-    "subtitle": "Machine Learning Researcher & Computer Vision Expert",
-    "description": "Exploring the frontiers of computer vision and machine learning in medical imaging, with a focus on automated diagnosis and interpretable AI systems.",
+    "title": "Dr.-Ing. Constantin Seibold",
+    "subtitle": "Research Group Leader - University Heidelberg",
+    "description": "Specializing in machine learning applications in medical imaging with a focus on automated diagnosis and interpretable AI systems.",
     "cta": {
       "text": "Explore My Research",
       "link": "research.html"
@@ -59,23 +59,10 @@
   "news": [
     {
       "date": "2024-12-01",
-      "title": "New Publication in CVPR 2025",
-      "description": "Our latest work on automated medical diagnosis has been accepted to CVPR 2025.",
+      "title": "Check out our tutorial at CVPR 2025",
+      "description": "Check out our in-depth view on state-of-the-art data exploration techniques including dimensionality reduction, clustering and more!",
       "type": "publication",
-      "link": "research.html"
-    },
-    {
-      "date": "2024-11-15",
-      "title": "Teaching Award Received",
-      "description": "Honored to receive the Excellence in Teaching Award for innovative ML course design.",
-      "type": "award"
-    },
-    {
-      "date": "2024-10-30",
-      "title": "New Dataset Release",
-      "description": "Released PAXRay dataset with 100K+ chest X-ray images for automated diagnosis research.",
-      "type": "news",
-      "link": "datasets.html"
+      "link": "https://identifying-structure-in-data.github.io/"
     }
   ],
   "featured_work": [
@@ -89,13 +76,13 @@
       "tags": ["Tutorial", "CVPR", "Data Visualization"]
     },
     {
-      "title": "PAXRay: Automated Chest X-Ray Analysis",
-      "description": "Deep learning system for automated diagnosis from chest X-ray images, achieving state-of-the-art performance on multiple pathology detection tasks.",
+      "title": "CXAS: Finegrained Anatomy Segmentation in Chest-Radiographs",
+      "description": "The interpretation of chest radiographs (CXR) remains a challenge due to ambiguous overlapping structures such as the lungs, heart, and bones hindering the annotation. To address this, we propose a novel method for extracting fine-grained anatomical structures in CXR using pseudo-labeling of three-dimensional computer tomography (CTs). ",
       "image": "assets/img/projects/paxray.jpg",
       "links": {
-        "paper": "paxray.html",
-        "code": "https://github.com/ConstantinSeibold/paxray",
-        "demo": "https://paxray.com"
+        "paper": "paxray.https://arxiv.org/pdf/2306.03934",
+        "code": "https://github.com/ConstantinSeibold/ChestXRayAnatomySegmentation",
+        "demo": "https://huggingface.co/datasets/cmseibold/PAXRay"
       },
       "tags": ["Medical AI", "Computer Vision", "Deep Learning"]
     }

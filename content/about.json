@@ -1,18 +1,25 @@
 {
   "page_info": {
-    "title": "About Dr. Constantin Seibold",
+    "title": "About Dr.-Ing. Constantin Seibold",
     "subtitle": "Career Overview & Achievements",
-    "description": "Detailed information about Dr. Constantin Seibold's academic career, achievements, and professional background."
+    "description": "Detailed information about Dr.-Ing. Constantin Seibold's academic career, achievements, and professional background."
   },
   "profile": {
-    "name": "Dr. Constantin Seibold",
-    "title": "Machine Learning Researcher & Computer Vision Expert",
+    "name": "Dr.-Ing. Constantin Seibold",
+    "title": "Research Group Leader - University Heidelberg",
     "image": "assets/img/profile/linkedin.jpg",
-    "bio": "Specializing in computer vision applications in medical imaging with a focus on automated diagnosis and interpretable AI systems."
+    "bio": "Specializing in machine learning applications in medical imaging with a focus on automated diagnosis and interpretable AI systems."
   },
   "career_timeline": {
     "title": "Professional Experience",
     "entries": [
+      {
+        "position": "Research Group Leader for Machine Learning Research",
+        "organization": "Diagnostic and Interventional Radiology, University Clinic Heidelberg",
+        "period": "2025 - ongoing",
+        "type": "professional",
+        "description": "Leading research initiatives for development of machine learning methods and their clinical translation."
+      },
       {
         "position": "Junior Research Group Leader for Computer Vision in Medicine",
         "organization": "Institute of Artificial Intelligence in Medicine and Nuclear Medicine, University Medicine Essen",
@@ -62,34 +69,46 @@
     "title": "Awards & Recognition",
     "entries": [
       {
+        "title": "2nd Place - Automated Lesion Segmentation in Whole-Body PET/CT Challenge (autoPET III)",
+        "organization": "autoPET III Challenge",
+        "year": "2024",
+        "type": "competition",
+        "link": "https://arxiv.org/pdf/2409.12155"
+      },
+      {
+        "title": "1st Place (Spanish, Chinese), 3rd Place (English) - MEDIQA-M3D Challenge",
+        "organization": "NAACL-ClinicalNLP",
+        "year": "2024",
+        "type": "competition",
+        "link": "https://aclanthology.org/2024.clinicalnlp-1.44.pdf"
+      },
+      {
         "title": "UME Innovation Contest - Winner",
         "organization": "University Medicine Essen",
         "year": "2023",
-        "type": "competition"
+        "type": "competition",
+        "link": ""
       },
       {
-        "title": "KIT Doctoral Award",
+        "title": "Doctoral Award",
         "organization": "Karlsruhe Institute of Technology",
         "year": "2023",
-        "type": "academic"
-      },
-      {
-        "title": "Student Travel Award",
-        "organization": "Medical Image Computing and Computer Assisted Intervention Society",
-        "year": "2022",
-        "type": "conference"
+        "type": "academic award",
+        "link": "https://www.khys.kit.edu/english/kit-doctoral-award_winners.php"
       },
       {
         "title": "Teaching Award - Best Practical Course",
-        "organization": "KIT Computer Science Faculty",
+        "organization": "Karlsruhe Institute of Technology, CS Faculty",
         "year": "2022",
-        "type": "teaching"
+        "type": "teaching award",
+        "link": "https://cvhci.iar.kit.edu/img/20220207_Auszeichnung_Projektpraktikum_S.png"
       },
       {
         "title": "Best Industry Paper Award",
         "organization": "British Machine Vision Conference",
         "year": "2019",
-        "type": "publication"
+        "type": "paper award",
+        "link": "https://arxiv.org/pdf/1908.00274"
       }
     ]
   },
@@ -106,75 +125,78 @@
     ]
   },
   "invited_talks": {
-    "title": "Invited Talks & Presentations",
-    "entries": [
+  "title": "Invited Talks & Presentations",
+  "entries": [
       {
-        "title": "Automated Medical Image Analysis: From Research to Clinical Application",
-        "event": "Medical AI Conference 2024",
-        "location": "Munich, Germany",
-        "date": "March 2024",
-        "type": "keynote",
-        "link": "https://example.com/talk1",
-        "description": "Keynote presentation on bridging the gap between research innovations and clinical deployment in medical AI."
+        "title": "Interpretable AI in Medicine: Generating Radiological Reports with Panoptic Scene Graphs",
+        "event": "2024 ENBIS Spring Meeting",
+        "location": "Dortmund, Germany",
+        "date": "2024",
+        "type": "invited talk",
+        "link": "",
+        "description": "Presentation on interpretable AI methods for radiology using panoptic scene graphs to generate medical reports."
       },
       {
-        "title": "Self-Supervised Learning for Medical Imaging",
-        "event": "CVPR Workshop on Computer Vision for Medicine",
-        "location": "Seattle, WA",
-        "date": "June 2023",
-        "type": "invited_talk",
-        "link": "https://example.com/talk2",
-        "description": "Invited talk discussing recent advances in self-supervised learning approaches for medical image analysis."
+        "title": "The Current State of Vision-Language Models in Radiology",
+        "event": "2024 Intelligent Sensing and Perception Group",
+        "location": "Stuttgart, Germany",
+        "date": "2024",
+        "type": "invited talk",
+        "link": "",
+        "description": "Overview of advances and challenges in applying vision-language models to radiology tasks."
       },
       {
-        "title": "Interpretable AI in Healthcare: Challenges and Solutions",
-        "event": "European Conference on AI in Healthcare",
-        "location": "Amsterdam, Netherlands", 
-        "date": "September 2022",
-        "type": "panel",
-        "link": "https://example.com/talk3",
-        "description": "Panel discussion on the importance of interpretability in AI systems for healthcare applications."
+        "title": "Clustering in Computer Vision: From Theory to Applications",
+        "event": "AI, ML and Computer Vision Meetup",
+        "location": "Online (hosted by voxel51)",
+        "date": "August 28, 2025",
+        "type": "invited talk",
+        "link": "https://voxel51.com/events/ai-ml-and-computer-vision-meetup-aug-28-2025",
+        "description": "Talk on clustering techniques in computer vision, bridging theoretical foundations with real-world applications."
       }
     ]
   },
-  "community_engagement": {
+  "community_engagement": 
+    {
     "title": "Community Engagement & Service",
     "entries": [
       {
-        "title": "CVPR 2024 Tutorial: Identifying Structure in Data",
-        "role": "Co-Organizer & Presenter",
-        "date": "June 2024",
+        "title": "CVPR 2025 Tutorial: Identifying Structure in Data",
+        "role": "Organizer",
+        "date": "June 2025",
         "type": "tutorial",
         "link": "https://identifying-structure-in-data.github.io/",
-        "description": "Co-organized and presented a full-day tutorial on data exploration techniques for computer vision applications.",
-        "participants": "200+ attendees"
+        "description": "Organized a tutorial on identifying and leveraging structure in data for computer vision research.",
+        "participants": "200+"
       },
       {
-        "title": "Medical Image Computing Workshop (MICW) 2023",
-        "role": "Workshop Co-Chair",
-        "date": "October 2023", 
+        "title": "Computer-Vision Reading Group at IKIM",
+        "role": "Organizer & Presenter",
+        "date": "2023–2024",
+        "type": "reading group",
+        "link": "",
+        "description": "Initiated and led a reading group at IKIM focused on foundational and cutting-edge computer vision research.",
+        "participants": ""
+      },
+      {
+        "title": "Computer-Vision Reading Group at CV:HCI",
+        "role": "Organizer & Presenter",
+        "date": "2021–2022",
+        "type": "reading group",
+        "link": "",
+        "description": "Founded and organized a computer vision reading group at CV:HCI to foster collaborative learning and discussion.",
+        "participants": ""
+      },
+      {
+        "title": "MICCAI 2022 Workshop: Medical Applications with Disentanglements",
+        "role": "Program Committee",
+        "date": "2022",
         "type": "workshop",
-        "link": "https://example.com/micw2023",
-        "description": "Co-chaired workshop focusing on emerging trends in medical image computing and analysis.",
-        "participants": "150+ participants"
-      },
-      {
-        "title": "AI for Healthcare Summer School",
-        "role": "Instructor",
-        "date": "July 2022",
-        "type": "educational",
-        "link": "https://example.com/summerschool",
-        "description": "Taught courses on computer vision applications in healthcare to graduate students and professionals.",
-        "participants": "80+ students"
-      },
-      {
-        "title": "Journal Reviewer",
-        "role": "Peer Reviewer",
-        "date": "Ongoing",
-        "type": "service",
-        "description": "Regular reviewer for top-tier journals including IEEE TMI, Medical Image Analysis, and Nature Machine Intelligence.",
-        "journals": ["IEEE TMI", "Medical Image Analysis", "Nature Machine Intelligence", "CVPR", "ICCV", "MICCAI"]
+        "link": "https://mad.ikim.nrw/",
+        "description": "Served on the program committee for the MICCAI workshop on medical applications with disentangled representations.",
+        "participants": "50+"
       }
     ]
   }
+
 }

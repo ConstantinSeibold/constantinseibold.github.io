@@ -4,7 +4,7 @@
             "title": "MedShapeNet",
             "publications": ["https://www.degruyterbrill.com/document/doi/10.1515/bmt-2024-0396/pdf"],
             "url": "https://medshapenet.ikim.nrw/",
-            "explore_url": "",
+            "explore_url": "https://medshapenet.ikim.nrw/",
             "short_description": "Prior to the deep learning era, the wide application of statistical shape model (SSM) in the medical domain is evidence that shapes are common in medical imaging. Inspired by the well-known ShapeNet and Princeton ModelNet in computer graphics (CG) and vision (CV), the goal of MedShapeNet is to promote the translation of methods developed in the context of CG/CV to clinical applications. MedShapeNet contains over 100,000 medical shapes, including bones, organs, vessels, muscles, etc., as well as surgical instruments.",
             "dataset_icon": "assets/img/dataset_thumbnails/medshapenet.png"
         },
@@ -19,8 +19,8 @@
         {
             "title": "PAXRay(++)",
             "publications": ["https://bmvc2022.mpi-inf.mpg.de/58/","https://arxiv.org/abs/2306.03934"],
-            "url": "paxray.html",
-            "explore_url": "#",
+            "url": "https://github.com/ConstantinSeibold/ChestXRayAnatomySegmentation/tree/main/cxas",
+            "explore_url": "paxray.html",
             "short_description": "We created a large-scale dataset of 10,021 thoracic CTs, encompassing 157 labels, and applied an ensemble of 3D anatomy segmentation models to extract anatomical pseudo-labels. These labels were projected onto a two-dimensional plane, resembling CXR, enabling the training of detailed semantic segmentation models without any manual annotation effort.",
             "dataset_icon": "assets/img/dataset_thumbnails/paxray.png"
         },
