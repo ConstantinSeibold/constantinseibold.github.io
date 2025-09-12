@@ -104,5 +104,77 @@
         "year": "2023"
       }
     ]
+  },
+  "invited_talks": {
+    "title": "Invited Talks & Presentations",
+    "entries": [
+      {
+        "title": "Automated Medical Image Analysis: From Research to Clinical Application",
+        "event": "Medical AI Conference 2024",
+        "location": "Munich, Germany",
+        "date": "March 2024",
+        "type": "keynote",
+        "link": "https://example.com/talk1",
+        "description": "Keynote presentation on bridging the gap between research innovations and clinical deployment in medical AI."
+      },
+      {
+        "title": "Self-Supervised Learning for Medical Imaging",
+        "event": "CVPR Workshop on Computer Vision for Medicine",
+        "location": "Seattle, WA",
+        "date": "June 2023",
+        "type": "invited_talk",
+        "link": "https://example.com/talk2",
+        "description": "Invited talk discussing recent advances in self-supervised learning approaches for medical image analysis."
+      },
+      {
+        "title": "Interpretable AI in Healthcare: Challenges and Solutions",
+        "event": "European Conference on AI in Healthcare",
+        "location": "Amsterdam, Netherlands", 
+        "date": "September 2022",
+        "type": "panel",
+        "link": "https://example.com/talk3",
+        "description": "Panel discussion on the importance of interpretability in AI systems for healthcare applications."
+      }
+    ]
+  },
+  "community_engagement": {
+    "title": "Community Engagement & Service",
+    "entries": [
+      {
+        "title": "CVPR 2024 Tutorial: Identifying Structure in Data",
+        "role": "Co-Organizer & Presenter",
+        "date": "June 2024",
+        "type": "tutorial",
+        "link": "https://identifying-structure-in-data.github.io/",
+        "description": "Co-organized and presented a full-day tutorial on data exploration techniques for computer vision applications.",
+        "participants": "200+ attendees"
+      },
+      {
+        "title": "Medical Image Computing Workshop (MICW) 2023",
+        "role": "Workshop Co-Chair",
+        "date": "October 2023", 
+        "type": "workshop",
+        "link": "https://example.com/micw2023",
+        "description": "Co-chaired workshop focusing on emerging trends in medical image computing and analysis.",
+        "participants": "150+ participants"
+      },
+      {
+        "title": "AI for Healthcare Summer School",
+        "role": "Instructor",
+        "date": "July 2022",
+        "type": "educational",
+        "link": "https://example.com/summerschool",
+        "description": "Taught courses on computer vision applications in healthcare to graduate students and professionals.",
+        "participants": "80+ students"
+      },
+      {
+        "title": "Journal Reviewer",
+        "role": "Peer Reviewer",
+        "date": "Ongoing",
+        "type": "service",
+        "description": "Regular reviewer for top-tier journals including IEEE TMI, Medical Image Analysis, and Nature Machine Intelligence.",
+        "journals": ["IEEE TMI", "Medical Image Analysis", "Nature Machine Intelligence", "CVPR", "ICCV", "MICCAI"]
+      }
+    ]
   }
 }

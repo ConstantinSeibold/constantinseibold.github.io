@@ -92,13 +92,13 @@ document.addEventListener('DOMContentLoaded', function () {
             slideElement.style.cssText = `
                 display: block;
                 text-decoration: none;
-                background: linear-gradient(135deg, rgba(37, 99, 235, 0.9), rgba(14, 165, 233, 0.8)), url('${slide.background_image || 'assets/img/backgrounds/default.jpg'}');
+                background: linear-gradient(135deg, rgba(37, 99, 235, 0.7), rgba(14, 165, 233, 0.6)), url('${slide.background_image || 'assets/img/backgrounds/default.jpg'}');
                 background-size: cover;
                 background-position: center;
                 border-radius: var(--radius-lg);
                 padding: 2rem;
                 color: white;
-                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
                 transition: transform 0.3s ease, box-shadow 0.3s ease;
                 height: 200px;
                 display: flex;

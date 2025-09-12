@@ -24,6 +24,16 @@ document.addEventListener('DOMContentLoaded', function () {
             if (data.grants) {
                 populateGrants(data.grants);
             }
+
+            // Populate invited talks
+            if (data.invited_talks) {
+                populateInvitedTalks(data.invited_talks);
+            }
+
+            // Populate community engagement
+            if (data.community_engagement) {
+                populateCommunityEngagement(data.community_engagement);
+            }
         })
         .catch(error => {
             console.error('Error loading about content:', error);
@@ -117,6 +127,102 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
 
             container.appendChild(grantDiv);
+        });
+    }
+
+    function populateInvitedTalks(talksData) {
+        const container = document.getElementById('invited-talks-container');
+        if (!container) return;
+
+        talksData.entries.forEach(talk => {
+            const talkDiv = document.createElement('div');
+            talkDiv.style.cssText = `
+                padding: 1.5rem;
+                background: var(--color-background-alt);
+                border-radius: var(--radius-md);
+                border-left: 3px solid #10b981;
+                margin-bottom: 1rem;
+            `;
+
+            let talkHTML = `
+                <div style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.5rem;">${talk.title}</div>
+                <div style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 0.5rem;">
+                    <strong>${talk.event}</strong> ${talk.location ? `• ${talk.location}` : ''} • ${talk.date}
+                </div>
+            `;
+
+            if (talk.description) {
+                talkHTML += `<div style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.5; margin-bottom: 0.75rem;">${talk.description}</div>`;
+            }
+
+            // Add type badge
+            const typeColors = {
+                'keynote': '#dc2626',
+                'invited_talk': '#059669', 
+                'panel': '#7c3aed',
+                'presentation': '#0ea5e9'
+            };
+            const typeColor = typeColors[talk.type] || '#64748b';
+            talkHTML += `<span style="background: ${typeColor}; color: white; padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.75rem; text-transform: uppercase; font-weight: 500; margin-right: 0.5rem;">${talk.type.replace('_', ' ')}</span>`;
+
+            if (talk.link) {
+                talkHTML += `<a href="${talk.link}" target="_blank" class="publication-link" style="margin-left: 0.5rem;">View Event</a>`;
+            }
+
+            talkDiv.innerHTML = talkHTML;
+            container.appendChild(talkDiv);
+        });
+    }
+
+    function populateCommunityEngagement(engagementData) {
+        const container = document.getElementById('community-engagement-container');
+        if (!container) return;
+
+        engagementData.entries.forEach(engagement => {
+            const engagementDiv = document.createElement('div');
+            engagementDiv.style.cssText = `
+                padding: 1.5rem;
+                background: var(--color-background-alt);
+                border-radius: var(--radius-md);
+                border-left: 3px solid #8b5cf6;
+                margin-bottom: 1rem;
+            `;
+
+            let engagementHTML = `
+                <div style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.5rem;">${engagement.title}</div>
+                <div style="color: var(--color-text-secondary); font-size: 0.95rem; margin-bottom: 0.5rem;">
+                    <strong>Role:</strong> ${engagement.role} • ${engagement.date}
+                </div>
+            `;
+
+            if (engagement.description) {
+                engagementHTML += `<div style="color: var(--color-text-secondary); font-size: 0.9rem; line-height: 1.5; margin-bottom: 0.75rem;">${engagement.description}</div>`;
+            }
+
+            if (engagement.participants) {
+                engagementHTML += `<div style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 0.5rem;"><strong>Participants:</strong> ${engagement.participants}</div>`;
+            }
+
+            if (engagement.journals && engagement.journals.length > 0) {
+                engagementHTML += `<div style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 0.5rem;"><strong>Journals/Conferences:</strong> ${engagement.journals.join(', ')}</div>`;
+            }
+
+            // Add type badge
+            const typeColors = {
+                'tutorial': '#dc2626',
+                'workshop': '#059669',
+                'educational': '#0ea5e9',
+                'service': '#64748b'
+            };
+            const typeColor = typeColors[engagement.type] || '#64748b';
+            engagementHTML += `<span style="background: ${typeColor}; color: white; padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.75rem; text-transform: capitalize; font-weight: 500; margin-right: 0.5rem;">${engagement.type}</span>`;
+
+            if (engagement.link) {
+                engagementHTML += `<a href="${engagement.link}" target="_blank" class="publication-link" style="margin-left: 0.5rem;">Learn More</a>`;
+            }
+
+            engagementDiv.innerHTML = engagementHTML;
+            container.appendChild(engagementDiv);
         });
     }
 });

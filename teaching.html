@@ -24,7 +24,7 @@
                 </div>
                 <div class="profile-section">
                     <img class="profile-image" src="assets/img/profile/linkedin.jpg" alt="Constantin Seibold" />
-                    <div class="social-links">
+                    <div class="social-links" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; width: 100px;">
                         <a href="assets/content/cv.pdf" class="social-link" title="CV">
                             <i class="fas fa-file-alt"></i>
                         </a>
@@ -60,138 +60,29 @@
         </nav>
         <!-- Main Content -->
         <main class="main-content">
-            <section class="section">
-                <h2 class="section-title">
-                    <i class="fas fa-chalkboard-teacher" style="margin-right: 0.5rem;"></i>
-                    Teaching Experience
-                </h2>
-                <p class="section-subtitle">Courses, supervision, and educational contributions</p>
-            </section>
-        
-       
-
-            <!-- Courses Section -->
+            <!-- Teaching Experience Section -->
             <section class="section">
                 <div class="card">
-                    <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Current and Past Courses</h3>
-                    
-                    <h4 style="margin-bottom: 1rem;">Past courses at KIT</h4>
-                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                        <div style="border-left: 3px solid var(--color-primary); padding-left: 1rem;">
-                            <div style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.25rem;">
-                                Deep Learning for Computer Vision II: Advanced Topics
-                            </div>
-                            <div style="color: var(--color-text-secondary); font-size: 0.9rem;">
-                                <a href="https://cvhci.anthropomatik.kit.edu/600_2169.php">2020-2022</a>
-                            </div>
-                        </div>
-                        
-                        <div style="border-left: 3px solid var(--color-primary); padding-left: 1rem;">
-                            <div style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.25rem;">
-                                Practical Course Computer Vision for Human-Computer Interaction
-                            </div>
-                            <div style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">
-                                <a href="https://cvhci.anthropomatik.kit.edu/600_2119.php">2020-2022</a>
-                            </div>
-                            <div style="padding: 0.75rem; background: linear-gradient(135deg, #fbbf24, #f59e0b); color: white; border-radius: var(--radius-md); margin-bottom: 1rem;">
-                                <strong>🏆 Awarded Best Practical Course</strong> by the Computer Science Faculty
-                            </div>
-                            
-                            <!-- Student Papers -->
-                            <div style="background: var(--color-background-alt); padding: 1rem; border-radius: var(--radius-md);">
-                                <strong style="color: var(--color-primary);">Student Publications:</strong>
-                                <div style="margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.75rem;">
-                                    <div style="font-size: 0.9rem; line-height: 1.5;">
-                                        <strong>Towards Automatic Parsing of Structured Visual Content through the Use of Synthetic Data</strong><br>
-                                        <span style="color: var(--color-text-secondary);">Lukas Scholch, Jonas Steinhauser, et al.</span>
-                                        <a href="https://arxiv.org/pdf/2204.14136" class="publication-link">ICPR</a>
-                                    </div>
-                                    <div style="font-size: 0.9rem; line-height: 1.5;">
-                                        <strong>Multimodal Interactive Lung Lesion Segmentation</strong><br>
-                                        <span style="color: var(--color-text-secondary);">Verena Jasmin Hallitschke, Tobias Schlumberger, et al.</span>
-                                        <a href="https://arxiv.org/pdf/2301.09914" class="publication-link">ISBI [Oral]</a>
-                                    </div>
-                                    <div style="font-size: 0.9rem; line-height: 1.5;">
-                                        <strong>Flying guide dog: Walkable path discovery for the visually impaired</strong><br>
-                                        <span style="color: var(--color-text-secondary);">Haobin Tan, Chang Chen, et al.</span>
-                                        <a href="https://arxiv.org/pdf/2108.07007" class="publication-link">IEEE ROBIO</a>
-                                    </div>
-                                    <div style="font-size: 0.9rem; line-height: 1.5;">
-                                        <strong>Pose2Drone: A Skeleton-Pose-based Framework for Human-Drone Interaction</strong><br>
-                                        <span style="color: var(--color-text-secondary);">Zdravko Marinov, Stanka Vasileva, et al.</span>
-                                        <a href="https://arxiv.org/pdf/2105.13204" class="publication-link">EUSIPCO</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="teaching-experience">
+                        <!-- Teaching experience will be loaded from teaching.json -->
                     </div>
                 </div>
             </section>
 
-            <!-- Supervised Students Section -->
+            <!-- Courses Section -->
             <section class="section">
                 <div class="card">
-                    <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Supervised Thesis Students</h3>
-                    
-                    <div class="card-grid card-grid-2">
-                        <div>
-                            <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Master Theses</h4>
-                            <div style="display: flex; flex-direction: column; gap: 1rem;">
-                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
-                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
-                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2102.php">Unsupervised Image Enhancement Using Generative and Denoising Model</a>
-                                    </div>
-                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2021, Thi Hoai Phuong Nguyen</div>
-                                </div>
-                                
-                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
-                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
-                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2413.php">Collective Confidence Maps for Foreign Object Detection in X-Ray Images</a>
-                                    </div>
-                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2023, Philipp Albrecht</div>
-                                </div>
-                                
-                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
-                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
-                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2375.php">Simulation of Photo-Realistic Chest X-Rays from Chest CTs</a>
-                                    </div>
-                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2023, Di Wen</div>
-                                </div>
-                                
-                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
-                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
-                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2576.php">Anatomische Segmentierung zur verbesserten Erkennung von Knochenläsionen</a>
-                                    </div>
-                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2024, Rene Chlebecec</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Bachelor Theses</h4>
-                            <div style="display: flex; flex-direction: column; gap: 1rem;">
-                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
-                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
-                                        <a href="https://cvhci.anthropomatik.kit.edu/publications_2129.php">Prediction of Monoenergetic Image Sets and the Z-Effective Map</a>
-                                    </div>
-                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">2021, Charlotte Goos</div>
-                                    <a href="https://arxiv.org/pdf/2102.01445" class="publication-link">Paper</a>
-                                </div>
-                                
-                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
-                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
-                                        <a href="https://cvhci.anthropomatik.kit.edu/publications_2564.php">Cobb Angle Measurement via Neural Networks</a>
-                                    </div>
-                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2024, Svenja Mahler</div>
-                                </div>
-                                
-                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
-                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">Domain Adaptation Methods for Emotion and Pain Recognition via Video Games</div>
-                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">2024, Jonas Nazimzada</div>
-                                    <a href="https://arxiv.org/abs/2409.16382" class="publication-link">Paper</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="courses-container">
+                        <!-- Courses will be loaded from teaching.json -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Student Supervision Section -->
+            <section class="section">
+                <div class="card">
+                    <div id="supervision-container">
+                        <!-- Student supervision will be loaded from teaching.json -->
                     </div>
                 </div>
             </section>
@@ -207,7 +98,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="js/reroute.js"></script>
-        <script src="js/showpaperlist.js"></script>
+        <script src="js/teaching.js"></script>
     </body>
 </html>

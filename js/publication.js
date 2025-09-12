@@ -119,12 +119,62 @@ document.addEventListener('DOMContentLoaded', function () {
     function createPublicationElement(publication) {
         const publicationDiv = document.createElement('div');
         publicationDiv.classList.add('publication-item');
+        publicationDiv.style.cssText = `
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--color-background);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-card);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        `;
+
+        // Add hover effect
+        publicationDiv.addEventListener('mouseenter', () => {
+            publicationDiv.style.transform = 'translateY(-2px)';
+            publicationDiv.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.1)';
+        });
+        
+        publicationDiv.addEventListener('mouseleave', () => {
+            publicationDiv.style.transform = 'translateY(0)';
+            publicationDiv.style.boxShadow = 'var(--shadow-card)';
+        });
+
+        // Preview image (if available)
+        if (publication.image) {
+            const imageContainer = document.createElement('div');
+            imageContainer.style.cssText = `
+                flex-shrink: 0;
+                width: 120px;
+                height: 90px;
+                border-radius: var(--radius-md);
+                overflow: hidden;
+                background: var(--color-background-alt);
+            `;
+            
+            const image = document.createElement('img');
+            image.src = publication.image;
+            image.alt = publication.title;
+            image.style.cssText = `
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            `;
+            
+            imageContainer.appendChild(image);
+            publicationDiv.appendChild(imageContainer);
+        }
+
+        // Content container
+        const contentDiv = document.createElement('div');
+        contentDiv.style.cssText = 'flex: 1; display: flex; flex-direction: column;';
 
         // Title
         const title = document.createElement('h3');
         title.classList.add('publication-title');
         title.textContent = publication.title;
-        publicationDiv.appendChild(title);
+        contentDiv.appendChild(title);
 
         // Authors with highlighting for Constantin Seibold
         const authors = document.createElement('div');
@@ -133,7 +183,7 @@ document.addEventListener('DOMContentLoaded', function () {
             author.includes('Constantin Seibold') ? `<strong>${author}</strong>` : author
         ).join(', ');
         authors.innerHTML = authorText;
-        publicationDiv.appendChild(authors);
+        contentDiv.appendChild(authors);
 
         // Venue, year, and award in same line
         const metaContainer = document.createElement('div');
@@ -160,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function () {
             metaContainer.appendChild(award);
         }
 
-        publicationDiv.appendChild(metaContainer);
+        contentDiv.appendChild(metaContainer);
 
         // Links
         const linksContainer = document.createElement('div');
@@ -183,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (linksContainer.children.length > 0) {
-            publicationDiv.appendChild(linksContainer);
+            contentDiv.appendChild(linksContainer);
         }
 
         // Abstract (expandable)
@@ -196,8 +246,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
                 <button class="btn btn-secondary" style="margin-top: 0.5rem; font-size: 0.875rem; padding: 0.25rem 0.75rem;" onclick="toggleAbstract(this)">Show Abstract</button>
             `;
-            publicationDiv.appendChild(abstract);
+            contentDiv.appendChild(abstract);
         }
+
+        // Add content container to publication div
+        publicationDiv.appendChild(contentDiv);
 
         return publicationDiv;
     }
