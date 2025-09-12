@@ -1,0 +1,108 @@
+{
+  "page_info": {
+    "title": "About Dr. Constantin Seibold",
+    "subtitle": "Career Overview & Achievements",
+    "description": "Detailed information about Dr. Constantin Seibold's academic career, achievements, and professional background."
+  },
+  "profile": {
+    "name": "Dr. Constantin Seibold",
+    "title": "Machine Learning Researcher & Computer Vision Expert",
+    "image": "assets/img/profile/linkedin.jpg",
+    "bio": "Specializing in computer vision applications in medical imaging with a focus on automated diagnosis and interpretable AI systems."
+  },
+  "career_timeline": {
+    "title": "Professional Experience",
+    "entries": [
+      {
+        "position": "Junior Research Group Leader for Computer Vision in Medicine",
+        "organization": "Institute of Artificial Intelligence in Medicine and Nuclear Medicine, University Medicine Essen",
+        "period": "2023 - 2024",
+        "type": "professional",
+        "description": "Led research initiatives in computer vision applications for medical imaging and clinical workflows."
+      },
+      {
+        "position": "PhD in Computer Science",
+        "organization": "Karlsruhe Institute of Technology",
+        "period": "July 2019 - April 2023",
+        "type": "education",
+        "grade": "summa cum laude",
+        "dissertation": {
+          "title": "Towards the automatic generation of medical reports in low supervision scenarios",
+          "advisors": [
+            "Prof. Dr.-Ing. Rainer Stiefelhagen (KIT)",
+            "Prof. Dr. Dr. Jens Kleesiek (University Medicine Essen)"
+          ],
+          "link": "https://publikationen.bibliothek.kit.edu/1000161573",
+          "award": "KIT Dissertation Award",
+          "award_link": "https://www.khys.kit.edu/promotionspreis_des_kit_preistraeger_innen.php"
+        }
+      },
+      {
+        "position": "Doctoral Researcher",
+        "organization": "Helmholtz Data Science School for Health (HIDSS4Health)",
+        "period": "July 2019 - April 2023",
+        "type": "professional",
+        "link": "https://www.hidss4health.de"
+      },
+      {
+        "position": "M.Sc. Computer Science",
+        "organization": "Karlsruhe Institute of Technology",
+        "period": "2016 - 2019",
+        "type": "education"
+      },
+      {
+        "position": "B.Sc. Computer Science",
+        "organization": "University Stuttgart",
+        "period": "2013 - 2016",
+        "type": "education"
+      }
+    ]
+  },
+  "awards": {
+    "title": "Awards & Recognition",
+    "entries": [
+      {
+        "title": "UME Innovation Contest - Winner",
+        "organization": "University Medicine Essen",
+        "year": "2023",
+        "type": "competition"
+      },
+      {
+        "title": "KIT Doctoral Award",
+        "organization": "Karlsruhe Institute of Technology",
+        "year": "2023",
+        "type": "academic"
+      },
+      {
+        "title": "Student Travel Award",
+        "organization": "Medical Image Computing and Computer Assisted Intervention Society",
+        "year": "2022",
+        "type": "conference"
+      },
+      {
+        "title": "Teaching Award - Best Practical Course",
+        "organization": "KIT Computer Science Faculty",
+        "year": "2022",
+        "type": "teaching"
+      },
+      {
+        "title": "Best Industry Paper Award",
+        "organization": "British Machine Vision Conference",
+        "year": "2019",
+        "type": "publication"
+      }
+    ]
+  },
+  "grants": {
+    "title": "Grants & Funding",
+    "entries": [
+      {
+        "title": "EU HORIZON JU - Innovative Health Initiative",
+        "grant_id": "HORIZON-JU-IHI-2023-05-02",
+        "project_name": "Thera4Care",
+        "description": "Development and proof of principle of new clinical applications of theranostics solutions",
+        "year": "2023"
+      }
+    ]
+  }
+}

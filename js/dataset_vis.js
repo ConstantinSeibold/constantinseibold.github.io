@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const datasetContainer = document.getElementById('dataset-container');
 
-    fetch('datasets.json')
+    fetch('content/datasets.json')
     .then(response => response.json())
     .then(data => {
         const datasets = data.datasets;
@@ -15,81 +15,147 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch(error => console.error("Error fetching datasets: ", error));
 
     function createDatasetElement(dataset) {
-        const datasetDiv = document.createElement('div');
-        datasetDiv.classList.add('dataset');
-
-        // Title and Dataset Icon (Clickable to Redirect to URL)
-        const titleLink = document.createElement('h2');
-        titleLink.textContent = dataset.title;
-        titleLink.classList.add('title-link');
-        titleLink.addEventListener('click', function () {
-            redirectToURL(dataset.url);
-        });
-
-        const img = document.createElement('img');
-        img.src = dataset.dataset_icon;
-        img.alt = 'Dataset Preview';
-        img.classList.add('dataset-icon');
-        img.addEventListener('click', function () {
-            redirectToURL(dataset.url);
-        });
-
-        // Publications
-        const textWrapper = document.createElement('div');
-        textWrapper.classList.add('text-wrapper');
-
-        const publicationsContainer = document.createElement('div');
-        publicationsContainer.classList.add('publications');
-
-        publicationsContainer.appendChild(document.createTextNode('Paper: ['));
-        dataset.publications.forEach((publication, index) => {
-            const publicationLink = document.createElement('a');
-            publicationLink.textContent = index + 1;
-            publicationLink.href = publication;
-            publicationLink.target = "_blank"; // Open link in a new tab
-            publicationsContainer.appendChild(publicationLink);
-
-            if (index < dataset.publications.length - 1) {
-                publicationsContainer.appendChild(document.createTextNode(', '));
+        const datasetCard = document.createElement('div');
+        datasetCard.classList.add('card');
+        datasetCard.style.cursor = 'pointer';
+        
+        // Make entire card clickable
+        datasetCard.addEventListener('click', function (e) {
+            if (!e.target.closest('a')) { // Don't trigger if clicking on a link
+                redirectToURL(dataset.url);
             }
         });
-        publicationsContainer.appendChild(document.createTextNode(']'));
 
-        // Explore URL
-        if (dataset.explore_url) {
-            const exploreLink = document.createElement('a');
-            exploreLink.textContent = '[Explore dataset]';
-            exploreLink.href = dataset.explore_url;
-            exploreLink.target = "_blank"; // Open link in a new tab
-            publicationsContainer.appendChild(exploreLink);
+        // Dataset Image
+        const imageContainer = document.createElement('div');
+        imageContainer.style.cssText = `
+            width: 100%;
+            height: 200px;
+            background-image: url('${dataset.dataset_icon}');
+            background-size: cover;
+            background-position: center;
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-lg);
+            position: relative;
+            overflow: hidden;
+        `;
+        
+        // Add overlay for better text readability
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.8), rgba(14, 165, 233, 0.8));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        `;
+        
+        const overlayText = document.createElement('div');
+        overlayText.style.cssText = `
+            color: white;
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        `;
+        overlayText.textContent = 'View Dataset';
+        overlay.appendChild(overlayText);
+        
+        imageContainer.appendChild(overlay);
+        
+        // Hover effect
+        datasetCard.addEventListener('mouseenter', () => {
+            overlay.style.opacity = '1';
+        });
+        
+        datasetCard.addEventListener('mouseleave', () => {
+            overlay.style.opacity = '0';
+        });
+
+        // Title
+        const title = document.createElement('h3');
+        title.style.cssText = `
+            color: var(--color-primary);
+            margin-bottom: var(--space-md);
+            font-size: 1.25rem;
+            font-weight: 600;
+        `;
+        title.textContent = dataset.title;
+
+        // Description
+        const description = document.createElement('p');
+        description.style.cssText = `
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-lg);
+            line-height: 1.5;
+            font-size: 0.95rem;
+        `;
+        description.textContent = dataset.short_description;
+
+        // Links Container
+        const linksContainer = document.createElement('div');
+        linksContainer.style.cssText = `
+            display: flex;
+            gap: var(--space-sm);
+            flex-wrap: wrap;
+        `;
+
+        // Publication Links
+        if (dataset.publications && dataset.publications.length > 0) {
+            dataset.publications.forEach((publication, index) => {
+                const pubLink = document.createElement('a');
+                pubLink.classList.add('publication-link');
+                pubLink.href = publication;
+                pubLink.target = '_blank';
+                pubLink.textContent = `Paper ${index + 1}`;
+                pubLink.style.fontSize = '0.875rem';
+                linksContainer.appendChild(pubLink);
+            });
         }
 
-        // Short Description
-        const shortDescription = document.createElement('p');
-        shortDescription.textContent = dataset.short_description;
+        // Explore Link
+        if (dataset.explore_url) {
+            const exploreLink = document.createElement('a');
+            exploreLink.classList.add('btn', 'btn-primary');
+            exploreLink.href = dataset.explore_url;
+            exploreLink.target = '_blank';
+            exploreLink.textContent = 'Explore Dataset';
+            exploreLink.style.cssText = `
+                font-size: 0.875rem;
+                padding: 0.5rem 1rem;
+                margin-top: var(--space-md);
+                display: inline-block;
+                text-decoration: none;
+            `;
+            
+            // Prevent card click when clicking explore button
+            exploreLink.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+            
+            datasetCard.appendChild(imageContainer);
+            datasetCard.appendChild(title);
+            datasetCard.appendChild(description);
+            if (linksContainer.children.length > 0) {
+                datasetCard.appendChild(linksContainer);
+            }
+            datasetCard.appendChild(exploreLink);
+        } else {
+            datasetCard.appendChild(imageContainer);
+            datasetCard.appendChild(title);
+            datasetCard.appendChild(description);
+            if (linksContainer.children.length > 0) {
+                datasetCard.appendChild(linksContainer);
+            }
+        }
 
-        // Append elements to datasetDiv
-
-        const titleWrapper = document.createElement('div');
-        titleWrapper.classList.add('title-wrapper');
-
-        const hlineright = document.createElement('div');
-        hlineright.classList.add('horizontal-line');
-
-        const hlineleft = document.createElement('div');
-        hlineleft.classList.add('horizontal-line');
-
-        titleWrapper.appendChild(hlineleft);
-        titleWrapper.appendChild(titleLink);
-        titleWrapper.appendChild(hlineright);
-        
-        datasetDiv.appendChild(titleWrapper);
-        datasetDiv.appendChild(img);
-        textWrapper.appendChild(publicationsContainer);
-        textWrapper.appendChild(shortDescription);
-        datasetDiv.appendChild(textWrapper);
-
-        return datasetDiv;
+        return datasetCard;
     }
 
     function redirectToURL(url) {

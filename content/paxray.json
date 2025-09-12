@@ -1,0 +1,68 @@
+{
+  "page_info": {
+    "title": "PAXRay Project",
+    "subtitle": "Advanced Chest X-Ray Analysis and Segmentation",
+    "description": "Comprehensive tool for automated chest X-ray analysis and anatomical segmentation in medical imaging."
+  },
+  "project_overview": {
+    "title": "Project Overview",
+    "description": "PAXRay is an advanced tool for chest X-ray analysis that provides automated segmentation and analysis capabilities for medical imaging. The project focuses on delivering accurate anatomical segmentation and feature extraction from chest X-ray images to support clinical diagnosis.",
+    "main_links": [
+      {
+        "title": "View on GitHub",
+        "url": "https://github.com/ConstantinSeibold/ChestXRayAnatomySegmentation/",
+        "icon": "fab fa-github",
+        "type": "primary"
+      },
+      {
+        "title": "Research Paper",
+        "url": "https://arxiv.org/pdf/2210.03416",
+        "icon": "fas fa-file-alt",
+        "type": "secondary"
+      }
+    ]
+  },
+  "key_features": [
+    {
+      "title": "Anatomical Segmentation",
+      "description": "Precise segmentation of chest anatomical structures including lungs, heart, and other thoracic regions for detailed analysis.",
+      "icon": "fas fa-search-plus"
+    },
+    {
+      "title": "AI-Powered Analysis",
+      "description": "Advanced machine learning algorithms for automated feature extraction and pathology detection in chest X-ray images.",
+      "icon": "fas fa-brain"
+    },
+    {
+      "title": "Clinical Integration",
+      "description": "Designed for seamless integration into clinical workflows with standardized output formats and DICOM compatibility.",
+      "icon": "fas fa-chart-line"
+    },
+    {
+      "title": "Open Source",
+      "description": "Fully open-source implementation with comprehensive documentation and example usage for research and development.",
+      "icon": "fas fa-code"
+    }
+  ],
+  "technical_specs": {
+    "title": "Technical Details",
+    "specifications": [
+      {
+        "label": "Framework",
+        "value": "PyTorch"
+      },
+      {
+        "label": "Language",
+        "value": "Python 3.8+"
+      },
+      {
+        "label": "Input Format",
+        "value": "DICOM, PNG, JPG"
+      },
+      {
+        "label": "License",
+        "value": "MIT"
+      }
+    ]
+  }
+}

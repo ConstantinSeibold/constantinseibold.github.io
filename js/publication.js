@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const yearFilter = $('#year-filter');
     const authorFilter = $('#author-filter');
 
-    fetch('publications.json')
+    fetch('content/publications.json')
     .then(response => response.json())
     .then(data => {
         // Populate the tag, year, and author filter options dynamically
@@ -118,94 +118,96 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function createPublicationElement(publication) {
         const publicationDiv = document.createElement('div');
-        publicationDiv.classList.add('publication');
+        publicationDiv.classList.add('publication-item');
 
-        const img = document.createElement('img');
-        img.src = publication.image;
-        img.alt = 'Publication Preview';
-        publicationDiv.appendChild(img);
-
-        const detailsDiv = document.createElement('div');
-        detailsDiv.classList.add('publication-details');
-
-        const title = document.createElement('h5');
+        // Title
+        const title = document.createElement('h3');
         title.classList.add('publication-title');
         title.textContent = publication.title;
-        detailsDiv.appendChild(title);
+        publicationDiv.appendChild(title);
 
-        const authors = document.createElement('p');
-        authors.classList.add('authors');
-        authors.textContent = publication.authors.join(', ');
-        detailsDiv.appendChild(authors);
+        // Authors with highlighting for Constantin Seibold
+        const authors = document.createElement('div');
+        authors.classList.add('publication-authors');
+        const authorText = publication.authors.map(author => 
+            author.includes('Constantin Seibold') ? `<strong>${author}</strong>` : author
+        ).join(', ');
+        authors.innerHTML = authorText;
+        publicationDiv.appendChild(authors);
 
-        const detailsContainer = document.createElement('div');
-        detailsContainer.classList.add('details');
+        // Venue, year, and award in same line
+        const metaContainer = document.createElement('div');
+        metaContainer.style.marginBottom = 'var(--space-md)';
         
         if (publication.venue) {
-            detailsContainer.appendChild(createDetailElement(publication.venue));
+            const venue = document.createElement('span');
+            venue.classList.add('publication-venue');
+            venue.textContent = publication.venue;
+            metaContainer.appendChild(venue);
         }
 
         if (publication.date) {
-            detailsContainer.appendChild(createDetailElement("  " + publication.date));
+            const year = document.createElement('span');
+            year.classList.add('publication-year');
+            year.textContent = publication.date;
+            metaContainer.appendChild(year);
         }
         
         if (publication.award) {
-            detailsContainer.appendChild(createDetailElement(publication.award));
+            const award = document.createElement('span');
+            award.classList.add('publication-award');
+            award.textContent = `🏆 ${publication.award}`;
+            metaContainer.appendChild(award);
         }
 
+        publicationDiv.appendChild(metaContainer);
+
+        // Links
         const linksContainer = document.createElement('div');
-        linksContainer.classList.add('links');
+        linksContainer.classList.add('publication-links');
         
         if (publication.paperLink) {
-            linksContainer.appendChild(createLinkElement('[Paper]', publication.paperLink));
+            linksContainer.appendChild(createModernLinkElement('Paper', publication.paperLink));
         }
         
         if (publication.arxivLink) {
-            linksContainer.appendChild(createLinkElement('[ArXiv]', publication.arxivLink));
+            linksContainer.appendChild(createModernLinkElement('ArXiv', publication.arxivLink));
         }
         
         if (publication.codeLink) {
-            linksContainer.appendChild(createLinkElement('[Code]', publication.codeLink));
+            linksContainer.appendChild(createModernLinkElement('Code', publication.codeLink));
         }
         
         if (publication.dataLink) {
-            linksContainer.appendChild(createLinkElement('[Data]', publication.dataLink));
-        }
-        
-        if (detailsContainer.children.length > 0) {
-            detailsDiv.appendChild(detailsContainer);
+            linksContainer.appendChild(createModernLinkElement('Data', publication.dataLink));
         }
 
         if (linksContainer.children.length > 0) {
-            detailsDiv.appendChild(linksContainer);
+            publicationDiv.appendChild(linksContainer);
         }
 
+        // Abstract (expandable)
         if (publication.abstract) {
-            const abstract = document.createElement('p');
-            abstract.classList.add('abstract', 'collapsed');
-            abstract.textContent = publication.abstract;
-            detailsDiv.appendChild(abstract);
-
-            // "Show more" and "Show less" buttons
-            const showMoreButton = document.createElement('span');
-            showMoreButton.textContent = 'Show more';
-            showMoreButton.classList.add('show-more');
-            showMoreButton.addEventListener('click', () => toggleAbstract(abstract));
-            showMoreButton.addEventListener('click', () => toggleText(showMoreButton));
-            detailsDiv.appendChild(showMoreButton);
+            const abstract = document.createElement('div');
+            abstract.style.marginTop = 'var(--space-md)';
+            abstract.innerHTML = `
+                <div style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6; max-height: 4.5em; overflow: hidden; transition: max-height 0.3s ease;" class="abstract-text">
+                    ${publication.abstract}
+                </div>
+                <button class="btn btn-secondary" style="margin-top: 0.5rem; font-size: 0.875rem; padding: 0.25rem 0.75rem;" onclick="toggleAbstract(this)">Show Abstract</button>
+            `;
+            publicationDiv.appendChild(abstract);
         }
-
-        publicationDiv.appendChild(detailsDiv);
 
         return publicationDiv;
     }
 
-    function createLinkElement(label, link) {
-        const linkElement = document.createElement('p');
-        const linkAnchor = document.createElement('a');
-        linkAnchor.href = link;
-        linkAnchor.textContent = label;
-        linkElement.appendChild(linkAnchor);
+    function createModernLinkElement(label, link) {
+        const linkElement = document.createElement('a');
+        linkElement.classList.add('publication-link');
+        linkElement.href = link;
+        linkElement.textContent = label;
+        linkElement.target = '_blank';
         return linkElement;
     }
 
@@ -215,15 +217,17 @@ document.addEventListener('DOMContentLoaded', function () {
         return detail;
     }
 
-    function toggleAbstract(abstractElement) {
-        abstractElement.classList.toggle('collapsed');
-    }
-
-    function toggleText(spanElement) {
-        if (spanElement.textContent == "Show more") {
-            spanElement.textContent = "Show less";
+    // Add global toggle function for abstracts
+    window.toggleAbstract = function(button) {
+        const abstractText = button.parentElement.querySelector('.abstract-text');
+        const isExpanded = abstractText.style.maxHeight === 'none';
+        
+        if (isExpanded) {
+            abstractText.style.maxHeight = '4.5em';
+            button.textContent = 'Show Abstract';
         } else {
-            spanElement.textContent = "Show more";
+            abstractText.style.maxHeight = 'none';
+            button.textContent = 'Hide Abstract';
         }
     }
 });

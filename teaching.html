@@ -7,225 +7,201 @@
         <meta name="author" content="" />
         <title>Constantin Seibold - Personal Website</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Modern professional styles -->
+        <link href="css/modern-styles.css" rel="stylesheet" />
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     </head>
     <body>
-        <header>
-
-            <div class="heading-container">
-                <div class="text-container">
-                    <h1 class="site-heading text-faded d-none d-lg-block">
-                        <span class="site-heading-lower">Constantin<br>Seibold</span>
-                    </h1>
-                    
+        <!-- Modern Header -->
+        <header class="modern-header">
+            <div class="header-content">
+                <div class="header-info">
+                    <h1>Dr. Constantin Seibold</h1>
+                    <div class="header-subtitle">Machine Learning Researcher & Computer Vision Expert</div>
                 </div>
-    
-                <div class="icon-container">
-                    <div class="icons large-icon-container">
-                        <img class="large-icon img-fluid rounded-circle mb-4" src="assets/img/profile/linkedin.jpg" />
-                    </div>
-                    <div class="icons small-icons-container">
-                        <div class="small-icon-column">
-                            <img class="small-icon img-fluid rounded-circle mb-2" src="assets/img/icons/cv.svg"  onclick="redirectToURL('assets/content/cv.pdf')" />
-                            <img class="small-icon img-fluid rounded-circle mb-2" src="assets/img/icons/linkedin.jpg" onclick="redirectToURL('https://www.linkedin.com/in/constantin-seibold-7669ba250/')" />
-                        </div>
-                        <div class="small-icon-column">
-                            <img class="small-icon img-fluid rounded-circle mb-2" src="assets/img/icons/GitHub.jpg" onclick="redirectToURL('https://github.com/ConstantinSeibold')" />
-                            <img class="small-icon img-fluid rounded-circle mb-2" src="assets/img/icons/scholar.jpg" onclick="redirectToURL('https://scholar.google.com/citations?user=rSuG-f4AAAAJ&hl=de&authuser=2')" />
-                        </div>
+                <div class="profile-section">
+                    <img class="profile-image" src="assets/img/profile/linkedin.jpg" alt="Constantin Seibold" />
+                    <div class="social-links">
+                        <a href="assets/content/cv.pdf" class="social-link" title="CV">
+                            <i class="fas fa-file-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/constantin-seibold-7669ba250/" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ConstantinSeibold" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=rSuG-f4AAAAJ&hl=de&authuser=2" class="social-link" title="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
                     </div>
                 </div>
-            
-            <!-- <h1 class="site-heading text-center text-faded d-none d-lg-block"> -->                        
-
-            
+            </div>
         </header>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Constantin Seibold</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html" id="nav-Home">Home</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html" id="nav-About">About</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="datasets.html" id="nav-Datasets">Datasets</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="research.html" id="nav-Research">Research</a></li>
-                        <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="software.html" id="nav-Software">Software</a></li> -->
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="teaching.html" id="nav-Teaching">Teaching</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="misc.html" id="nav-Misc">Misc</a></li>
+
+        <!-- Modern Navigation -->
+        <nav class="modern-nav">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="datasets.html" class="nav-link">Datasets</a></li>
+                        <li><a href="research.html" class="nav-link">Research</a></li>
+                        <li><a href="research-group.html" class="nav-link">Research Group</a></li>
+                        <li><a href="teaching.html" class="nav-link active">Teaching</a></li>
+                        <li><a href="misc.html" class="nav-link">Misc</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section class="page-section about-heading">
-            <div class="container">
-                <div class="about-heading-content">
-                    <div class="row">
-                        <div class="col-xl-9 col-lg-10 mx-auto">
-                            <div class="bg-faded rounded p-5 cv-desc">                              
-                                <h2>
-                                    Computer Vision in Medicine Group 
-                                </h2>
-                                <div>
-                                    In our group "Computer Vision in Medicine", we tackle a variety of problems relating to the automated analysis of visual information in the clinical setting. This ranges across different fields of medical imaging from PET-CT scans over radiological data to photo-based imaging. We investigate ways how we can provide essential information to medical staff in the most efficient manner to streamline the clinical workflow. 
-                                </div>   
-                                <br>
-                                <h3>
-                                    People
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://mml.ikim.nrw/authors/hamza-kalisch/">Hamza Kalisch</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://mml.ikim.nrw/authors/lukas-heine/">Lukas Heine  </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://mml.ikim.nrw/authors/alexander-brehmer/">Alexander Brehmer</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://mml.ikim.nrw/authors/frederic-jonske/">Frederick Jonske</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>     
-            </div>
-        </section>
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-chalkboard-teacher" style="margin-right: 0.5rem;"></i>
+                    Teaching Experience
+                </h2>
+                <p class="section-subtitle">Courses, supervision, and educational contributions</p>
+            </section>
         
        
 
-        <section class="page-section about-heading">
-            <div class="container">
-                <div class="about-heading-content">
-                    <div class="row">
-                        <div class="col-xl-9 col-lg-10 mx-auto">
-                            <div class="bg-faded rounded p-5 cv-desc">
-                                <h2 class="section-heading mb-4">                                    
-                                    <span class="section-heading-lower">Current and Past Courses</span>
-                                </h2>                                
-                                <h5>
-                                    Past courses at KIT
-                                </h5>                    
-                                <ul>
-                                    <li>Deep Learning for Computer Vision II: Advanced Topics (at KIT) 
-                                        <a href="https://cvhci.anthropomatik.kit.edu/600_2169.php">[2020-2022]</a>
-                                    </li>
-                                    <li>Practical Course Computer Vision for Human-Computer Interaction (at KIT) 
-                                        <a href="https://cvhci.anthropomatik.kit.edu/600_2119.php">[2020-2022]</a>
-                                        <ul>
-                                            <li>Awarded <b>Best Practical Course</b> by the Computer Science Faculty </li>
-                                            <li>Student Papers
-                                                <span class="show-more" id="show-more">Show more</span>
-                                                <ul id="papers-list" class="hidden-pub">
-                                                    <li>
-                                                            Towards Automatic Parsing of Structured Visual Content through the Use of Synthetic Data
-                                                        <br>
-                                                            Lukas Scholch, Jonas Steinhauser, Maximilian Beichter, Constantin Seibold, Kailun Yang, Merlin Knäble, Thorsten Schwarz, Alexander Mädche, Rainer Stiefelhagen, 
-                                                        <a href="https://arxiv.org/pdf/2204.14136">ICPR</a>
-                                                    </li>
-                                                    <li>
-                                                            Multimodal Interactive Lung Lesion Segmentation: A Framework for Annotating PET/CT Images based on Physiological and Anatomical Cues</li>
-                                                            Verena Jasmin Hallitschke, Tobias Schlumberger, Philipp Kataliakos, Zdravko Marinov, Moon Kim, Lars Heiliger, Constantin Seibold, Jens Kleesiek, Rainer Stiefelhagen,
-                                                        <a href="https://arxiv.org/pdf/2301.09914">ISBI [Oral]</a>
-                                                    <li>
-                                                        Flying guide dog: Walkable path discovery for the visually impaired utilizing drones and transformer-based semantic segmentation
-                                                        <br>
-                                                        Haobin Tan, Chang Chen, Xinyu Luo, Jiaming Zhang, Constantin Seibold, Kailun Yang, Rainer Stiefelhagen, <a href="https://arxiv.org/pdf/2108.07007">IEEE ROBIO</a>
-                                                    </li>
-                                                    <li>
-                                                        Pose2Drone: A Skeleton-Pose-based Framework for Human-Drone Interaction
-                                                        <br>
-                                                        Zdravko Marinov, Stanka Vasileva, Qing Wang, Constantin Seibold, Jiaming Zhang, Rainer Stiefelhagen
-                                                        <a href="https://arxiv.org/pdf/2105.13204">EUSIPCO</a>
-                                                    </li>
-                                                </ul>                                                
-                                        </ul>
-                                    </li>                                
-                                </ul>                                 
+            <!-- Courses Section -->
+            <section class="section">
+                <div class="card">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Current and Past Courses</h3>
+                    
+                    <h4 style="margin-bottom: 1rem;">Past courses at KIT</h4>
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="border-left: 3px solid var(--color-primary); padding-left: 1rem;">
+                            <div style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.25rem;">
+                                Deep Learning for Computer Vision II: Advanced Topics
+                            </div>
+                            <div style="color: var(--color-text-secondary); font-size: 0.9rem;">
+                                <a href="https://cvhci.anthropomatik.kit.edu/600_2169.php">2020-2022</a>
+                            </div>
+                        </div>
+                        
+                        <div style="border-left: 3px solid var(--color-primary); padding-left: 1rem;">
+                            <div style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.25rem;">
+                                Practical Course Computer Vision for Human-Computer Interaction
+                            </div>
+                            <div style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                                <a href="https://cvhci.anthropomatik.kit.edu/600_2119.php">2020-2022</a>
+                            </div>
+                            <div style="padding: 0.75rem; background: linear-gradient(135deg, #fbbf24, #f59e0b); color: white; border-radius: var(--radius-md); margin-bottom: 1rem;">
+                                <strong>🏆 Awarded Best Practical Course</strong> by the Computer Science Faculty
+                            </div>
+                            
+                            <!-- Student Papers -->
+                            <div style="background: var(--color-background-alt); padding: 1rem; border-radius: var(--radius-md);">
+                                <strong style="color: var(--color-primary);">Student Publications:</strong>
+                                <div style="margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                                    <div style="font-size: 0.9rem; line-height: 1.5;">
+                                        <strong>Towards Automatic Parsing of Structured Visual Content through the Use of Synthetic Data</strong><br>
+                                        <span style="color: var(--color-text-secondary);">Lukas Scholch, Jonas Steinhauser, et al.</span>
+                                        <a href="https://arxiv.org/pdf/2204.14136" class="publication-link">ICPR</a>
+                                    </div>
+                                    <div style="font-size: 0.9rem; line-height: 1.5;">
+                                        <strong>Multimodal Interactive Lung Lesion Segmentation</strong><br>
+                                        <span style="color: var(--color-text-secondary);">Verena Jasmin Hallitschke, Tobias Schlumberger, et al.</span>
+                                        <a href="https://arxiv.org/pdf/2301.09914" class="publication-link">ISBI [Oral]</a>
+                                    </div>
+                                    <div style="font-size: 0.9rem; line-height: 1.5;">
+                                        <strong>Flying guide dog: Walkable path discovery for the visually impaired</strong><br>
+                                        <span style="color: var(--color-text-secondary);">Haobin Tan, Chang Chen, et al.</span>
+                                        <a href="https://arxiv.org/pdf/2108.07007" class="publication-link">IEEE ROBIO</a>
+                                    </div>
+                                    <div style="font-size: 0.9rem; line-height: 1.5;">
+                                        <strong>Pose2Drone: A Skeleton-Pose-based Framework for Human-Drone Interaction</strong><br>
+                                        <span style="color: var(--color-text-secondary);">Zdravko Marinov, Stanka Vasileva, et al.</span>
+                                        <a href="https://arxiv.org/pdf/2105.13204" class="publication-link">EUSIPCO</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>     
-            </div>
-        </section>
+                </div>
+            </section>
 
-
-        <section class="page-section about-heading">
-            <div class="container">
-                <div class="about-heading-content">
-                    <div class="row">
-                        <div class="col-xl-9 col-lg-10 mx-auto">
-                            <div class="bg-faded rounded p-5 cv-desc">                              
-                                <h2>
-                                    Supervised Thesis Students
-                                </h2>
-
-                                <h3>
-                                    Master Theses
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2102.php">
-                                            Unsupervised Image Enhancement Using Generative and Denoising Model
-                                        </a>, 2021,
-                                        Thi Hoai Phuong Nguyen
-                                    </li>
-                                    <li>
-                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2413.php">Collective Confidence Maps for Foreign Object Detection in X-Ray Images with Limited Data</a>,                                                                             
-                                        2023, Philipp Albrecht
-                                    </li>
-                                    <li>
-                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2375.php">
-                                            Simulation of Photo-Realistic Chest X-Rays from Chest CTs through the Use of Image-to-Image Translation,
-                                        </a> 2023,
-                                        Di Wen
-                                    </li>
-                                    <li>
-                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2576.php">
-                                            Anatomische Segmentierung zur verbesserten Erkennung von Knochenläsionen
-                                        </a>, 2024, 
-                                        Rene Chlebecec
-                                    </li>
-                                </ul>
-                                <h3>
-                                    Bachelor Theses
-                                </h3>
-                                <ul>
-                                    <li>
-                                        <a href="https://cvhci.anthropomatik.kit.edu/publications_2129.php">
-                                            Prediction of Monoenergetic Image Sets and the Z-Effective Map Based on the Acquired Arterial Phase
-                                        </a>, 2021,
-                                        Charlotte Goos <a href="https://arxiv.org/pdf/2102.01445">[Paper]</a>
-                                    </li>                                    
-                                    <li>
-                                        <a href="https://cvhci.anthropomatik.kit.edu/publications_2564.php">Cobb Angle Measurement via Neural Networks</a>, 
-                                        2024, Svenja Mahler
-                                    </li>
-                                    <li> 
-                                        <a>
-                                            Domain Adaptation Methods for Emotion and Pain Recognition via Video Games
-                                        </a>, 2024,
-                                        Jonas Nazimzada <a href="https://arxiv.org/abs/2409.16382">[Paper]</a>
-                                    </li>
-                                </ul>
-                               
+            <!-- Supervised Students Section -->
+            <section class="section">
+                <div class="card">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">Supervised Thesis Students</h3>
+                    
+                    <div class="card-grid card-grid-2">
+                        <div>
+                            <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Master Theses</h4>
+                            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
+                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
+                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2102.php">Unsupervised Image Enhancement Using Generative and Denoising Model</a>
+                                    </div>
+                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2021, Thi Hoai Phuong Nguyen</div>
+                                </div>
+                                
+                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
+                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
+                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2413.php">Collective Confidence Maps for Foreign Object Detection in X-Ray Images</a>
+                                    </div>
+                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2023, Philipp Albrecht</div>
+                                </div>
+                                
+                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
+                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
+                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2375.php">Simulation of Photo-Realistic Chest X-Rays from Chest CTs</a>
+                                    </div>
+                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2023, Di Wen</div>
+                                </div>
+                                
+                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
+                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
+                                        <a href="https://cvhci.anthropomatik.kit.edu/809_2576.php">Anatomische Segmentierung zur verbesserten Erkennung von Knochenläsionen</a>
+                                    </div>
+                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2024, Rene Chlebecec</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Bachelor Theses</h4>
+                            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
+                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
+                                        <a href="https://cvhci.anthropomatik.kit.edu/publications_2129.php">Prediction of Monoenergetic Image Sets and the Z-Effective Map</a>
+                                    </div>
+                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">2021, Charlotte Goos</div>
+                                    <a href="https://arxiv.org/pdf/2102.01445" class="publication-link">Paper</a>
+                                </div>
+                                
+                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
+                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">
+                                        <a href="https://cvhci.anthropomatik.kit.edu/publications_2564.php">Cobb Angle Measurement via Neural Networks</a>
+                                    </div>
+                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem;">2024, Svenja Mahler</div>
+                                </div>
+                                
+                                <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
+                                    <div style="font-weight: 500; margin-bottom: 0.25rem;">Domain Adaptation Methods for Emotion and Pain Recognition via Video Games</div>
+                                    <div style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">2024, Jonas Nazimzada</div>
+                                    <a href="https://arxiv.org/abs/2409.16382" class="publication-link">Paper</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>     
-            </div>
-        </section>
+                </div>
+            </section>
 
-        <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">Copyright &copy; Constantin Seibold</p></div>
+        </main>
+        
+        <footer class="modern-footer">
+            <div class="container">
+                <p>&copy; 2025 Constantin Seibold. All rights reserved.</p>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

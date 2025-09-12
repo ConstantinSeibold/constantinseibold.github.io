@@ -7,12 +7,12 @@
         <meta name="author" content="" />
         <title>Constantin Seibold - Personal Website</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Modern professional styles -->
+        <link href="css/modern-styles.css" rel="stylesheet" />
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     </head>
     <script>
         // Redirect function
@@ -26,189 +26,122 @@
         }
     </script>
     <body>
-        <header>
-
-            <div class="heading-container">
-                <div class="text-container">
-                    <h1 class="site-heading text-faded d-none d-lg-block">
-                        <span class="site-heading-lower">Constantin<br>Seibold</span>
-                    </h1>
-                    
+        <!-- Modern Header -->
+        <header class="modern-header">
+            <div class="header-content">
+                <div class="header-info">
+                    <h1 id="hero-title">Dr. Constantin Seibold</h1>
+                    <div class="header-subtitle" id="hero-subtitle">Machine Learning Researcher & Computer Vision Expert</div>
                 </div>
-    
-                <div class="icon-container">
-                    <div class="icons large-icon-container">
-                        <img class="large-icon img-fluid rounded-circle mb-4" src="assets/img/profile/linkedin.jpg" />
-                    </div>
-                    <div class="icons small-icons-container">
-                        <div class="small-icon-column">
-                            <img class="small-icon img-fluid rounded-circle mb-2" src="assets/img/icons/cv.svg"  onclick="redirectToURL('assets/content/cv.pdf')" />
-                            <img class="small-icon img-fluid rounded-circle mb-2" src="assets/img/icons/linkedin.jpg" onclick="redirectToURL('https://www.linkedin.com/in/constantin-seibold-7669ba250/')" />
-                        </div>
-                        <div class="small-icon-column">
-                            <img class="small-icon img-fluid rounded-circle mb-2" src="assets/img/icons/GitHub.jpg" onclick="redirectToURL('https://github.com/ConstantinSeibold')" />
-                            <img class="small-icon img-fluid rounded-circle mb-2" src="assets/img/icons/scholar.jpg" onclick="redirectToURL('https://scholar.google.com/citations?user=rSuG-f4AAAAJ&hl=de&authuser=2')" />
-                        </div>
+                <div class="profile-section">
+                    <img class="profile-image" src="assets/img/profile/linkedin.jpg" alt="Constantin Seibold" />
+                    <div class="social-links">
+                        <a href="assets/content/cv.pdf" class="social-link" title="CV">
+                            <i class="fas fa-file-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/constantin-seibold-7669ba250/" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ConstantinSeibold" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=rSuG-f4AAAAJ&hl=de&authuser=2" class="social-link" title="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
                     </div>
                 </div>
-                
-                
-                
-            
-            <!-- <h1 class="site-heading text-center text-faded d-none d-lg-block"> -->                        
-
-            
+            </div>
         </header>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Constantin Seibold</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html" id="nav-Home">Home</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html" id="nav-About">About</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="datasets.html" id="nav-Datasets">Datasets</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="research.html" id="nav-Research">Research</a></li>
-                        <!-- <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="software.html" id="nav-Software">Software</a></li> -->
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="teaching.html" id="nav-Teaching">Teaching</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="misc.html" id="nav-Misc">Misc</a></li>
+
+        <!-- Modern Navigation -->
+        <nav class="modern-nav">
+            <div class="nav-container">
+                <div class="nav-content">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="datasets.html" class="nav-link">Datasets</a></li>
+                        <li><a href="research.html" class="nav-link">Research</a></li>
+                        <li><a href="research-group.html" class="nav-link">Research Group</a></li>
+                        <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+                        <li><a href="misc.html" class="nav-link">Misc</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section class="page-section clearfix">
-            <div class="container">
-                <div class="intro">
-                    <!-- <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." /> -->
-
-                    <div class="main-banner img-fluid mb-3 mb-lg-0 rounded roundview" id="main-banner">            
-            
-                        <div class="imgban" id="imgban5" style="background-image: url(assets/img/overviews/method_overview.jpg)">
-                            <div class="imgban-box" onclick="redirectToURL('research.html')">
-                                <h2 class="banner-desc">Research Topics</h2>
-                            </div>
-                        </div>
-                        <div class="imgban" id="imgban4" style="background-image: url(assets/img/overviews/datasets_overview.jpg)">
-                            <div class="imgban-box" onclick="redirectToURL('datasets.html')">
-                                <h2 class="banner-desc">Datasets</h2>
-                            </div>
-                        </div>
-                        <div class="imgban" id="imgban3" style="background-image: url(assets/img/overviews/software_overview.jpg)">
-                            <div class="imgban-box" onclick="redirectToURL('software.html')">
-                                <h2 class="banner-desc">Software</h2>
-                            </div>
-                        </div>
-                        <div class="imgban" id="imgban2" style="background-image: url(assets/img/overviews/teaching_overview.jpg)">
-                            <div class="imgban-box" onclick="redirectToURL('teaching.html')">
-                                <h2 class="banner-desc">Teaching</h2>
-                            </div>
-                        </div>
-                        <div class="imgban" id="imgban1" style="background-image: url(assets/img/overviews/personal_image.jpg)" 
-                                onclick="redirectToURL('about.html')">
-                            <div class="imgban-box">
-                                <h2 class="banner-desc">About me</h2>
-                            </div>
-                        </div>
-                        
-            
-                        <div class="imgban-nav">
-                            <div class="horizontal-line"></div>
-                            <div class="manual-navigation">
-                                <input type="radio" name="banner-radio" id="radio1" onclick="changeBanner(1)" checked>
-                                <label for="radio1"></label>
-                        
-                                <input type="radio" name="banner-radio" id="radio2" onclick="changeBanner(2)">
-                                <label for="radio2"></label>
-                        
-                                <input type="radio" name="banner-radio" id="radio3" onclick="changeBanner(3)">
-                                <label for="radio3"></label>
-                        
-                                <input type="radio" name="banner-radio" id="radio4" onclick="changeBanner(4)">
-                                <label for="radio4"></label>
-                        
-                                <input type="radio" name="banner-radio" id="radio5" onclick="changeBanner(5)">
-                                <label for="radio5"></label>
-                            </div>
-                            <div class="horizontal-line"></div>
-                        </div>
-                        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title" id="hero-description">Welcome to My Research</h1>
+                    <div style="margin-top: 1.5rem;">
+                        <a href="research.html" class="btn btn-primary" id="hero-cta-link">
+                            <span id="hero-cta-text">Explore My Research</span>
+                        </a>
                     </div>
+                </div>
+            </section>
 
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-upper">Check out our Tutorial at CVPR!</span>                        
-                        </h2>
-                        <h4>
-                            Identifying Structure in Data: All you need to know about Dimensionality Reduction, Clustering and more 
-                        </h4>
-                        <p class="mb-3">
-                            This tutorial provides an in-depth exploration of the current state-of-the-art of data exploration techniques such as dimensionality reduction for data visualization and clustering methods, with a strong focus on their applications within computer vision. 
-                        </p>
-                        <!-- <iframe class="mb-3" src="assets/content/index/welcome.txt" style="width: 100%; height: 100%; font-family: 'Bangers', sans-serif;"></iframe>  -->
-                        <div class="intro-button mx-auto">
-                            <a class="btn btn-primary btn-xl" href="https://identifying-structure-in-data.github.io/">Visit Us at CVPR!</a>
+            <!-- News Section -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-newspaper" style="margin-right: 0.5rem;"></i>
+                    Latest News
+                </h2>
+                <div id="news-container"></div>
+            </section>
+
+            <!-- Navigation Slides -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-compass" style="margin-right: 0.5rem;"></i>
+                    Explore
+                </h2>
+                <div class="card-grid card-grid-3" id="navigation-slides">
+                    <!-- Navigation slides will be loaded from JSON -->
+                </div>
+            </section>
+
+            <!-- Featured Work -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-star" style="margin-right: 0.5rem;"></i>
+                    Featured Work
+                </h2>
+                <div class="card-grid card-grid-2" id="featured-work">
+                    <!-- Featured work will be loaded from JSON -->
+                </div>
+            </section>
+        </main>
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="card">
+                <h2 class="section-title">Contact</h2>
+                <div class="card-grid card-grid-3">
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Email</h4>
+                        <a href="mailto:constantinseibold+website@gmail.com">constantinseibold@gmail.com</a>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Phone</h4>
+                        <p style="margin: 0;">+49.160.374.3570</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Links</h4>
+                        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                            <a href="https://www.linkedin.com/in/constantin-seibold-7669ba250/">LinkedIn</a>
+                            <a href="https://github.com/ConstantinSeibold">GitHub</a>
+                            <a href="assets/content/cv.pdf">CV</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="page-section cta">
+        <footer class="modern-footer">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                        <div class="cta-inner bg-faded text-center rounded">
-                            <h2 class="section-heading mb-4">
-                                <span class="section-heading-upper"></span>
-                                <span class="section-heading-lower">Contact</span>
-                            </h2>
-                            <div class="contact-group" style="flex: 1; min-width: 200px; margin-right: 20px;margin-bottom: 40px;">
-                                <h4>Dr.-Ing. Constantin Seibold</h6>
-                                <div>Machine Learning Researcher</div>
-                                <!-- <div>Junior Research Group Leader for Computer Vision in Medicine</div> -->
-                                <a href="assets/content/cv.pdf" target="_blank">Curriculum Vitae</a>
-
-                            </div>
-                            
-                            <div class="contact-container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-                        
-                                <!-- Name and CV Section -->
-                                
-                                <!-- Email and Phone Section -->
-                                <div class="contact-group" style="flex: 1; min-width: 200px; margin-right: 20px;">
-                                    <h6>Email:</h6>
-                                    <!-- <a href="mailto:constantin.seibold+website@uk-essen.de">constantin.seibold[at]uk-essen.de</a><br> -->
-                                    <a href="mailto:constantinseibold+website@gmail.com">constantinseibold[at]gmail.com</a>
-                                    <div>
-                                    </br>
-                                    </div>
-                                </div>
-                        
-                                <!-- Address Section -->
-                                <div class="contact-group" style="flex: 1; min-width: 200px; margin-right: 20px;">
-                                    <h6>Phone:</h6>
-                                    <p>+49.160.374.3570</p>
-                                </div>
-                        
-                                <!-- Social Media Section -->
-                                <div class="contact-group" style="flex: 1; min-width: 200px;">
-                                    <h6>Social Media:</h6>
-                                    <a href="https://www.linkedin.com/in/constantin-seibold-7669ba250/" target="_blank">LinkedIn</a> | 
-                                    <a href="https://twitter.com/cmseibold" target="_blank">Twitter (Not actively maintained)</a> | 
-                                    <a href="https://github.com/ConstantinSeibold" target="_blank">GitHub</a>
-                                </div>
-                        
-                            </div>
-                        </div>
-                        
-                        
-                        
-                    </div>
-                </div>
+                <p>&copy; 2025 Constantin Seibold. All rights reserved.</p>
             </div>
-        </section>
-        <footer class="footer text-faded text-center py-5">
-            <div class="container"><p class="m-0 small">Copyright &copy; Constantin Seibold</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -216,5 +149,7 @@
         <script src="js/scripts.js"></script>
         <script src="js/reroute.js"></script>
         <script src="js/image_slider.js"></script>
+        <script src="js/index.js"></script>
+        
     </body>
 </html>

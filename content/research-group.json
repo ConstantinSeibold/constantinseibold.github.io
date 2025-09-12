@@ -1,0 +1,69 @@
+{
+  "research_group": {
+    "name": "Computer Vision in Medicine",
+    "description": "In our group \"Computer Vision in Medicine\", we tackle a variety of problems relating to the automated analysis of visual information in the clinical setting. This ranges across different fields of medical imaging from PET-CT scans over radiological data to photo-based imaging. We investigate ways how we can provide essential information to medical staff in the most efficient manner to streamline the clinical workflow.",
+    "leader": {
+      "name": "Dr. Constantin Seibold",
+      "position": "Junior Research Group Leader",
+      "image": "assets/img/profile/linkedin.jpg",
+      "bio": "Machine Learning Researcher specializing in Computer Vision applications in medical imaging."
+    },
+    "members": [
+      {
+        "name": "Hamza Kalisch",
+        "position": "PhD Student",
+        "image": "assets/img/profile/linkedin.jpg",
+        "profile_url": "https://mml.ikim.nrw/authors/hamza-kalisch/",
+        "research_interests": ["PET-CT Analysis", "Nuclear Medicine", "Deep Learning"]
+      },
+      {
+        "name": "Lukas Heine",
+        "position": "PhD Student",
+        "image": "assets/img/profile/linkedin.jpg",
+        "profile_url": "https://mml.ikim.nrw/authors/lukas-heine/",
+        "research_interests": ["Medical Image Segmentation", "Interactive Tools", "Data Exploration"]
+      },
+      {
+        "name": "Alexander Brehmer",
+        "position": "Research Assistant",
+        "image": "assets/img/profile/linkedin.jpg",
+        "profile_url": "https://mml.ikim.nrw/authors/alexander-brehmer/",
+        "research_interests": ["Computer Vision", "Medical AI", "Image Processing"]
+      },
+      {
+        "name": "Frederick Jonske",
+        "position": "Research Assistant",
+        "image": "assets/img/profile/linkedin.jpg",
+        "profile_url": "https://mml.ikim.nrw/authors/frederic-jonske/",
+        "research_interests": ["Natural Language Processing", "Medical Reports", "AI Ethics"]
+      }
+    ],
+    "research_areas": [
+      {
+        "area": "Medical Image Analysis",
+        "description": "Automated analysis of medical imaging data including CT, MRI, and X-ray images.",
+        "icon": "🔬"
+      },
+      {
+        "area": "Computer-Aided Diagnosis",
+        "description": "Development of AI systems to assist radiologists and medical professionals.",
+        "icon": "🏥"
+      },
+      {
+        "area": "Multi-Modal Learning",
+        "description": "Integration of imaging data with clinical reports and patient information.",
+        "icon": "📊"
+      },
+      {
+        "area": "Explainable AI",
+        "description": "Creating interpretable AI systems for medical decision-making.",
+        "icon": "🧠"
+      }
+    ],
+    "facilities": {
+      "location": "University Medicine Essen",
+      "equipment": ["High-performance computing cluster", "Medical imaging workstations", "GPU computing resources"],
+      "collaborations": ["Karlsruhe Institute of Technology", "Helmholtz Association", "Clinical Partners"]
+    }
+  }
+}

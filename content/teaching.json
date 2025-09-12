@@ -1,0 +1,112 @@
+{
+  "page_info": {
+    "title": "Teaching Experience",
+    "subtitle": "Courses, supervision, and educational contributions",
+    "description": "Overview of teaching activities, course development, and student supervision at various academic institutions."
+  },
+  "courses": {
+    "title": "Current and Past Courses",
+    "subtitle": "Past courses at KIT",
+    "entries": [
+      {
+        "title": "Deep Learning for Computer Vision II: Advanced Topics",
+        "institution": "Karlsruhe Institute of Technology (KIT)",
+        "period": "2020-2022",
+        "link": "https://cvhci.anthropomatik.kit.edu/600_2169.php",
+        "type": "lecture"
+      },
+      {
+        "title": "Practical Course Computer Vision for Human-Computer Interaction",
+        "institution": "Karlsruhe Institute of Technology (KIT)",
+        "period": "2020-2022",
+        "link": "https://cvhci.anthropomatik.kit.edu/600_2119.php",
+        "type": "practical",
+        "award": {
+          "title": "Best Practical Course",
+          "organization": "Computer Science Faculty",
+          "description": "Awarded by the Computer Science Faculty for outstanding course design and student engagement"
+        },
+        "student_publications": [
+          {
+            "title": "Towards Automatic Parsing of Structured Visual Content through the Use of Synthetic Data",
+            "authors": ["Lukas Scholch", "Jonas Steinhauser", "Maximilian Beichter", "Constantin Seibold", "Kailun Yang", "Merlin Knäble", "Thorsten Schwarz", "Alexander Mädche", "Rainer Stiefelhagen"],
+            "venue": "ICPR",
+            "link": "https://arxiv.org/pdf/2204.14136",
+            "year": "2022"
+          },
+          {
+            "title": "Multimodal Interactive Lung Lesion Segmentation: A Framework for Annotating PET/CT Images based on Physiological and Anatomical Cues",
+            "authors": ["Verena Jasmin Hallitschke", "Tobias Schlumberger", "Philipp Kataliakos", "Zdravko Marinov", "Moon Kim", "Lars Heiliger", "Constantin Seibold", "Jens Kleesiek", "Rainer Stiefelhagen"],
+            "venue": "ISBI [Oral]",
+            "link": "https://arxiv.org/pdf/2301.09914",
+            "year": "2023"
+          },
+          {
+            "title": "Flying guide dog: Walkable path discovery for the visually impaired utilizing drones and transformer-based semantic segmentation",
+            "authors": ["Haobin Tan", "Chang Chen", "Xinyu Luo", "Jiaming Zhang", "Constantin Seibold", "Kailun Yang", "Rainer Stiefelhagen"],
+            "venue": "IEEE ROBIO",
+            "link": "https://arxiv.org/pdf/2108.07007",
+            "year": "2021"
+          },
+          {
+            "title": "Pose2Drone: A Skeleton-Pose-based Framework for Human-Drone Interaction",
+            "authors": ["Zdravko Marinov", "Stanka Vasileva", "Qing Wang", "Constantin Seibold", "Jiaming Zhang", "Rainer Stiefelhagen"],
+            "venue": "EUSIPCO",
+            "link": "https://arxiv.org/pdf/2105.13204",
+            "year": "2021"
+          }
+        ]
+      }
+    ]
+  },
+  "supervision": {
+    "title": "Supervised Thesis Students",
+    "master_theses": [
+      {
+        "title": "Unsupervised Image Enhancement Using Generative and Denoising Model",
+        "student": "Thi Hoai Phuong Nguyen",
+        "year": "2021",
+        "link": "https://cvhci.anthropomatik.kit.edu/809_2102.php"
+      },
+      {
+        "title": "Collective Confidence Maps for Foreign Object Detection in X-Ray Images with Limited Data",
+        "student": "Philipp Albrecht",
+        "year": "2023",
+        "link": "https://cvhci.anthropomatik.kit.edu/809_2413.php"
+      },
+      {
+        "title": "Simulation of Photo-Realistic Chest X-Rays from Chest CTs through the Use of Image-to-Image Translation",
+        "student": "Di Wen",
+        "year": "2023",
+        "link": "https://cvhci.anthropomatik.kit.edu/809_2375.php"
+      },
+      {
+        "title": "Anatomische Segmentierung zur verbesserten Erkennung von Knochenläsionen",
+        "student": "Rene Chlebecec",
+        "year": "2024",
+        "link": "https://cvhci.anthropomatik.kit.edu/809_2576.php"
+      }
+    ],
+    "bachelor_theses": [
+      {
+        "title": "Prediction of Monoenergetic Image Sets and the Z-Effective Map Based on the Acquired Arterial Phase",
+        "student": "Charlotte Goos",
+        "year": "2021",
+        "link": "https://cvhci.anthropomatik.kit.edu/publications_2129.php",
+        "publication_link": "https://arxiv.org/pdf/2102.01445"
+      },
+      {
+        "title": "Cobb Angle Measurement via Neural Networks",
+        "student": "Svenja Mahler",
+        "year": "2024",
+        "link": "https://cvhci.anthropomatik.kit.edu/publications_2564.php"
+      },
+      {
+        "title": "Domain Adaptation Methods for Emotion and Pain Recognition via Video Games",
+        "student": "Jonas Nazimzada",
+        "year": "2024",
+        "publication_link": "https://arxiv.org/abs/2409.16382"
+      }
+    ]
+  }
+}

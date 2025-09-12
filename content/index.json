@@ -1,0 +1,125 @@
+{
+  "page_info": {
+    "title": "Welcome to My Research",
+    "subtitle": "Exploring the frontiers of computer vision and machine learning in medical imaging",
+    "description": "Homepage showcasing research in computer vision and machine learning with focus on automated diagnosis and interpretable AI systems."
+  },
+  "hero": {
+    "title": "Dr. Constantin Seibold",
+    "subtitle": "Machine Learning Researcher & Computer Vision Expert",
+    "description": "Exploring the frontiers of computer vision and machine learning in medical imaging, with a focus on automated diagnosis and interpretable AI systems.",
+    "cta": {
+      "text": "Explore My Research",
+      "link": "research.html"
+    },
+    "background_image": "assets/img/overviews/method_overview.jpg"
+  },
+  "navigation_slides": [
+    {
+      "id": "about",
+      "title": "About Me",
+      "link": "about.html",
+      "icon": "fas fa-user",
+      "background_image": "assets/img/overviews/personal_image.jpg",
+      "description": "Learn about my background, education, and career journey"
+    },
+    {
+      "id": "research",
+      "title": "Research Topics",
+      "link": "research.html",
+      "icon": "fas fa-search",
+      "background_image": "assets/img/overviews/method_overview.jpg",
+      "description": "Explore my research publications and contributions"
+    },
+    {
+      "id": "datasets",
+      "title": "Datasets",
+      "link": "datasets.html",
+      "icon": "fas fa-database",
+      "background_image": "assets/img/overviews/datasets_overview.jpg",
+      "description": "Access research datasets and resources"
+    },
+    {
+      "id": "software",
+      "title": "Software",
+      "link": "misc.html",
+      "icon": "fas fa-code",
+      "background_image": "assets/img/overviews/software_overview.jpg",
+      "description": "Open-source tools and software projects"
+    },
+    {
+      "id": "teaching",
+      "title": "Teaching",
+      "link": "teaching.html",
+      "icon": "fas fa-chalkboard-teacher",
+      "background_image": "assets/img/overviews/teaching_overview.jpg",
+      "description": "Teaching experience and student supervision"
+    }
+  ],
+  "news": [
+    {
+      "date": "2024-12-01",
+      "title": "New Publication in CVPR 2025",
+      "description": "Our latest work on automated medical diagnosis has been accepted to CVPR 2025.",
+      "type": "publication",
+      "link": "research.html"
+    },
+    {
+      "date": "2024-11-15",
+      "title": "Teaching Award Received",
+      "description": "Honored to receive the Excellence in Teaching Award for innovative ML course design.",
+      "type": "award"
+    },
+    {
+      "date": "2024-10-30",
+      "title": "New Dataset Release",
+      "description": "Released PAXRay dataset with 100K+ chest X-ray images for automated diagnosis research.",
+      "type": "news",
+      "link": "datasets.html"
+    }
+  ],
+  "featured_work": [
+    {
+      "title": "CVPR Tutorial: Identifying Structure in Data",
+      "description": "An in-depth exploration of state-of-the-art data exploration techniques including dimensionality reduction for data visualization and clustering methods, with a strong focus on computer vision applications.",
+      "image": "assets/img/projects/cvpr-tutorial.jpg",
+      "links": {
+        "demo": "https://identifying-structure-in-data.github.io/"
+      },
+      "tags": ["Tutorial", "CVPR", "Data Visualization"]
+    },
+    {
+      "title": "PAXRay: Automated Chest X-Ray Analysis",
+      "description": "Deep learning system for automated diagnosis from chest X-ray images, achieving state-of-the-art performance on multiple pathology detection tasks.",
+      "image": "assets/img/projects/paxray.jpg",
+      "links": {
+        "paper": "paxray.html",
+        "code": "https://github.com/ConstantinSeibold/paxray",
+        "demo": "https://paxray.com"
+      },
+      "tags": ["Medical AI", "Computer Vision", "Deep Learning"]
+    }
+  ],
+  "contact": {
+    "title": "Contact",
+    "email": "constantinseibold@gmail.com",
+    "phone": "+49.160.374.3570",
+    "social_links": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/constantin-seibold-7669ba250/",
+        "icon": "fab fa-linkedin"
+      },
+      {
+        "platform": "GitHub", 
+        "url": "https://github.com/ConstantinSeibold",
+        "icon": "fab fa-github"
+      },
+      {
+        "platform": "CV",
+        "url": "assets/content/cv.pdf",
+        "icon": "fas fa-file-alt"
+      }
+    ]
+  }
+}

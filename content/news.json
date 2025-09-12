@@ -1,0 +1,44 @@
+{
+  "news": [
+    {
+      "id": "cvpr-tutorial-2024",
+      "title": "CVPR Tutorial: Identifying Structure in Data",
+      "date": "2024-06-18",
+      "type": "conference",
+      "description": "Successfully presented our tutorial on dimensionality reduction, clustering, and data exploration techniques at CVPR 2024.",
+      "link": "https://identifying-structure-in-data.github.io/",
+      "image": "assets/img/overviews/method_overview.jpg",
+      "tags": ["tutorial", "cvpr", "data-exploration"]
+    },
+    {
+      "id": "research-group-lead",
+      "title": "Junior Research Group Leadership",
+      "date": "2023-01-01",
+      "type": "position",
+      "description": "Started leading the Computer Vision in Medicine research group at University Medicine Essen.",
+      "link": "research-group.html",
+      "image": "assets/img/overviews/personal_image.jpg",
+      "tags": ["leadership", "research-group"]
+    },
+    {
+      "id": "phd-completion",
+      "title": "PhD Completed with Summa Cum Laude",
+      "date": "2023-04-01",
+      "type": "achievement",
+      "description": "Successfully defended PhD thesis on automatic generation of medical reports in low supervision scenarios.",
+      "link": "https://publikationen.bibliothek.kit.edu/1000161573",
+      "image": "assets/img/icons/scholar.jpg",
+      "tags": ["phd", "achievement", "medical-ai"]
+    },
+    {
+      "id": "kit-award",
+      "title": "KIT Doctoral Award",
+      "date": "2023-07-15",
+      "type": "award",
+      "description": "Received the prestigious KIT Doctoral Award for outstanding dissertation research.",
+      "link": "https://www.khys.kit.edu/promotionspreis_des_kit_preistraeger_innen.php",
+      "image": "assets/img/icons/cv.svg",
+      "tags": ["award", "recognition"]
+    }
+  ]
+}
