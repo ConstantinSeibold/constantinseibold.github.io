@@ -23,12 +23,19 @@ document.addEventListener('DOMContentLoaded', function () {
     function createSoftwareElement(software) {
         const softwareCard = document.createElement('div');
         softwareCard.classList.add('card');
+        softwareCard.style.cssText = `
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 400px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        `;
         
         // Software Image with overlay
         const imageContainer = document.createElement('div');
         imageContainer.style.cssText = `
             width: 100%;
-            height: 200px;
+            height: 180px;
             background-image: url('${software.software_icon}');
             background-size: cover;
             background-position: center;
@@ -37,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             position: relative;
             overflow: hidden;
             cursor: pointer;
+            flex-shrink: 0;
         `;
         
         // Add overlay for hover effect
@@ -81,6 +89,14 @@ document.addEventListener('DOMContentLoaded', function () {
             overlay.style.opacity = '0';
         });
 
+        // Content container
+        const contentContainer = document.createElement('div');
+        contentContainer.style.cssText = `
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        `;
+
         // Title
         const title = document.createElement('h3');
         title.style.cssText = `
@@ -98,10 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
             margin-bottom: var(--space-lg);
             line-height: 1.5;
             font-size: 0.95rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
+            flex: 1;
         `;
         description.textContent = software.short_description;
 
@@ -160,11 +173,14 @@ document.addEventListener('DOMContentLoaded', function () {
             linksContainer.appendChild(exploreLink);
         }
 
+        // Assemble the content container
+        contentContainer.appendChild(title);
+        contentContainer.appendChild(description);
+        contentContainer.appendChild(linksContainer);
+        
         // Assemble the card
         softwareCard.appendChild(imageContainer);
-        softwareCard.appendChild(title);
-        softwareCard.appendChild(description);
-        softwareCard.appendChild(linksContainer);
+        softwareCard.appendChild(contentContainer);
 
         return softwareCard;
     }

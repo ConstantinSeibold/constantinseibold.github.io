@@ -46,17 +46,22 @@ document.addEventListener('DOMContentLoaded', function () {
         timelineData.entries.forEach(entry => {
             const entryDiv = document.createElement('div');
             entryDiv.style.cssText = `
+                display: flex;
+                gap: 1rem;
                 border-left: 3px solid var(--color-primary);
                 padding-left: 1rem;
                 margin-bottom: 1.5rem;
+                align-items: flex-start;
             `;
 
+            // Content container
             let entryHTML = `
-                <div style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.25rem;">
-                    ${entry.position}${entry.grade ? ` <em>(${entry.grade})</em>` : ''}
-                </div>
-                <div style="color: var(--color-text-secondary); margin-bottom: 0.25rem;">${entry.organization}</div>
-                <div style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">${entry.period}</div>
+                <div style="flex: 1;">
+                    <div style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.25rem;">
+                        ${entry.position}${entry.grade ? ` <em>(${entry.grade})</em>` : ''}
+                    </div>
+                    <div style="color: var(--color-text-secondary); margin-bottom: 0.25rem;">${entry.organization}</div>
+                    <div style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">${entry.period}</div>
             `;
 
             if (entry.description) {
@@ -76,6 +81,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (entry.link) {
                 entryHTML += `<a href="${entry.link}" class="publication-link" style="margin-top: 0.5rem;">Learn More</a>`;
+            }
+
+            // Close content container
+            entryHTML += `</div>`;
+
+            // Add logo container if logo exists
+            if (entry.logo) {
+                entryHTML += `
+                    <div style="flex-shrink: 0; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                        <img src="${entry.logo}" alt="${entry.organization} logo" 
+                             style="max-width: 80px; max-height: 80px; object-fit: contain; border-radius: var(--radius-md); box-shadow: 0 2px 4px rgba(0,0,0,0.1);" 
+                             onerror="this.style.display='none'">
+                    </div>
+                `;
             }
 
             entryDiv.innerHTML = entryHTML;

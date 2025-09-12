@@ -17,7 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
     function createDatasetElement(dataset) {
         const datasetCard = document.createElement('div');
         datasetCard.classList.add('card');
-        datasetCard.style.cursor = 'pointer';
+        datasetCard.style.cssText = `
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 400px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        `;
         
         // Make entire card clickable
         datasetCard.addEventListener('click', function (e) {
@@ -30,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const imageContainer = document.createElement('div');
         imageContainer.style.cssText = `
             width: 100%;
-            height: 200px;
+            height: 180px;
             background-image: url('${dataset.dataset_icon}');
             background-size: cover;
             background-position: center;
@@ -38,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             margin-bottom: var(--space-lg);
             position: relative;
             overflow: hidden;
+            flex-shrink: 0;
         `;
         
         // Add overlay for better text readability
@@ -88,6 +96,14 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
         title.textContent = dataset.title;
 
+        // Content container
+        const contentContainer = document.createElement('div');
+        contentContainer.style.cssText = `
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        `;
+
         // Description
         const description = document.createElement('p');
         description.style.cssText = `
@@ -95,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
             margin-bottom: var(--space-lg);
             line-height: 1.5;
             font-size: 0.95rem;
+            flex: 1;
         `;
         description.textContent = dataset.short_description;
 
@@ -132,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 margin-top: var(--space-md);
                 display: inline-block;
                 text-decoration: none;
+                align-self: flex-start;
             `;
             
             // Prevent card click when clicking explore button
@@ -139,21 +157,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.stopPropagation();
             });
             
-            datasetCard.appendChild(imageContainer);
-            datasetCard.appendChild(title);
-            datasetCard.appendChild(description);
-            if (linksContainer.children.length > 0) {
-                datasetCard.appendChild(linksContainer);
-            }
-            datasetCard.appendChild(exploreLink);
-        } else {
-            datasetCard.appendChild(imageContainer);
-            datasetCard.appendChild(title);
-            datasetCard.appendChild(description);
-            if (linksContainer.children.length > 0) {
-                datasetCard.appendChild(linksContainer);
-            }
+            contentContainer.appendChild(exploreLink);
         }
+
+        // Assemble the content container
+        contentContainer.appendChild(title);
+        contentContainer.appendChild(description);
+        if (linksContainer.children.length > 0) {
+            contentContainer.appendChild(linksContainer);
+        }
+        
+        // Assemble the card
+        datasetCard.appendChild(imageContainer);
+        datasetCard.appendChild(contentContainer);
 
         return datasetCard;
     }

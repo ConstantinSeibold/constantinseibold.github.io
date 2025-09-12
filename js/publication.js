@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const yearFilter = $('#year-filter');
     const authorFilter = $('#author-filter');
 
+    // Set consistent styling for publications container
+    publicationsContainer.style.cssText = `
+        width: 100%;
+        max-width: none;
+    `;
+
     fetch('content/publications.json')
     .then(response => response.json())
     .then(data => {
