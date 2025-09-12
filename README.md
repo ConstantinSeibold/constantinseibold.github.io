@@ -22,7 +22,7 @@ Defines the about page content including career timeline, awards, and grants.
 ```json
 {
   "page_info": {
-    "title": "About Dr. Constantin Seibold"
+    "title": "About Dr.-Ing. Constantin Seibold"
   },
   "career_timeline": {
     "entries": [
@@ -70,8 +70,8 @@ Defines the homepage content including hero section, navigation slides, and feat
 ```json
 {
   "hero": {
-    "title": "Dr. Constantin Seibold",
-    "subtitle": "Machine Learning Researcher & Computer Vision Expert",
+    "title": "Dr.-Ing. Constantin Seibold",
+    "subtitle": "Research Group Leader - University Heidelberg",
     "description": "Brief description of expertise and focus areas",
     "cta": {
       "text": "Explore My Research",
