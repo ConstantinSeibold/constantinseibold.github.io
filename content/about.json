@@ -27,7 +27,7 @@
         "period": "2023 - 2024",
         "type": "professional",
         "description": "Led research initiatives in computer vision applications for medical imaging and clinical workflows.",
-        "logo": "assets/img/icons/uniklinik essen.html"
+        "logo": "assets/img/icons/uniklinik essen.jpg"
       },
       {
         "position": "PhD in Computer Science",
@@ -52,7 +52,8 @@
         "organization": "Helmholtz Data Science School for Health (HIDSS4Health)",
         "period": "July 2019 - April 2023",
         "type": "professional",
-        "link": "https://www.hidss4health.de"
+        "link": "https://www.hidss4health.de",
+        "logo": "assets/img/icons/hidss4health.jpg"
       },
       {
         "position": "M.Sc. Computer Science",

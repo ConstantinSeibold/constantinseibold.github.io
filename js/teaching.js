@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             // Populate teaching experience overview
-            if (data.page_info) {
-                populateTeachingExperience(data.page_info);
-            }
+            // if (data.page_info) {
+            //     populateTeachingExperience(data.page_info);
+            // }
 
             // Populate courses
             if (data.courses) {
