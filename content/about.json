@@ -22,6 +22,14 @@
         "logo": "assets/img/icons/Ruprecht-Karls-Universität_Heidelberg_Logo.svg.png"
       },
       {
+        "position": "Lecturer",
+        "organization": "University Heidelberg",
+        "period": "2025 - ongoing",
+        "type": "professional",
+        "description": "Teaching courses at the University of Heidelberg.",
+        "logo": "assets/img/icons/Ruprecht-Karls-Universität_Heidelberg_Logo.svg.png"
+      },
+      {
         "position": "Junior Research Group Leader for Computer Vision in Medicine",
         "organization": "Institute of Artificial Intelligence in Medicine and Nuclear Medicine, University Medicine Essen",
         "period": "2023 - 2024",
