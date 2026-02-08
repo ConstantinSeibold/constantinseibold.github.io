@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (work.links.paper) links.push(`<a href="${work.links.paper}" target="_blank" class="publication-link">Paper</a>`);
                 if (work.links.code) links.push(`<a href="${work.links.code}" target="_blank" class="publication-link">Code</a>`);
                 if (work.links.demo) links.push(`<a href="${work.links.demo}" target="_blank" class="publication-link">Demo</a>`);
+                if (work.links.homepage) links.push(`<a href="${work.links.homepage}" target="_blank" class="publication-link">Homepage</a>`);
                 linksHTML = links.length > 0 ? `<div style="margin-top: 1rem;">${links.join(' ')}</div>` : '';
             }
 

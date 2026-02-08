@@ -71,7 +71,7 @@ Defines the homepage content including hero section, navigation slides, and feat
 {
   "hero": {
     "title": "Dr.-Ing. Constantin Seibold",
-    "subtitle": "Research Group Leader - University Heidelberg",
+    "subtitle": "Research Group Leader - University Clinic Heidelberg | Lecturer - University Heidelberg",
     "description": "Brief description of expertise and focus areas",
     "cta": {
       "text": "Explore My Research",

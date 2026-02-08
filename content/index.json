@@ -6,7 +6,7 @@
   },
   "hero": {
     "title": "Dr.-Ing. Constantin Seibold",
-    "subtitle": "Research Group Leader - University Heidelberg",
+    "subtitle": "Research Group Leader - University Clinic Heidelberg | Lecturer - University Heidelberg",
     "description": "Specializing in machine learning applications in medical imaging with a focus on automated diagnosis and interpretable AI systems.",
     "cta": {
       "text": "Explore My Research",
@@ -71,16 +71,16 @@
       "description": "An in-depth exploration of state-of-the-art data exploration techniques including dimensionality reduction for data visualization and clustering methods, with a strong focus on computer vision applications.",
       "image": "assets/img/projects/cvpr-tutorial.jpg",
       "links": {
-        "demo": "https://identifying-structure-in-data.github.io/"
+        "homepage": "https://identifying-structure-in-data.github.io/"
       },
       "tags": ["Tutorial", "CVPR", "Data Visualization"]
     },
     {
       "title": "CXAS: Finegrained Anatomy Segmentation in Chest-Radiographs",
       "description": "The interpretation of chest radiographs (CXR) remains a challenge due to ambiguous overlapping structures such as the lungs, heart, and bones hindering the annotation. To address this, we propose a novel method for extracting fine-grained anatomical structures in CXR using pseudo-labeling of three-dimensional computer tomography (CTs). ",
-      "image": "assets/img/projects/paxray.jpg",
+      "image": "assets/img/software_thumbnails/paxray.jpg",
       "links": {
-        "paper": "paxray.https://arxiv.org/pdf/2306.03934",
+        "paper": "https://arxiv.org/pdf/2306.03934",
         "code": "https://github.com/ConstantinSeibold/ChestXRayAnatomySegmentation",
         "demo": "https://huggingface.co/datasets/cmseibold/PAXRay"
       },
