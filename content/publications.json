@@ -575,69 +575,6 @@
             "abstract": "Interpreting chest radiographs (CXR) remains challenging due to the ambiguity of overlapping structures such as the lungs, heart, and bones. To address this issue, we propose a novel method for extracting fine-grained anatomical structures in CXR using pseudo-labeling of three-dimensional computed tomography (CT) scans. "
         },
         {
-            "title": "Cellvit: Vision transformers for precise cell segmentation and classification",
-            "authors": [
-                "Fabian Hörst",
-                "Moritz Rempe",
-                "Lukas Heine",
-                "Constantin Seibold",
-                "Julius Keyl",
-                "Giulia Baldini",
-                "Selma Ugurel",
-                "Jens Siveke",
-                "Barbara Grünwald",
-                "Jan Egger",
-                "Jens Kleesiek"
-            ],
-            "venue": "Medical Image Analysis",
-            "conference": "journal",
-            "image": "assets/img/thumbnails/cellvit.png",
-            "arxivLink": "https://arxiv.org/pdf/2306.15350",
-            "codeLink": "https://github.com/TIO-IKIM/CellViT",
-            "paperLink": "",
-            "dataLink": "",
-            "award": "",
-            "date": "2024",
-            "tags": [
-                "Instance Segmentation",
-                "Cell Segmentation",
-                "Vision Transformer",
-                "Histopathology"
-            ],
-            "abstract": "Nuclei detection and segmentation in hematoxylin and eosin-stained (H&E) tissue images are important clinical tasks and crucial for a wide range of applications. However, it is a challenging task due to nuclei variances in staining and size, overlapping boundaries, and nuclei clustering. While convolutional neural networks have been extensively used for this task, we explore the potential of Transformer-based networks in this domain. Therefore, we introduce a new method for automated instance segmentation of cell nuclei in digitized tissue samples using a deep learning architecture based on Vision Transformer called CellViT. CellViT is trained and evaluated on the PanNuke dataset, which is one of the most challenging nuclei instance segmentation datasets, consisting of nearly 200,000 annotated Nuclei into 5 clinically important classes in 19 tissue types. We demonstrate the superiority of large-scale in-domain and out-of-domain pre-trained Vision Transformers by leveraging the recently published Segment Anything Model and a ViT-encoder pre-trained on 104 million histological image patches - achieving state-of-the-art nuclei detection and instance segmentation performance on the PanNuke dataset with a mean panoptic quality of 0.51 and an F1-detection score of 0.83."
-        },
-        {
-            "title": "Why does my medical AI look at pictures of birds? Exploring the efficacy of transfer learning across domain boundaries",
-            "authors": [
-                "Frederic Jonske",
-                "Moon Kim",
-                "Enrico Nasca",
-                "Janis Evers",
-                "Johannes Haubold",
-                "René Hosch",
-                "Felix Nensa",
-                "Michael Kamp",
-                "Constantin Seibold",
-                "Jan Egger",
-                "Jens Kleesiek"
-            ],
-            "venue": "Computer Methods and Programs in Biomedicine,",
-            "conference": "journal",
-            "image": "assets/img/thumbnails/birds.png",
-            "arxivLink": "https://arxiv.org/pdf/2306.17555",
-            "codeLink": "",
-            "paperLink": "",
-            "dataLink": "",
-            "award": "",
-            "date": "2025",
-            "tags": [
-                "Pretraining",
-                "Computer Tomography",
-                "Transfer Learning"
-            ],
-            "abstract": "It is an open secret that ImageNet is treated as the panacea of pretraining. Particularly in medical machine learning, models not trained from scratch are often finetuned based on ImageNet-pretrained models. We posit that pretraining on data from the domain of the downstream task should almost always be preferred instead. We leverage RadNet-12M, a dataset containing more than 12 million computed tomography (CT) image slices, to explore the efficacy of self-supervised pretraining on medical and natural images. Our experiments cover intra- and cross-domain transfer scenarios, varying data scales, finetuning vs. linear evaluation, and feature space analysis. We observe that intra-domain transfer compares favorably to cross-domain transfer, achieving comparable or improved performance (0.44% - 2.07% performance increase using RadNet pretraining, depending on the experiment) and demonstrate the existence of a domain boundary-related generalization gap and domain-specific learned features."
-        },
-        {
             "title": "Valuing Vicinity: Memory attention framework for context-based semantic segmentation in histopathology",
             "authors": [
                 "Oliver Ester",
@@ -667,55 +604,6 @@
                 "Histopathology"
             ],
             "abstract": "The segmentation of histopathological whole slide images into tumourous and non-tumourous types of tissue is a challenging task that requires the consideration of both local and global spatial contexts to classify tumourous regions precisely. The identification of subtypes of tumour tissue complicates the issue as the sharpness of separation decreases and the pathologist’s reasoning is even more guided by spatial context. However, the identification of detailed tissue types is crucial for providing personalized cancer therapies. Due to the high resolution of whole slide images, existing semantic segmentation methods, restricted to isolated image sections, are incapable of processing context information beyond. To take a step towards better context comprehension, we propose a patch neighbour attention mechanism to query the neighbouring tissue context from a patch embedding memory bank and infuse context …"
-        },
-        {
-            "title": "Towards unifying anatomy segmentation: automated generation of a full-body CT dataset via knowledge aggregation and anatomical guidelines",
-            "authors": [
-                "Alexander Jaus*",
-                "Constantin Seibold*",
-                "Kelsey Hermann",
-                "Alexandra Walter",
-                "Kristina Giske",
-                "Johannes Haubold",
-                "Jens Kleesiek",
-                "Rainer Stiefelhagen"
-            ],
-            "venue": "ICIP",
-            "conference": "conference",
-            "image": "assets/img/thumbnails/atlas.png",
-            "arxivLink": "https://arxiv.org/pdf/2307.13375",
-            "codeLink": "",
-            "paperLink": "",
-            "dataLink": "",
-            "award": "",
-            "date": "2024",
-            "tags": [
-                "Semantic Segmentation",
-                "Computer Tomography",
-                "Anatomy Segmentation",
-                "Dataset"
-            ],
-            "abstract": "A vast amount of images and pixel-wise annotations allowed our community to build scalable segmentation solutions for natural domains. However, the transfer to expert-driven domains like microscopy applications or medical healthcare remains difficult as domain experts are a critical factor due to their limited availability for providing pixel-wise annotations. To enable affordable segmentation solutions for such domains, we need training strategies which can simultaneously handle diverse annotation types and are not bound to costly pixel-wise annotations. In this work, we analyze existing training algorithms towards their flexibility for different annotation types and scalability to small annotation regimes. We conduct an extensive evaluation in the challenging domain of organelle segmentation and find that existing semi-and semi-weakly supervised training algorithms are not able to fully exploit diverse annotation types. Driven by our findings, we introduce Decoupled Semantic Prototypes (DSP) as a training method for semantic segmentation which enables learning from annotation types as diverse as image-level-, point-, bounding box-, and pixel-wise annotations and which leads to remarkable accuracy gains over existing solutions for semi-weakly segmentation."
-        },
-        {
-            "title": "MedShapeNet--A Large-Scale Dataset of 3D Medical Shapes for Computer Vision",
-            "authors": [
-                "Jianning Li et al."
-            ],
-            "venue": "Biomedical Engineering/Biomedizinische Technik",
-            "conference": "journal",
-            "image": "assets/img/thumbnails/medshapenet.png",
-            "arxivLink": "https://arxiv.org/pdf/2308.16139",
-            "codeLink": "",
-            "paperLink": "",
-            "dataLink": "https://medshapenet.ikim.nrw/",
-            "award": "",
-            "date": "2025",
-            "tags": [
-                "Shapes",
-                "Dataset"
-            ],
-            "abstract": "We present MedShapeNet, a large collection of anatomical shapes (e.g., bones, organs, vessels) and 3D surgical instrument models. Prior to the deep learning era, the broad application of statistical shape models (SSMs) in medical image analysis is evidence that shapes have been commonly used to describe medical data. Nowadays, however, state-of-the-art (SOTA) deep learning algorithms in medical imaging are predominantly voxel-based. In computer vision, on the contrary, shapes (including, voxel occupancy grids, meshes, point clouds and implicit surface models) are preferred data representations in 3D, as seen from the numerous shape-related publications in premier vision conferences, such as the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), as well as the increasing popularity of ShapeNet (about 51,300 models) and Princeton ModelNet (127,915 models) in computer vision research. MedShapeNet is created as an alternative to these commonly used shape benchmarks to facilitate the translation of data-driven vision algorithms to medical applications, and it extends the opportunities to adapt SOTA vision algorithms to solve critical medical problems. Besides, the majority of the medical shapes in MedShapeNet are modeled directly on the imaging data of real patients, and therefore it complements well existing shape benchmarks comprising of computer-aided design (CAD) models. MedShapeNet currently includes more than 100,000 medical shapes, and provides annotations in the form of paired data. It is therefore also a freely available repository of 3D models for extended reality (virtual reality …"
         },
         {
             "title": "On the Impact of Cross-Domain Data on German Language Models",
@@ -752,6 +640,67 @@
             "abstract": "Traditionally, large language models have been either trained on general web crawls or domain-specific data. However, recent successes of generative large language models, have shed light on the benefits of cross-domain datasets. To examine the significance of prioritizing data diversity over quality, we present a German dataset comprising texts from five domains, along with another dataset aimed at containing high-quality data. Through training a series of models ranging between 122M and 750M parameters on both datasets, we conduct a comprehensive benchmark on multiple downstream tasks. Our findings demonstrate that the models trained on the cross-domain dataset outperform those trained on quality data alone, leading to improvements up to over the previous state-of-the-art. "
         },
         {
+            "title": "Cellvit: Vision transformers for precise cell segmentation and classification",
+            "authors": [
+                "Fabian Hörst",
+                "Moritz Rempe",
+                "Lukas Heine",
+                "Constantin Seibold",
+                "Julius Keyl",
+                "Giulia Baldini",
+                "Selma Ugurel",
+                "Jens Siveke",
+                "Barbara Grünwald",
+                "Jan Egger",
+                "Jens Kleesiek"
+            ],
+            "venue": "Medical Image Analysis",
+            "conference": "journal",
+            "image": "assets/img/thumbnails/cellvit.png",
+            "arxivLink": "https://arxiv.org/pdf/2306.15350",
+            "codeLink": "https://github.com/TIO-IKIM/CellViT",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "",
+            "date": "2024",
+            "tags": [
+                "Instance Segmentation",
+                "Cell Segmentation",
+                "Vision Transformer",
+                "Histopathology"
+            ],
+            "abstract": "Nuclei detection and segmentation in hematoxylin and eosin-stained (H&E) tissue images are important clinical tasks and crucial for a wide range of applications. However, it is a challenging task due to nuclei variances in staining and size, overlapping boundaries, and nuclei clustering. While convolutional neural networks have been extensively used for this task, we explore the potential of Transformer-based networks in this domain. Therefore, we introduce a new method for automated instance segmentation of cell nuclei in digitized tissue samples using a deep learning architecture based on Vision Transformer called CellViT. CellViT is trained and evaluated on the PanNuke dataset, which is one of the most challenging nuclei instance segmentation datasets, consisting of nearly 200,000 annotated Nuclei into 5 clinically important classes in 19 tissue types. We demonstrate the superiority of large-scale in-domain and out-of-domain pre-trained Vision Transformers by leveraging the recently published Segment Anything Model and a ViT-encoder pre-trained on 104 million histological image patches - achieving state-of-the-art nuclei detection and instance segmentation performance on the PanNuke dataset with a mean panoptic quality of 0.51 and an F1-detection score of 0.83."
+        },
+        {
+            "title": "Towards unifying anatomy segmentation: automated generation of a full-body CT dataset via knowledge aggregation and anatomical guidelines",
+            "authors": [
+                "Alexander Jaus*",
+                "Constantin Seibold*",
+                "Kelsey Hermann",
+                "Alexandra Walter",
+                "Kristina Giske",
+                "Johannes Haubold",
+                "Jens Kleesiek",
+                "Rainer Stiefelhagen"
+            ],
+            "venue": "ICIP",
+            "conference": "conference",
+            "image": "assets/img/thumbnails/atlas.png",
+            "arxivLink": "https://arxiv.org/pdf/2307.13375",
+            "codeLink": "",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "",
+            "date": "2024",
+            "tags": [
+                "Semantic Segmentation",
+                "Computer Tomography",
+                "Anatomy Segmentation",
+                "Dataset"
+            ],
+            "abstract": "A vast amount of images and pixel-wise annotations allowed our community to build scalable segmentation solutions for natural domains. However, the transfer to expert-driven domains like microscopy applications or medical healthcare remains difficult as domain experts are a critical factor due to their limited availability for providing pixel-wise annotations. To enable affordable segmentation solutions for such domains, we need training strategies which can simultaneously handle diverse annotation types and are not bound to costly pixel-wise annotations. In this work, we analyze existing training algorithms towards their flexibility for different annotation types and scalability to small annotation regimes. We conduct an extensive evaluation in the challenging domain of organelle segmentation and find that existing semi-and semi-weakly supervised training algorithms are not able to fully exploit diverse annotation types. Driven by our findings, we introduce Decoupled Semantic Prototypes (DSP) as a training method for semantic segmentation which enables learning from annotation types as diverse as image-level-, point-, bounding box-, and pixel-wise annotations and which leads to remarkable accuracy gains over existing solutions for semi-weakly segmentation."
+        },
+        {
             "title": "FootCapture: Towards an AR-based System for 3D Foot Object Acquisition through Photogrammetry",
             "authors": [
                 "Valentin Khan-Blouki",
@@ -781,59 +730,6 @@
                 "Foot"
             ],
             "abstract": "The acquisition of accurate 3D models of feet is crucial in fields such as chronic foot wound monitoring, prosthetics design, and orthopedic surgery. However, obtaining precise models of patients' feet typically relies on manual measurements, which is both costly and prone to error. Addressing this need, we introduce FootCapture, a mobile application designed to facilitate the acquisition of precise photographic measurements. Our solution employs augmented reality to intuitively guide untrained users to capture comprehensive photographic data from the correct positions and angles, suitable to create a high-fidelity 3D model of the patient's foot using photogrammetry. To validate our application's utility, we compared FootCapture with Apple's Guided Capture application in a user study with n=7 participants. The results showed FootCapture’s intuitive use and high robustness marking it as a tool worth considering for medical personnel."
-        },
-        {
-            "title": "Foreign object segmentation in chest x-rays through anatomy-guided shape insertion",
-            "authors": [
-                "Constantin Seibold",
-                "Hamza Kalisch",
-                "Lukas Heine",
-                "Simon Reiß",
-                "Jens Kleesiek"
-            ],
-            "venue": "",
-            "conference": "",
-            "image": "assets/img/thumbnails/foreign_object_segmentation_in_chest_x_rays_through_anatomy_guided_shape_inserti.jpg",
-            "arxivLink": "https://arxiv.org/abs/2501.12022",
-            "codeLink": "",
-            "paperLink": "",
-            "dataLink": "",
-            "award": "",
-            "date": "2025",
-            "tags": [
-                "Synthetic Data",
-                "Instance Segmentation"
-            ],
-            "abstract": "In this paper, we tackle the challenge of instance segmentation for foreign objects in chest radiographs, commonly seen in postoperative follow-ups with stents, pacemakers, or ingested objects in children. The diversity of foreign objects complicates dense annotation, as shown in insufficient existing datasets. To address this, we propose the simple generation of synthetic data through (1) insertion of arbitrary shapes (lines, polygons, ellipses) with varying contrasts and opacities, and (2) cut-paste augmentations from a small set of semi-automatically extracted labels. These insertions are guided by anatomy labels to ensure realistic placements, such as stents appearing only in relevant vessels. Our approach enables networks to segment complex structures with minimal manually labeled data. Notably, it achieves performance comparable to fully supervised models while using 93% fewer manual annotations."
-        },
-        {
-            "title": "Does Biomedical Training Lead to Better Medical Performance?",
-            "authors": [
-                "Amin Dada",
-                "Osman Alperen Koraş",
-                "Marie Bauer",
-                "Jean-Philippe Corbeil",
-                "Amanda Butler Contreras",
-                "Constantin Seibold",
-                "Kaleb E Smith",
-                "Jens Kleesiek"
-            ],
-            "venue": "Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM)",
-            "conference": "conference",
-            "image": "assets/img/thumbnails/clue.pdf.png",
-            "arxivLink": "https://arxiv.org/pdf/2404.04067",
-            "codeLink": "https://github.com/dadaamin/CLUE",
-            "paperLink": "",
-            "dataLink": "",
-            "award": "",
-            "date": "2025",
-            "tags": [
-                "LLM",
-                "Natural Language Processing",
-                "NLP",
-                "Medical Understanding"
-            ],
-            "abstract": "In this study, we investigate the effect of biomedical training by evaluating 25 models on six practical medical tasks. In contrast to previous evaluations on non-clinical tasks, our results reveal a performance decline in nine out of twelve biomedical models after fine-tuning, particularly on tasks involving hallucinations, ICD10 coding, and instruction adherence. General-purpose models like Meta-Llama-3.1-70B-Instruct outperformed specialized biomedical variants, suggesting a trade-off exists between domain-specific adaptation and broader medical task competency."
         },
         {
             "title": "Style Transfer and Pseudo-Label Filtering Improve Transferability in Cell Organelle Segmentation Scenarios",
@@ -962,36 +858,6 @@
             "abstract": "Lesion segmentation in PET/CT imaging is essential for precise tumor characterization, which supports personalized treatment planning and enhances diagnostic precision in oncology. However, accurate manual segmentation of lesions is time-consuming and prone to inter-observer variability. Given the rising demand and clinical use of PET/CT, automated segmentation methods, particularly deep-learning-based approaches, have become increasingly more relevant. The autoPET III Challenge focuses on advancing automated segmentation of tumor lesions in PET/CT images in a multitracer multicenter setting, addressing the clinical need for quantitative, robust, and generalizable solutions. Building on previous challenges, the third iteration of the autoPET challenge introduces a more diverse dataset featuring two different tracers (FDG and PSMA) from two clinical centers. To this extent, we developed a classifier that identifies the tracer of the given PET/CT based on the Maximum Intensity Projection of the PET scan. We trained two individual nnUNet-ensembles for each tracer where anatomical labels are included as a multi-label task to enhance the model's performance. Our final submission achieves cross-validation Dice scores of 76.90% and 61.33% for the publicly available FDG and PSMA datasets, respectively. The code is available at https://github.com/hakal104/autoPETIII/ "
         },
         {
-            "title": "Anatomy-guided Pathology Segmentation",
-            "authors": [
-                "Alexander Jaus",
-                "Constantin Seibold",
-                "Simon Reiß",
-                "Lukas Heine",
-                "Anton Schily",
-                "Moon Kim",
-                "Fin Hendrik Bahnsen",
-                "Ken Herrmann",
-                "Rainer Stiefelhagen",
-                "Jens Kleesiek"
-            ],
-            "venue": "MICCAI",
-            "conference": "conference",
-            "image": "assets/img/thumbnails/miccai_alex.pdf.png",
-            "arxivLink": "https://arxiv.org/pdf/2407.05844",
-            "codeLink": "",
-            "paperLink": "",
-            "dataLink": "",
-            "award": "",
-            "date": "2025",
-            "tags": [
-                "Anatomy Segmentation",
-                "Chest X-ray",
-                "PET-CT"
-            ],
-            "abstract": "Pathological structures in medical images are typically deviations from the expected anatomy of a patient. While clinicians consider this interplay between anatomy and pathology, recent deep learning algorithms specialize in recognizing either one of the two, rarely considering the patient's body from such a joint perspective. In this paper, we develop a generalist segmentation model that combines anatomical and pathological information, aiming to enhance the segmentation accuracy of pathological features. Our Anatomy-Pathology Exchange (APEx) training utilizes a query-based segmentation transformer which decodes a joint feature space into query-representations for human anatomy and interleaves them via a mixing strategy into the pathology-decoder for anatomy-informed pathology predictions. In doing so, we are able to report the best results across the board on FDG-PET-CT and Chest X-Ray pathology segmentation tasks with a margin of up to 3.3% as compared to strong baseline methods. Code and models will be publicly available at github.com/alexanderjaus/APEx."
-        },
-        {
             "title": "Every Component Counts: Rethinking the Measure of Success for Medical Semantic Segmentation in Multi-Instance Segmentation Tasks",
             "authors": [
                 "Alexander Jaus",
@@ -1019,30 +885,6 @@
                 "Semantic Segmentation"
             ],
             "abstract": "We present Connected-Component~(CC)-Metrics, a novel semantic segmentation evaluation protocol, targeted to align existing semantic segmentation metrics to a multi-instance detection scenario in which each connected component matters. We motivate this setup in the common medical scenario of semantic metastases segmentation in a full-body PET/CT. We show how existing semantic segmentation metrics suffer from a bias towards larger connected components contradicting the clinical assessment of scans in which tumor size and clinical relevance are uncorrelated. To rebalance existing segmentation metrics, we propose to evaluate them on a per-component basis thus giving each tumor the same weight irrespective of its size. To match predictions to ground-truth segments, we employ a proximity-based matching criterion, evaluating common metrics locally at the component of interest. Using this approach, we break free of biases introduced by large metastasis for overlap-based metrics such as Dice or Surface Dice. CC-Metrics also improves distance-based metrics such as Hausdorff Distances which are uninformative for small changes that do not influence the maximum or 95th percentile, and avoids pitfalls introduced by directly combining counting-based metrics with overlap-based metrics as it is done in Panoptic Quality."
-        },
-        {
-            "title": "De-Identification of Medical Imaging Data: A Comprehensive Tool for Ensuring Patient Privacy",
-            "authors": [
-                "Moritz Rempe",
-                "Lukas Heine",
-                "Constantin Seibold",
-                "Fabian Hörst",
-                "Jens Kleesiek"
-            ],
-            "venue": "European Radiology",
-            "conference": "journal",
-            "image": "assets/img/thumbnails/de_identification_of_medical_imaging_data_a_comprehensive_tool_for_ensuring_pati.jpg",
-            "arxivLink": "https://arxiv.org/pdf/2410.12402",
-            "codeLink": "https://github.com/code-lukas/medical_image_deidentification",
-            "paperLink": "",
-            "dataLink": "",
-            "award": "",
-            "date": "2025",
-            "tags": [
-                "De-Identification",
-                "Privacy"
-            ],
-            "abstract": "Medical data employed in research frequently comprises sensitive patient health information (PHI), which is subject to rigorous legal frameworks such as the General Data Protection Regulation (GDPR) or the Health Insurance Portability and Accountability Act (HIPAA). Consequently, these types of data must be pseudonymized prior to utilisation, which presents a significant challenge for many researchers. Given the vast array of medical data, it is necessary to employ a variety of de-identification techniques. To facilitate the anonymization process for medical imaging data, we have developed an open-source tool that can be used to de-identify DICOM magnetic resonance images, computer tomography images, whole slide images and magnetic resonance twix raw data. Furthermore, the implementation of a neural network enables the removal of text within the images. The proposed tool automates an elaborate anonymization pipeline for multiple types of inputs, reducing the need for additional tools used for de-identification of imaging data. We make our code publicly available at https://github.com/code-lukas/medical_image_deidentification."
         },
         {
             "title": "Towards Synthetic Data Generation for Improved Pain Recognition in Videos under Patient Constraints",
@@ -1100,30 +942,162 @@
             "abstract": "Unstructured data in industries such as healthcare, finance, and manufacturing presents significant challenges for efficient analysis and decision making. Detecting patterns within this data and understanding their impact is critical but complex without the right tools. Traditionally, these tasks relied on the expertise of data analysts or labor-intensive manual reviews. In response, we introduce Spacewalker, an interactive tool designed to explore and annotate data across multiple modalities. Spacewalker allows users to extract data representations and visualize them in low-dimensional spaces, enabling the detection of semantic similarities. Through extensive user studies, we assess Spacewalker's effectiveness in data annotation and integrity verification. Results show that the tool's ability to traverse latent spaces and perform multi-modal queries significantly enhances the user's capacity to quickly identify relevant data. Moreover, Spacewalker allows for annotation speed-ups far superior to conventional methods, making it a promising tool for efficiently navigating unstructured data and improving decision making processes. The code of this work is open-source and can be found at: this https URL"
         },
         {
-            "title": "Region-Normalized DPO for Medical Image Segmentation under Noisy Judges",
+            "title": "Why does my medical AI look at pictures of birds? Exploring the efficacy of transfer learning across domain boundaries",
             "authors": [
-                "Hamza Kalisch",
+                "Frederic Jonske",
+                "Moon Kim",
+                "Enrico Nasca",
+                "Janis Evers",
+                "Johannes Haubold",
+                "René Hosch",
+                "Felix Nensa",
+                "Michael Kamp",
                 "Constantin Seibold",
-                "Jens Kleesiek",
-                "Ken Herrmann",
-                "Frederic Jonske"
+                "Jan Egger",
+                "Jens Kleesiek"
             ],
-            "venue": "",
-            "conference": "",
-            "image": "assets/img/thumbnails/region_normalized_dpo_for_medical_image_segmentation_under_noisy_judges.jpg",
-            "arxivLink": "https://arxiv.org/abs/2601.23222",
+            "venue": "Computer Methods and Programs in Biomedicine,",
+            "conference": "journal",
+            "image": "assets/img/thumbnails/birds.png",
+            "arxivLink": "https://arxiv.org/pdf/2306.17555",
             "codeLink": "",
             "paperLink": "",
             "dataLink": "",
             "award": "",
-            "date": "2026",
+            "date": "2025",
             "tags": [
-                "Medical Image Segmentation",
-                "DPO",
-                "Noisy Labels",
-                "Preference Optimization"
+                "Pretraining",
+                "Computer Tomography",
+                "Transfer Learning"
             ],
-            "abstract": "This paper addresses medical image segmentation when dense pixel-level annotations are unavailable. Rather than relying on costly ground-truth labels, we leverage inexpensive automatic quality-control signals such as model agreement and uncertainty measures. We investigate Direct Preference Optimization (DPO) applied to noisy preference signals and propose Region-Normalized DPO (RN-DPO), which normalizes preference updates by the size of the disagreement region between masks, reducing the harmful influence of unreliable comparisons. Testing across multiple medical imaging datasets and conditions, RN-DPO demonstrates improved stability and performance gains over standard DPO and comparable methods, all without requiring additional pixel-level annotations."
+            "abstract": "It is an open secret that ImageNet is treated as the panacea of pretraining. Particularly in medical machine learning, models not trained from scratch are often finetuned based on ImageNet-pretrained models. We posit that pretraining on data from the domain of the downstream task should almost always be preferred instead. We leverage RadNet-12M, a dataset containing more than 12 million computed tomography (CT) image slices, to explore the efficacy of self-supervised pretraining on medical and natural images. Our experiments cover intra- and cross-domain transfer scenarios, varying data scales, finetuning vs. linear evaluation, and feature space analysis. We observe that intra-domain transfer compares favorably to cross-domain transfer, achieving comparable or improved performance (0.44% - 2.07% performance increase using RadNet pretraining, depending on the experiment) and demonstrate the existence of a domain boundary-related generalization gap and domain-specific learned features."
+        },
+        {
+            "title": "MedShapeNet--A Large-Scale Dataset of 3D Medical Shapes for Computer Vision",
+            "authors": [
+                "Jianning Li et al."
+            ],
+            "venue": "Biomedical Engineering/Biomedizinische Technik",
+            "conference": "journal",
+            "image": "assets/img/thumbnails/medshapenet.png",
+            "arxivLink": "https://arxiv.org/pdf/2308.16139",
+            "codeLink": "",
+            "paperLink": "",
+            "dataLink": "https://medshapenet.ikim.nrw/",
+            "award": "",
+            "date": "2025",
+            "tags": [
+                "Shapes",
+                "Dataset"
+            ],
+            "abstract": "We present MedShapeNet, a large collection of anatomical shapes (e.g., bones, organs, vessels) and 3D surgical instrument models. Prior to the deep learning era, the broad application of statistical shape models (SSMs) in medical image analysis is evidence that shapes have been commonly used to describe medical data. Nowadays, however, state-of-the-art (SOTA) deep learning algorithms in medical imaging are predominantly voxel-based. In computer vision, on the contrary, shapes (including, voxel occupancy grids, meshes, point clouds and implicit surface models) are preferred data representations in 3D, as seen from the numerous shape-related publications in premier vision conferences, such as the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), as well as the increasing popularity of ShapeNet (about 51,300 models) and Princeton ModelNet (127,915 models) in computer vision research. MedShapeNet is created as an alternative to these commonly used shape benchmarks to facilitate the translation of data-driven vision algorithms to medical applications, and it extends the opportunities to adapt SOTA vision algorithms to solve critical medical problems. Besides, the majority of the medical shapes in MedShapeNet are modeled directly on the imaging data of real patients, and therefore it complements well existing shape benchmarks comprising of computer-aided design (CAD) models. MedShapeNet currently includes more than 100,000 medical shapes, and provides annotations in the form of paired data. It is therefore also a freely available repository of 3D models for extended reality (virtual reality …"
+        },
+        {
+            "title": "Foreign object segmentation in chest x-rays through anatomy-guided shape insertion",
+            "authors": [
+                "Constantin Seibold",
+                "Hamza Kalisch",
+                "Lukas Heine",
+                "Simon Reiß",
+                "Jens Kleesiek"
+            ],
+            "venue": "",
+            "conference": "",
+            "image": "assets/img/thumbnails/foreign_object_segmentation_in_chest_x_rays_through_anatomy_guided_shape_inserti.jpg",
+            "arxivLink": "https://arxiv.org/abs/2501.12022",
+            "codeLink": "",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "",
+            "date": "2025",
+            "tags": [
+                "Synthetic Data",
+                "Instance Segmentation"
+            ],
+            "abstract": "In this paper, we tackle the challenge of instance segmentation for foreign objects in chest radiographs, commonly seen in postoperative follow-ups with stents, pacemakers, or ingested objects in children. The diversity of foreign objects complicates dense annotation, as shown in insufficient existing datasets. To address this, we propose the simple generation of synthetic data through (1) insertion of arbitrary shapes (lines, polygons, ellipses) with varying contrasts and opacities, and (2) cut-paste augmentations from a small set of semi-automatically extracted labels. These insertions are guided by anatomy labels to ensure realistic placements, such as stents appearing only in relevant vessels. Our approach enables networks to segment complex structures with minimal manually labeled data. Notably, it achieves performance comparable to fully supervised models while using 93% fewer manual annotations."
+        },
+        {
+            "title": "Does Biomedical Training Lead to Better Medical Performance?",
+            "authors": [
+                "Amin Dada",
+                "Osman Alperen Koraş",
+                "Marie Bauer",
+                "Jean-Philippe Corbeil",
+                "Amanda Butler Contreras",
+                "Constantin Seibold",
+                "Kaleb E Smith",
+                "Jens Kleesiek"
+            ],
+            "venue": "Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM)",
+            "conference": "conference",
+            "image": "assets/img/thumbnails/clue.pdf.png",
+            "arxivLink": "https://arxiv.org/pdf/2404.04067",
+            "codeLink": "https://github.com/dadaamin/CLUE",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "",
+            "date": "2025",
+            "tags": [
+                "LLM",
+                "Natural Language Processing",
+                "NLP",
+                "Medical Understanding"
+            ],
+            "abstract": "In this study, we investigate the effect of biomedical training by evaluating 25 models on six practical medical tasks. In contrast to previous evaluations on non-clinical tasks, our results reveal a performance decline in nine out of twelve biomedical models after fine-tuning, particularly on tasks involving hallucinations, ICD10 coding, and instruction adherence. General-purpose models like Meta-Llama-3.1-70B-Instruct outperformed specialized biomedical variants, suggesting a trade-off exists between domain-specific adaptation and broader medical task competency."
+        },
+        {
+            "title": "Anatomy-guided Pathology Segmentation",
+            "authors": [
+                "Alexander Jaus",
+                "Constantin Seibold",
+                "Simon Reiß",
+                "Lukas Heine",
+                "Anton Schily",
+                "Moon Kim",
+                "Fin Hendrik Bahnsen",
+                "Ken Herrmann",
+                "Rainer Stiefelhagen",
+                "Jens Kleesiek"
+            ],
+            "venue": "MICCAI",
+            "conference": "conference",
+            "image": "assets/img/thumbnails/miccai_alex.pdf.png",
+            "arxivLink": "https://arxiv.org/pdf/2407.05844",
+            "codeLink": "",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "",
+            "date": "2025",
+            "tags": [
+                "Anatomy Segmentation",
+                "Chest X-ray",
+                "PET-CT"
+            ],
+            "abstract": "Pathological structures in medical images are typically deviations from the expected anatomy of a patient. While clinicians consider this interplay between anatomy and pathology, recent deep learning algorithms specialize in recognizing either one of the two, rarely considering the patient's body from such a joint perspective. In this paper, we develop a generalist segmentation model that combines anatomical and pathological information, aiming to enhance the segmentation accuracy of pathological features. Our Anatomy-Pathology Exchange (APEx) training utilizes a query-based segmentation transformer which decodes a joint feature space into query-representations for human anatomy and interleaves them via a mixing strategy into the pathology-decoder for anatomy-informed pathology predictions. In doing so, we are able to report the best results across the board on FDG-PET-CT and Chest X-Ray pathology segmentation tasks with a margin of up to 3.3% as compared to strong baseline methods. Code and models will be publicly available at github.com/alexanderjaus/APEx."
+        },
+        {
+            "title": "De-Identification of Medical Imaging Data: A Comprehensive Tool for Ensuring Patient Privacy",
+            "authors": [
+                "Moritz Rempe",
+                "Lukas Heine",
+                "Constantin Seibold",
+                "Fabian Hörst",
+                "Jens Kleesiek"
+            ],
+            "venue": "European Radiology",
+            "conference": "journal",
+            "image": "assets/img/thumbnails/de_identification_of_medical_imaging_data_a_comprehensive_tool_for_ensuring_pati.jpg",
+            "arxivLink": "https://arxiv.org/pdf/2410.12402",
+            "codeLink": "https://github.com/code-lukas/medical_image_deidentification",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "",
+            "date": "2025",
+            "tags": [
+                "De-Identification",
+                "Privacy"
+            ],
+            "abstract": "Medical data employed in research frequently comprises sensitive patient health information (PHI), which is subject to rigorous legal frameworks such as the General Data Protection Regulation (GDPR) or the Health Insurance Portability and Accountability Act (HIPAA). Consequently, these types of data must be pseudonymized prior to utilisation, which presents a significant challenge for many researchers. Given the vast array of medical data, it is necessary to employ a variety of de-identification techniques. To facilitate the anonymization process for medical imaging data, we have developed an open-source tool that can be used to de-identify DICOM magnetic resonance images, computer tomography images, whole slide images and magnetic resonance twix raw data. Furthermore, the implementation of a neural network enables the removal of text within the images. The proposed tool automates an elaborate anonymization pipeline for multiple types of inputs, reducing the need for additional tools used for de-identification of imaging data. We make our code publicly available at https://github.com/code-lukas/medical_image_deidentification."
         },
         {
             "title": "Improving Medical Visual Instruction Tuning with Labeled Datasets",
@@ -1404,6 +1378,32 @@
                 "Benchmarking"
             ],
             "abstract": "Despite advances in automated medical image segmentation, AI models still underperform in various clinical settings. In this pre-registered prospective multicenter evaluation, we analyzed 20 state-of-the-art mandibular segmentation models across 19,218 segmentations of 1,000 clinically resampled CT/CBCT scans. Segmentation accuracy varies by up to 25% depending on socio-technical factors such as voxel size, bone orientation, and patient conditions such as osteosynthesis or pathology. Improved image sharpness, smaller isotropic voxels, and neutral bone positioning yielded better outcomes, whereas metallic implants and anatomical complexity significantly reduced performance. These findings challenge conventional assumptions about AI deployment, recommending evidence-informed optimization strategies for clinical professionals and model developers to facilitate real-world healthcare implementation."
+        },
+        {
+            "title": "Region-Normalized DPO for Medical Image Segmentation under Noisy Judges",
+            "authors": [
+                "Hamza Kalisch",
+                "Constantin Seibold",
+                "Jens Kleesiek",
+                "Ken Herrmann",
+                "Frederic Jonske"
+            ],
+            "venue": "",
+            "conference": "",
+            "image": "assets/img/thumbnails/region_normalized_dpo_for_medical_image_segmentation_under_noisy_judges.jpg",
+            "arxivLink": "https://arxiv.org/abs/2601.23222",
+            "codeLink": "",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "",
+            "date": "2026",
+            "tags": [
+                "Medical Image Segmentation",
+                "DPO",
+                "Noisy Labels",
+                "Preference Optimization"
+            ],
+            "abstract": "This paper addresses medical image segmentation when dense pixel-level annotations are unavailable. Rather than relying on costly ground-truth labels, we leverage inexpensive automatic quality-control signals such as model agreement and uncertainty measures. We investigate Direct Preference Optimization (DPO) applied to noisy preference signals and propose Region-Normalized DPO (RN-DPO), which normalizes preference updates by the size of the disagreement region between masks, reducing the harmful influence of unreliable comparisons. Testing across multiple medical imaging datasets and conditions, RN-DPO demonstrates improved stability and performance gains over standard DPO and comparable methods, all without requiring additional pixel-level annotations."
         }
     ]
 }
