@@ -1,41 +1,50 @@
 document.addEventListener('DOMContentLoaded', function () {
     const newsContainer = document.getElementById('news-container');
 
-    if (!newsContainer) return; // Only load if news container exists
+    if (!newsContainer) return;
 
     fetch('content/news.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error('Failed to load');
+            return response.json();
+        })
         .then(data => {
             const news = data.news;
-            
-            // Sort news by date (newest first)
+
             news.sort((a, b) => new Date(b.date) - new Date(a.date));
-            
-            // Show only the 4 most recent news items on homepage
+
+            newsContainer.innerHTML = '';
+
+            if (!news || news.length === 0) {
+                newsContainer.innerHTML = '<div class="empty-state"><div class="empty-state__icon"><i class="fas fa-newspaper" aria-hidden="true"></i></div><p>No news available.</p></div>';
+                return;
+            }
+
             const recentNews = news.slice(0, 4);
-            
+
             recentNews.forEach(item => {
                 const newsCard = createNewsCard(item);
                 newsContainer.appendChild(newsCard);
             });
         })
-        .catch(error => console.error('Error loading news:', error));
+        .catch(error => {
+            console.error('Error loading news:', error);
+            newsContainer.innerHTML = '<div class="error-state"><div class="error-state__icon"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i></div><p>Error loading news. Please try again later.</p></div>';
+        });
 
     function createNewsCard(news) {
         const newsCard = document.createElement('div');
         newsCard.className = 'card';
         newsCard.style.cursor = 'pointer';
-        
-        // Add click handler if there's a link
+
         if (news.link) {
             newsCard.addEventListener('click', function(e) {
-                if (!e.target.closest('a')) { // Don't trigger if clicking on a link
+                if (!e.target.closest('a')) {
                     window.open(news.link, '_blank');
                 }
             });
         }
 
-        // News type icon
         const getTypeIcon = (type) => {
             switch (type) {
                 case 'conference': return 'fas fa-microphone';
@@ -47,52 +56,49 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         };
 
-        // Format date
         const formatDate = (dateString) => {
             const date = new Date(dateString);
-            return date.toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
             });
         };
 
         newsCard.innerHTML = `
             <div style="margin-bottom: 1rem;">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="${getTypeIcon(news.type)}" style="color: var(--color-primary); font-size: 1.1rem;"></i>
-                        <span style="background: var(--color-background-alt); color: var(--color-text-secondary); padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.75rem; text-transform: uppercase;">
+                <div class="news-card__header">
+                    <div class="news-card__type">
+                        <i class="${getTypeIcon(news.type)} news-card__type-icon" aria-hidden="true"></i>
+                        <span class="badge-tag" style="text-transform: uppercase;">
                             ${news.type}
                         </span>
                     </div>
-                    <div style="color: var(--color-text-muted); font-size: 0.875rem;">
+                    <div class="news-card__date">
                         ${formatDate(news.date)}
                     </div>
                 </div>
-                
-                <h4 style="color: var(--color-text-primary); margin-bottom: 0.75rem; font-size: 1.125rem; line-height: 1.3;">
+
+                <h4 class="news-card__title">
                     ${news.title}
                 </h4>
-                
-                <p style="color: var(--color-text-secondary); line-height: 1.5; font-size: 0.9rem; margin-bottom: 1rem;">
+
+                <p class="news-card__description">
                     ${news.description}
                 </p>
-                
+
                 ${news.tags ? `
-                <div style="display: flex; gap: 0.25rem; flex-wrap: wrap; margin-bottom: 1rem;">
-                    ${news.tags.map(tag => 
-                        `<span style="background: rgba(37, 99, 235, 0.1); color: var(--color-primary); padding: 0.25rem 0.5rem; border-radius: var(--radius-sm); font-size: 0.75rem;">
-                            #${tag}
-                        </span>`
+                <div class="news-card__tags">
+                    ${news.tags.map(tag =>
+                        `<span class="badge-tag badge-tag--primary">#${tag}</span>`
                     ).join('')}
                 </div>
                 ` : ''}
-                
+
                 ${news.link ? `
                 <div style="margin-top: auto;">
-                    <a href="${news.link}" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.5rem 1rem;" onclick="event.stopPropagation();">
-                        <i class="fas fa-external-link-alt" style="margin-right: 0.25rem;"></i>
+                    <a href="${news.link}" target="_blank" class="btn btn-secondary btn--sm" onclick="event.stopPropagation();">
+                        <i class="fas fa-external-link-alt" aria-hidden="true" style="margin-right: 0.25rem;"></i>
                         Learn More
                     </a>
                 </div>

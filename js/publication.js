@@ -4,14 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const yearFilter = $('#year-filter');
     const authorFilter = $('#author-filter');
 
-    // Set consistent styling for publications container
-    publicationsContainer.style.cssText = `
-        width: 100%;
-        max-width: none;
-    `;
-
     fetch('content/publications.json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) throw new Error('Failed to load');
+        return response.json();
+    })
     .then(data => {
         // Populate the tag, year, and author filter options dynamically
         populateTagFilter(data);
@@ -19,8 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
         populateAuthorFilter(data);
         
         const reversedPublications = data.publications.reverse();
-        
-        // Display all publications initially
+
+        // Clear loading spinner and display all publications
+        publicationsContainer.innerHTML = '';
         reversedPublications.forEach(publication => {
             const publicationElement = createPublicationElement(publication);
             publicationsContainer.appendChild(publicationElement);
@@ -37,7 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
             filterPublications(data);
         });
     })
-    .catch(error => console.error('Error fetching publications:', error));
+    .catch(error => {
+        console.error('Error fetching publications:', error);
+        publicationsContainer.innerHTML = '<div class="error-state"><div class="error-state__icon"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i></div><p>Error loading publications. Please try again later.</p></div>';
+    });
 
     function populateTagFilter(data) {
         const allTags = new Set();
@@ -125,48 +126,16 @@ document.addEventListener('DOMContentLoaded', function () {
     function createPublicationElement(publication) {
         const publicationDiv = document.createElement('div');
         publicationDiv.classList.add('publication-item');
-        publicationDiv.style.cssText = `
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: var(--color-background);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-card);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        `;
-
-        // Add hover effect
-        publicationDiv.addEventListener('mouseenter', () => {
-            publicationDiv.style.transform = 'translateY(-2px)';
-            publicationDiv.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.1)';
-        });
-        
-        publicationDiv.addEventListener('mouseleave', () => {
-            publicationDiv.style.transform = 'translateY(0)';
-            publicationDiv.style.boxShadow = 'var(--shadow-card)';
-        });
+        publicationDiv.classList.add('publication-item--flex');
 
         // Preview image (if available)
         if (publication.image) {
             const imageContainer = document.createElement('div');
-            imageContainer.style.cssText = `
-                flex-shrink: 0;
-                width: 120px;
-                height: 90px;
-                border-radius: var(--radius-md);
-                overflow: hidden;
-                background: var(--color-background-alt);
-            `;
+            imageContainer.classList.add('publication-item__image');
             
             const image = document.createElement('img');
             image.src = publication.image;
             image.alt = publication.title;
-            image.style.cssText = `
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            `;
             
             imageContainer.appendChild(image);
             publicationDiv.appendChild(imageContainer);
@@ -174,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Content container
         const contentDiv = document.createElement('div');
-        contentDiv.style.cssText = 'flex: 1; display: flex; flex-direction: column;';
+        contentDiv.classList.add('publication-item__content');
 
         // Title
         const title = document.createElement('h3');
@@ -193,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Venue, year, and award in same line
         const metaContainer = document.createElement('div');
-        metaContainer.style.marginBottom = 'var(--space-md)';
+        metaContainer.classList.add('publication-meta');
         
         if (publication.venue) {
             const venue = document.createElement('span');
@@ -247,10 +216,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const abstract = document.createElement('div');
             abstract.style.marginTop = 'var(--space-md)';
             abstract.innerHTML = `
-                <div style="color: var(--color-text-secondary); font-size: 0.95rem; line-height: 1.6; max-height: 4.5em; overflow: hidden; transition: max-height 0.3s ease;" class="abstract-text">
+                <div class="abstract-text">
                     ${publication.abstract}
                 </div>
-                <button class="btn btn-secondary" style="margin-top: 0.5rem; font-size: 0.875rem; padding: 0.25rem 0.75rem;" onclick="toggleAbstract(this)">Show Abstract</button>
+                <button class="btn btn-secondary abstract-toggle" onclick="toggleAbstract(this)">Show Abstract</button>
             `;
             contentDiv.appendChild(abstract);
         }
@@ -279,14 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add global toggle function for abstracts
     window.toggleAbstract = function(button) {
         const abstractText = button.parentElement.querySelector('.abstract-text');
-        const isExpanded = abstractText.style.maxHeight === 'none';
-        
-        if (isExpanded) {
-            abstractText.style.maxHeight = '4.5em';
-            button.textContent = 'Show Abstract';
-        } else {
-            abstractText.style.maxHeight = 'none';
-            button.textContent = 'Hide Abstract';
-        }
+        const isExpanded = abstractText.classList.toggle('abstract-text--expanded');
+        button.textContent = isExpanded ? 'Hide Abstract' : 'Show Abstract';
     }
 });

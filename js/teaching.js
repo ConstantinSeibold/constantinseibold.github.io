@@ -1,79 +1,63 @@
 document.addEventListener('DOMContentLoaded', function () {
     fetch('content/teaching.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) throw new Error('Failed to load');
+            return response.json();
+        })
         .then(data => {
-            // Populate teaching experience overview
-            // if (data.page_info) {
-            //     populateTeachingExperience(data.page_info);
-            // }
-
-            // Populate courses
             if (data.courses) {
                 populateCourses(data.courses);
             }
 
-            // Populate supervision
             if (data.supervision) {
                 populateSupervision(data.supervision);
             }
         })
         .catch(error => {
             console.error('Error loading teaching content:', error);
+            const errorHTML = '<div class="error-state"><div class="error-state__icon"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i></div><p>Error loading content. Please try again later.</p></div>';
+            ['courses-container', 'supervision-container'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) el.innerHTML = errorHTML;
+            });
         });
-
-    function populateTeachingExperience(pageInfo) {
-        const container = document.getElementById('teaching-experience');
-        if (!container) return;
-
-        let teachingHTML = `
-            <h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">
-                <i class="fas fa-chalkboard-teacher" style="margin-right: 0.5rem;"></i>
-                ${pageInfo.title}
-            </h3>
-            <p style="color: var(--color-text-secondary); font-size: 1.1rem; margin-bottom: 1.5rem;">
-                ${pageInfo.description}
-            </p>
-        `;
-        
-        container.innerHTML = teachingHTML;
-    }
 
     function populateCourses(coursesData) {
         const container = document.getElementById('courses-container');
         if (!container) return;
 
-        let coursesHTML = `<h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">${coursesData.title}</h3>`;
-        
+        let coursesHTML = `<h3 class="section-heading">${coursesData.title}</h3>`;
+
         if (coursesData.subtitle) {
             coursesHTML += `<h4 style="margin-bottom: 1rem;">${coursesData.subtitle}</h4>`;
         }
-        
-        coursesHTML += `<div style="display: flex; flex-direction: column; gap: 1.5rem;">`;
+
+        coursesHTML += `<div class="stack-lg">`;
 
         coursesData.entries.forEach(course => {
             coursesHTML += `
-                <div style="border-left: 3px solid var(--color-primary); padding-left: 1rem;">
-                    <div style="font-weight: 600; color: var(--color-text-primary); margin-bottom: 0.25rem;">
+                <div class="course-item">
+                    <div class="course-item__title">
                         ${course.title}
                     </div>
-                    <div style="color: var(--color-text-secondary); font-size: 0.9rem; margin-bottom: 0.5rem;">
+                    <div class="course-item__period">
                         ${course.link ? `<a href="${course.link}" target="_blank" class="publication-link">${course.period}</a>` : course.period}
                     </div>
-                    
+
                     ${course.award ? `
-                        <div style="padding: 0.75rem; background: linear-gradient(135deg, #fbbf24, #f59e0b); color: white; border-radius: var(--radius-md); margin-bottom: 1rem;">
+                        <div class="award-banner">
                             <strong>🏆 ${course.award.title}</strong> by the ${course.award.organization}
                         </div>
                     ` : ''}
-                    
+
                     ${course.student_publications && course.student_publications.length > 0 ? `
-                        <div style="background: var(--color-background-alt); padding: 1rem; border-radius: var(--radius-md);">
+                        <div class="info-panel">
                             <strong style="color: var(--color-primary);">Student Publications:</strong>
-                            <div style="margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                            <div class="stack-sm" style="margin-top: 0.75rem;">
                                 ${course.student_publications.map(pub => `
-                                    <div style="font-size: 0.9rem; line-height: 1.5;">
+                                    <div class="student-pub">
                                         <strong>${pub.title}</strong><br>
-                                        <span style="color: var(--color-text-secondary);">${pub.authors.join(', ')}</span>
+                                        <span class="student-pub__authors">${pub.authors.join(', ')}</span>
                                         ${pub.link ? `<a href="${pub.link}" target="_blank" class="publication-link">${pub.venue}</a>` : `<span class="publication-link">${pub.venue}</span>`}
                                     </div>
                                 `).join('')}
@@ -92,23 +76,23 @@ document.addEventListener('DOMContentLoaded', function () {
         const container = document.getElementById('supervision-container');
         if (!container) return;
 
-        let supervisionHTML = `<h3 style="color: var(--color-primary); margin-bottom: 1.5rem;">${supervisionData.title}</h3>`;
-        
+        let supervisionHTML = `<h3 class="section-heading">${supervisionData.title}</h3>`;
+
         supervisionHTML += `<div class="card-grid card-grid-2">`;
 
         // Master students
         if (supervisionData.master_theses && supervisionData.master_theses.length > 0) {
             supervisionHTML += `
                 <div>
-                    <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Master Theses</h4>
-                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <h4 class="section-heading" style="font-size: 1.25rem;">${'Master Theses'}</h4>
+                    <div class="stack-md">
                         ${supervisionData.master_theses.map(thesis => `
-                            <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
-                                <div style="font-weight: 500; margin-bottom: 0.25rem;">
+                            <div class="thesis-item">
+                                <div class="thesis-item__title">
                                     ${thesis.link ? `<a href="${thesis.link}" target="_blank">${thesis.title}</a>` : thesis.title}
                                 </div>
-                                <div style="color: var(--color-text-secondary); font-size: 0.9rem;">${thesis.year}, ${thesis.student}</div>
-                                ${thesis.publication_link ? `<div style="margin-top: 0.5rem;"><a href="${thesis.publication_link}" target="_blank" class="publication-link">Paper</a></div>` : ''}
+                                <div class="thesis-item__meta">${thesis.year}, ${thesis.student}</div>
+                                ${thesis.publication_link ? `<div class="thesis-item__link"><a href="${thesis.publication_link}" target="_blank" class="publication-link">Paper</a></div>` : ''}
                             </div>
                         `).join('')}
                     </div>
@@ -116,19 +100,19 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
         }
 
-        // Bachelor students  
+        // Bachelor students
         if (supervisionData.bachelor_theses && supervisionData.bachelor_theses.length > 0) {
             supervisionHTML += `
                 <div>
-                    <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Bachelor Theses</h4>
-                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <h4 class="section-heading" style="font-size: 1.25rem;">${'Bachelor Theses'}</h4>
+                    <div class="stack-md">
                         ${supervisionData.bachelor_theses.map(thesis => `
-                            <div style="padding: 1rem; background: var(--color-background-alt); border-radius: var(--radius-md);">
-                                <div style="font-weight: 500; margin-bottom: 0.25rem;">
+                            <div class="thesis-item">
+                                <div class="thesis-item__title">
                                     ${thesis.link ? `<a href="${thesis.link}" target="_blank">${thesis.title}</a>` : thesis.title}
                                 </div>
-                                <div style="color: var(--color-text-secondary); font-size: 0.9rem;">${thesis.year}, ${thesis.student}</div>
-                                ${thesis.publication_link ? `<div style="margin-top: 0.5rem;"><a href="${thesis.publication_link}" target="_blank" class="publication-link">Paper</a></div>` : ''}
+                                <div class="thesis-item__meta">${thesis.year}, ${thesis.student}</div>
+                                ${thesis.publication_link ? `<div class="thesis-item__link"><a href="${thesis.publication_link}" target="_blank" class="publication-link">Paper</a></div>` : ''}
                             </div>
                         `).join('')}
                     </div>
