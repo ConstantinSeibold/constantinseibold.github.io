@@ -15,11 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
         populateYearFilter(data);
         populateAuthorFilter(data);
         
-        const reversedPublications = data.publications.reverse();
+        // Sort publications by date descending (newest first)
+        data.publications.sort((a, b) => parseInt(b.date) - parseInt(a.date));
 
         // Clear loading spinner and display all publications
         publicationsContainer.innerHTML = '';
-        reversedPublications.forEach(publication => {
+        data.publications.forEach(publication => {
             const publicationElement = createPublicationElement(publication);
             publicationsContainer.appendChild(publicationElement);
         });
@@ -115,6 +116,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             return matchesTags && matchesYear && matchesAuthor;
         });
+
+        // Sort filtered results by date descending (newest first)
+        filteredPublications.sort((a, b) => parseInt(b.date) - parseInt(a.date));
 
         // Display filtered publications or all publications if no filter is applied
         filteredPublications.forEach(publication => {
