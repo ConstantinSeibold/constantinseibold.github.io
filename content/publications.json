@@ -1404,6 +1404,53 @@
                 "Preference Optimization"
             ],
             "abstract": "This paper addresses medical image segmentation when dense pixel-level annotations are unavailable. Rather than relying on costly ground-truth labels, we leverage inexpensive automatic quality-control signals such as model agreement and uncertainty measures. We investigate Direct Preference Optimization (DPO) applied to noisy preference signals and propose Region-Normalized DPO (RN-DPO), which normalizes preference updates by the size of the disagreement region between masks, reducing the harmful influence of unreliable comparisons. Testing across multiple medical imaging datasets and conditions, RN-DPO demonstrates improved stability and performance gains over standard DPO and comparable methods, all without requiring additional pixel-level annotations."
+        },
+        {
+            "title": "Frame2Freq: Spectral Adapters for Fine-Grained Video Understanding",
+            "authors": [
+                "Thinesh Thiyakesan Ponbagavathi",
+                "Constantin Seibold",
+                "Alina Roitberg"
+            ],
+            "venue": "CVPR",
+            "conference": "conference",
+            "image": "assets/img/thumbnails/frame2freq_spectral_adapters_for_fine_grained_video_understanding.jpg",
+            "arxivLink": "https://arxiv.org/abs/2602.18977",
+            "codeLink": "",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "",
+            "date": "2026",
+            "tags": [
+                "Video Understanding",
+                "Parameter-Efficient Fine-Tuning",
+                "Spectral Analysis",
+                "Activity Recognition"
+            ],
+            "abstract": "Frame2Freq addresses a limitation in adapting image-trained models to video by introducing frequency-based adapters. The method uses Fast Fourier Transform (FFT) along time and learns frequency-band specific embeddings to capture motion dynamics at multiple temporal scales. It surpasses conventional parameter-efficient fine-tuning techniques and achieves competitive results with fully fine-tuned models across five fine-grained activity recognition datasets, demonstrating that spectral analysis provides an effective way to model temporal dynamics in video understanding tasks."
+        },
+        {
+            "title": "The Data Manifold Under the Microscope",
+            "authors": [
+                "Marios Koulakis",
+                "Constantin Seibold"
+            ],
+            "venue": "",
+            "conference": "",
+            "image": "assets/img/thumbnails/the_data_manifold_under_the_microscope.jpg",
+            "arxivLink": "https://openreview.net/pdf?id=Kk08XcQCl2",
+            "codeLink": "",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "",
+            "date": "2026",
+            "tags": [
+                "Data Geometry",
+                "Manifold Learning",
+                "Benchmarking",
+                "Deep Learning Theory"
+            ],
+            "abstract": "A significant gap exists between theory and practice in deep learning. Many generalization and approximation error bounds rely on the manifold hypothesis and depend on geometric regularity properties, including intrinsic dimension, curvature, and reach of the data manifold. To address the lack of simple yet realistic datasets and accompanying geometric tools, this work introduces a benchmarking framework for studying data geometry. It repurposes and extends the dSprites and COIL-20 datasets with additional transformation dimensions and finer sampling resolution, enabling accurate finite-difference estimates of geometric quantities such as curvature, reach, and volume. As illustrative applications, two established manifold learning bounds are assessed, and manifold geometry evolution across network layers in beta-VAEs is analyzed."
         }
     ]
 }
