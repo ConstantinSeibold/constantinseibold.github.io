@@ -1067,7 +1067,7 @@
             "paperLink": "",
             "dataLink": "",
             "award": "",
-            "date": "2025",
+            "date": "2024",
             "tags": [
                 "Anatomy Segmentation",
                 "Chest X-ray",
@@ -1257,15 +1257,15 @@
                 "Jens Kleesiek",
                 "Rainer Stiefelhagen"
             ],
-            "venue": "",
-            "conference": "",
+            "venue": "MICCAI",
+            "conference": "conference",
             "image": "assets/img/thumbnails/good_enough_is_it_worth_improving_your_label_quality.jpg",
             "arxivLink": "https://arxiv.org/abs/2505.20928",
             "codeLink": "",
             "paperLink": "",
             "dataLink": "",
             "award": "",
-            "date": "2025",
+            "date": "2026",
             "tags": [
                 "Label Quality",
                 "Medical Image Segmentation",
@@ -1435,8 +1435,8 @@
                 "Marios Koulakis",
                 "Constantin Seibold"
             ],
-            "venue": "",
-            "conference": "",
+            "venue": "ICML",
+            "conference": "conference",
             "image": "assets/img/thumbnails/the_data_manifold_under_the_microscope.jpg",
             "arxivLink": "https://openreview.net/pdf?id=Kk08XcQCl2",
             "codeLink": "",

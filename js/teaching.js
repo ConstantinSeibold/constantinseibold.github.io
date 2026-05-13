@@ -22,53 +22,58 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
+    function renderCourseEntry(course) {
+        return `
+            <div class="course-item">
+                <div class="course-item__title">${course.title}</div>
+                <div class="course-item__period">
+                    ${course.link ? `<a href="${course.link}" target="_blank" class="publication-link">${course.period}</a>` : course.period}
+                </div>
+                ${course.award ? `
+                    <div class="award-banner">
+                        <strong>🏆 ${course.award.title}</strong> by the ${course.award.organization}
+                    </div>
+                ` : ''}
+                ${course.student_publications && course.student_publications.length > 0 ? `
+                    <div class="info-panel">
+                        <strong style="color: var(--color-primary);">Student Publications:</strong>
+                        <div class="stack-sm" style="margin-top: 0.75rem;">
+                            ${course.student_publications.map(pub => `
+                                <div class="student-pub">
+                                    <strong>${pub.title}</strong><br>
+                                    <span class="student-pub__authors">${pub.authors.join(', ')}</span>
+                                    ${pub.link ? `<a href="${pub.link}" target="_blank" class="publication-link">${pub.venue}</a>` : `<span class="publication-link">${pub.venue}</span>`}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    }
+
     function populateCourses(coursesData) {
         const container = document.getElementById('courses-container');
         if (!container) return;
 
         let coursesHTML = `<h3 class="section-heading">${coursesData.title}</h3>`;
 
-        if (coursesData.subtitle) {
-            coursesHTML += `<h4 style="margin-bottom: 1rem;">${coursesData.subtitle}</h4>`;
+        if (coursesData.sections) {
+            coursesData.sections.forEach(section => {
+                coursesHTML += `
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                        <h4 style="margin: 0;">${section.institution}</h4>
+                        ${section.logo ? `<img src="${section.logo}" alt="${section.institution} logo" style="height: 2.5rem; width: auto; object-fit: contain;" onerror="this.style.display='none'">` : ''}
+                    </div>
+                    <div class="stack-lg" style="margin-bottom: 2rem;">
+                        ${section.entries.map(renderCourseEntry).join('')}
+                    </div>
+                `;
+            });
+        } else if (coursesData.entries) {
+            coursesHTML += `<div class="stack-lg">${coursesData.entries.map(renderCourseEntry).join('')}</div>`;
         }
 
-        coursesHTML += `<div class="stack-lg">`;
-
-        coursesData.entries.forEach(course => {
-            coursesHTML += `
-                <div class="course-item">
-                    <div class="course-item__title">
-                        ${course.title}
-                    </div>
-                    <div class="course-item__period">
-                        ${course.link ? `<a href="${course.link}" target="_blank" class="publication-link">${course.period}</a>` : course.period}
-                    </div>
-
-                    ${course.award ? `
-                        <div class="award-banner">
-                            <strong>🏆 ${course.award.title}</strong> by the ${course.award.organization}
-                        </div>
-                    ` : ''}
-
-                    ${course.student_publications && course.student_publications.length > 0 ? `
-                        <div class="info-panel">
-                            <strong style="color: var(--color-primary);">Student Publications:</strong>
-                            <div class="stack-sm" style="margin-top: 0.75rem;">
-                                ${course.student_publications.map(pub => `
-                                    <div class="student-pub">
-                                        <strong>${pub.title}</strong><br>
-                                        <span class="student-pub__authors">${pub.authors.join(', ')}</span>
-                                        ${pub.link ? `<a href="${pub.link}" target="_blank" class="publication-link">${pub.venue}</a>` : `<span class="publication-link">${pub.venue}</span>`}
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </div>
-                    ` : ''}
-                </div>
-            `;
-        });
-
-        coursesHTML += `</div>`;
         container.innerHTML = coursesHTML;
     }
 
