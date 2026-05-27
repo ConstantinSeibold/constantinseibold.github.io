@@ -24,9 +24,17 @@
       {
         "position": "Lecturer",
         "organization": "University Heidelberg",
-        "period": "2025 - ongoing",
+        "period": "April 2026 - ongoing",
         "type": "professional",
         "description": "Teaching courses at the University of Heidelberg.",
+        "logo": "assets/img/icons/Ruprecht-Karls-Universität_Heidelberg_Logo.svg.png"
+      },
+      {
+        "position": "Member",
+        "organization": "Camilla-und-Georg-Jellinek-Zentrum für Ethik, University Heidelberg",
+        "period": "2026 - ongoing",
+        "type": "professional",
+        "description": "Member of the Camilla-und-Georg-Jellinek-Zentrum für Ethik.",
         "logo": "assets/img/icons/Ruprecht-Karls-Universität_Heidelberg_Logo.svg.png"
       },
       {
