@@ -64,24 +64,6 @@
       "description": "Tutorials and workshops I organize, and conferences I attend"
     }
   ],
-  "news": [
-    {
-      "date": "2026-06-23",
-      "title": "Attending ICML 2026",
-      "description": "I'll be at ICML 2026 presenting \"The Data Manifold Under the Microscope\" (Marios Koulakis) at the main conference and at the Mechanistic Interpretability workshop. Come say hi!",
-      "type": "presentation",
-      "link": "events.html",
-      "expires": "2026-07-14"
-    },
-    {
-      "date": "2024-12-01",
-      "title": "Check out our tutorial at CVPR 2025",
-      "description": "Check out our in-depth view on state-of-the-art data exploration techniques including dimensionality reduction, clustering and more!",
-      "type": "publication",
-      "link": "https://identifying-structure-in-data.github.io/",
-      "expires": "2025-07-01"
-    }
-  ],
   "featured_work": [
     {
       "title": "CXAS: Finegrained Anatomy Segmentation in Chest-Radiographs",

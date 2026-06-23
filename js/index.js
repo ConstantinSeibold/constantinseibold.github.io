@@ -23,10 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (heroCtaLink) heroCtaLink.href = data.hero.cta.link;
             }
 
-            if (data.news) {
-                populateNews(data.news);
-            }
-
             if (data.navigation_slides) {
                 populateNavigationSlides(data.navigation_slides);
             }
@@ -38,11 +34,21 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => {
             console.error('Error loading index content:', error);
             const errorHTML = '<div class="error-state"><div class="error-state__icon"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i></div><p>Error loading content. Please try again later.</p></div>';
-            ['news-container', 'navigation-slides', 'featured-work'].forEach(id => {
+            ['navigation-slides', 'featured-work'].forEach(id => {
                 const el = document.getElementById(id);
                 if (el) el.innerHTML = errorHTML;
             });
         });
+
+    // Homepage announcement banner. Single source of truth is content/news.json;
+    // only items flagged `homepage: true` and not past their `expires` date show here.
+    fetch('content/news.json')
+        .then(response => {
+            if (!response.ok) throw new Error('Failed to load');
+            return response.json();
+        })
+        .then(data => populateNews(data.news || []))
+        .catch(error => console.error('Error loading news:', error));
 
     function populateNews(newsData) {
         const container = document.getElementById('news-container');
@@ -52,12 +58,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         container.innerHTML = '';
 
-        // Keep items with no expiry, or whose expiry day has not yet passed.
-        // `expires` is a "YYYY-MM-DD" date; the item shows through the end of that day.
+        // Banner shows only items opted in via `homepage: true`, and hides an item
+        // once its `expires` day ("YYYY-MM-DD", shown through end of that day) has passed.
         const now = new Date();
         const activeNews = newsData.filter(item => {
-            if (!item.expires) return true;
-            return now <= new Date(item.expires + 'T23:59:59');
+            if (!item.homepage) return false;
+            if (item.expires && now > new Date(item.expires + 'T23:59:59')) return false;
+            return true;
         });
 
         if (activeNews.length === 0) {

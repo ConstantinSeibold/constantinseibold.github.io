@@ -1,6 +1,18 @@
 {
   "news": [
     {
+      "id": "icml-2026",
+      "title": "Attending ICML 2026",
+      "date": "2026-06-23",
+      "type": "conference",
+      "description": "We will present Marios Koulakis' \"The Data Manifold Under the Microscope\" at the main conference and at the Mechanistic Interpretability workshop.",
+      "link": "events.html",
+      "image": "assets/img/overviews/method_overview.jpg",
+      "tags": ["icml", "presentation", "mechanistic-interpretability"],
+      "homepage": true,
+      "expires": "2026-07-14"
+    },
+    {
       "id": "cvpr-tutorial-2024",
       "title": "CVPR Tutorial: Identifying Structure in Data",
       "date": "2024-06-18",
