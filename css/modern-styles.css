@@ -1338,6 +1338,200 @@ a.contact-value {
 }
 
 /* ========================================
+   Events Timeline
+   ======================================== */
+
+.timeline {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+  z-index: 0;
+}
+
+/* Year rule */
+.timeline-rule {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin: var(--space-2xl) 0 var(--space-lg);
+  padding-left: calc(2rem + var(--space-lg));
+  position: relative;
+}
+
+.timeline-rule:first-child {
+  margin-top: 0;
+}
+
+/* Diamond marker on the line */
+.timeline-rule::before {
+  content: '';
+  position: absolute;
+  left: calc(1rem - 0.375rem);
+  width: 0.75rem;
+  height: 0.75rem;
+  background: var(--color-surface);
+  border: 2px solid var(--color-primary);
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.timeline-rule__year {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Timeline item row */
+.timeline-item {
+  display: flex;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+/* Left column — holds the dot, aligned with the line */
+.timeline-item__dot-col {
+  width: 2rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.3rem;
+  z-index: 1;
+}
+
+.timeline-dot {
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  border: 2.5px solid var(--color-background);
+  box-shadow: 0 0 0 2px var(--color-primary);
+  flex-shrink: 0;
+}
+
+.timeline-item--attendee .timeline-dot {
+  background: var(--color-secondary);
+  box-shadow: 0 0 0 2px var(--color-secondary);
+}
+
+/* Content card */
+.timeline-item__body {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Card header image for organized events */
+.timeline-card__image {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  margin: calc(-1 * var(--space-xl)) calc(-1 * var(--space-xl)) var(--space-lg);
+}
+
+/* Meta line: role badge + venue · location · date */
+.timeline-card__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.timeline-card__meta-text {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+.timeline-card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text-primary);
+}
+
+.timeline-card__description {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.timeline-card__footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+/* Role badge variants */
+.badge-organizer {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--color-primary);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-attendee {
+  background: rgba(100, 116, 139, 0.1);
+  color: var(--color-secondary);
+  border: 1px solid rgba(100, 116, 139, 0.25);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 640px) {
+  .timeline {
+    padding-left: 0;
+  }
+
+  .timeline::before {
+    left: 0.75rem;
+  }
+
+  .timeline-rule {
+    padding-left: calc(1.5rem + var(--space-md));
+  }
+
+  .timeline-rule::before {
+    left: calc(0.75rem - 0.375rem);
+  }
+
+  .timeline-item {
+    gap: var(--space-md);
+  }
+
+  .timeline-item__dot-col {
+    width: 1.5rem;
+  }
+
+  .timeline-card__image {
+    height: 120px;
+  }
+}
+
+/* ========================================
    Accessibility
    ======================================== */
 
