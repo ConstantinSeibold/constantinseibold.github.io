@@ -138,6 +138,13 @@
     "title": "Grants & Funding",
     "entries": [
       {
+        "title": "Medical Data Scientist Program - Heidelberg Faculty of Medicine",
+        "grant_id": "Career Development Programm - Medical Data Scientists",
+        "project_name": "POLARIS",
+        "description": "Platform for Optimizing Language-based Assistive Radiology Information Systems",
+        "year": "2026"
+      },
+      {
         "title": "EU HORIZON JU - Innovative Health Initiative",
         "grant_id": "HORIZON-JU-IHI-2023-05-02",
         "project_name": "Thera4Care",
