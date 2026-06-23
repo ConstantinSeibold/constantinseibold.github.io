@@ -1,0 +1,34 @@
+{
+  "page_info": {
+    "title": "Events",
+    "subtitle": "Tutorials, workshops and challenges I organize, plus conferences I attend"
+  },
+  "organized": [
+    {
+      "title": "CVPR 2025 Tutorial: Identifying Structure in Data",
+      "role": "Organizer",
+      "date": "2025-06",
+      "venue": "CVPR 2025",
+      "location": "Nashville, USA",
+      "description": "An in-depth exploration of state-of-the-art data exploration techniques including dimensionality reduction for data visualization and clustering methods, with a strong focus on computer vision applications.",
+      "image": "assets/img/projects/cvpr-tutorial.jpg",
+      "url": "https://identifying-structure-in-data.github.io/",
+      "tags": ["Tutorial", "CVPR", "Data Visualization"]
+    }
+  ],
+  "attending": [
+    {
+      "name": "ICML 2026",
+      "location": "Seoul, Korea",
+      "date": "2026-07",
+      "url": "https://icml.cc/",
+      "note": "We will present Marios Koulakis' \"The Data Manifold Under the Microscope\" at the main conference and at the Mechanistic Interpretability workshop."
+    },
+    {
+      "name": "CVPR 2025",
+      "location": "Nashville, USA",
+      "date": "2025-06",
+      "url": "https://cvpr.thecvf.com/"
+    }
+  ]
+}

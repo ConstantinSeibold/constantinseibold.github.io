@@ -48,9 +48,25 @@ document.addEventListener('DOMContentLoaded', function () {
         const container = document.getElementById('news-container');
         if (!container) return;
 
+        const section = container.closest('.section') || container;
+
         container.innerHTML = '';
 
-        newsData.forEach(item => {
+        // Keep items with no expiry, or whose expiry day has not yet passed.
+        // `expires` is a "YYYY-MM-DD" date; the item shows through the end of that day.
+        const now = new Date();
+        const activeNews = newsData.filter(item => {
+            if (!item.expires) return true;
+            return now <= new Date(item.expires + 'T23:59:59');
+        });
+
+        if (activeNews.length === 0) {
+            section.style.display = 'none';
+            return;
+        }
+        section.style.display = '';
+
+        activeNews.forEach(item => {
             const newsItem = document.createElement('div');
             newsItem.classList.add('news-item');
 
