@@ -4,3 +4,13 @@
 _site/
 Gemfile.lock
 **/.ruby-version
+*.py
+.DS_Store
+CLAUDE.md
+.claude/
+todos.txt
+*/.DS_Store
+*/*/.DS_Store
+__pycache__/
+assets/.DS_Store
+assets/img/.DS_Store
