@@ -109,13 +109,6 @@
     "title": "Awards & Recognition",
     "entries": [
       {
-        "title": "Young Marsilius Fellowship for Interdisciplinary Research and Science Communication",
-        "organization": "Marsilius-Kolleg, Heidelberg University",
-        "year": "2026",
-        "type": "fellowship",
-        "link": "https://www.marsilius-kolleg.uni-heidelberg.de/en/research/young-marsilius-fellows/young-marsilius-fellowships"
-      },
-      {
         "title": "2nd Place - Automated Lesion Segmentation in Whole-Body PET/CT Challenge (autoPET III)",
         "organization": "autoPET III Challenge",
         "year": "2024",
@@ -163,6 +156,13 @@
     "title": "Grants & Funding",
     "entries": [
       {
+        "title": "Young Marsilius Fellowship - Marsilius-Kolleg, Heidelberg University",
+        "grant_id": "Young Marsilius Fellowships for Interdisciplinary Research and Science Communication (6th cohort)",
+        "description": "Fellowship with dedicated budget for interdisciplinary research and science communication, October 2026 - September 2027.",
+        "year": "2026",
+        "link": "https://www.marsilius-kolleg.uni-heidelberg.de/en/research/young-marsilius-fellows/young-marsilius-fellowships"
+      },
+      {
         "title": "Medical Data Scientist Program - Heidelberg Faculty of Medicine",
         "grant_id": "Career Development Programm - Medical Data Scientists",
         "project_name": "POLARIS",
@@ -182,6 +182,24 @@
   "title": "Invited Talks & Presentations",
   "entries": [
       {
+        "title": "Panel: Language Model Reliability & Safety",
+        "event": "KAIST @ ICML 2026",
+        "location": "Seoul, Korea",
+        "date": "July 6, 2026",
+        "type": "panel",
+        "link": "https://www.linkedin.com/posts/constantin-seibold-7669ba250_after-an-amazing-week-of-great-discourse-ugcPost-7481670273344294912-QOU_/",
+        "description": "Invited panelist discussing reliability and safety of large language models at the KAIST @ ICML satellite event."
+      },
+      {
+        "title": "Clustering in Computer Vision: From Theory to Applications",
+        "event": "AI, ML and Computer Vision Meetup",
+        "location": "Online (hosted by voxel51)",
+        "date": "August 28, 2025",
+        "type": "invited talk",
+        "link": "https://voxel51.com/events/ai-ml-and-computer-vision-meetup-aug-28-2025",
+        "description": "Talk on clustering techniques in computer vision, bridging theoretical foundations with real-world applications."
+      },
+      {
         "title": "Interpretable AI in Medicine: Generating Radiological Reports with Panoptic Scene Graphs",
         "event": "2024 ENBIS Spring Meeting",
         "location": "Dortmund, Germany",
@@ -198,24 +216,6 @@
         "type": "invited talk",
         "link": "",
         "description": "Overview of advances and challenges in applying vision-language models to radiology tasks."
-      },
-      {
-        "title": "Clustering in Computer Vision: From Theory to Applications",
-        "event": "AI, ML and Computer Vision Meetup",
-        "location": "Online (hosted by voxel51)",
-        "date": "August 28, 2025",
-        "type": "invited talk",
-        "link": "https://voxel51.com/events/ai-ml-and-computer-vision-meetup-aug-28-2025",
-        "description": "Talk on clustering techniques in computer vision, bridging theoretical foundations with real-world applications."
-      },
-      {
-        "title": "Panel: Language Model Reliability & Safety",
-        "event": "KAIST @ ICML 2026",
-        "location": "Seoul, Korea",
-        "date": "July 6, 2026",
-        "type": "panel",
-        "link": "https://www.linkedin.com/posts/constantin-seibold-7669ba250_after-an-amazing-week-of-great-discourse-ugcPost-7481670273344294912-QOU_/",
-        "description": "Invited panelist discussing reliability and safety of large language models at the KAIST @ ICML satellite event."
       }
     ]
   },

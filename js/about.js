@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <strong>Dissertation:</strong> "${entry.dissertation.title}"<br>
                         <strong>Advisors:</strong> ${entry.dissertation.advisors.join(' and ')}<br>
                         <a href="${entry.dissertation.link}" class="publication-link">View Thesis</a>
-                        <span class="publication-award">🏆 ${entry.dissertation.award}</span>
+                        <span class="publication-award"><i class="fas fa-trophy" aria-hidden="true"></i> ${entry.dissertation.award}</span>
                     </div>
                 `;
             }
@@ -123,12 +123,23 @@ document.addEventListener('DOMContentLoaded', function () {
             const grantDiv = document.createElement('div');
             grantDiv.classList.add('entry-item', 'entry-item--grant');
 
-            grantDiv.innerHTML = `
-                <div class="entry-title" style="margin-bottom: 0.5rem;">${grant.title}</div>
-                <div class="entry-description">${grant.grant_id}</div>
-                <div class="entry-subtitle"><strong>Project:</strong> ${grant.project_name} - ${grant.description}</div>
-            `;
+            let grantHTML = `<div class="entry-title" style="margin-bottom: 0.5rem;">${grant.title}</div>`;
 
+            if (grant.grant_id) {
+                grantHTML += `<div class="entry-description">${grant.grant_id}</div>`;
+            }
+
+            if (grant.project_name) {
+                grantHTML += `<div class="entry-subtitle"><strong>Project:</strong> ${grant.project_name} - ${grant.description}</div>`;
+            } else if (grant.description) {
+                grantHTML += `<div class="entry-subtitle">${grant.description}</div>`;
+            }
+
+            if (grant.link) {
+                grantHTML += `<a href="${grant.link}" target="_blank" class="publication-link">Learn More</a>`;
+            }
+
+            grantDiv.innerHTML = grantHTML;
             container.appendChild(grantDiv);
         });
     }
