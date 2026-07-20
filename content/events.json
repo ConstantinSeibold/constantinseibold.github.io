@@ -5,6 +5,16 @@
   },
   "organized": [
     {
+      "title": "KAIST @ ICML Panel: Language Model Reliability & Safety",
+      "role": "Panelist",
+      "date": "2026-07",
+      "venue": "KAIST @ ICML 2026",
+      "location": "Seoul, Korea",
+      "description": "Invited panelist at the KAIST @ ICML satellite event, discussing reliability and safety of large language models with researchers from academia and industry.",
+      "url": "https://www.linkedin.com/posts/constantin-seibold-7669ba250_after-an-amazing-week-of-great-discourse-ugcPost-7481670273344294912-QOU_/",
+      "tags": ["Panel", "ICML", "LLM Safety"]
+    },
+    {
       "title": "CVPR 2025 Tutorial: Identifying Structure in Data",
       "role": "Organizer",
       "date": "2025-06",

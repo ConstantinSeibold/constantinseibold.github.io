@@ -76,9 +76,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const body = document.createElement('div');
         body.className = 'timeline-item__body card';
 
-        const badge = item._type === 'organizer'
-            ? '<span class="badge-organizer">Organizer</span>'
-            : '<span class="badge-attendee">Attendee</span>';
+        const badgeLabel = item.role || (item._type === 'organizer' ? 'Organizer' : 'Attendee');
+        const badgeClass = item._type === 'organizer' ? 'badge-organizer' : 'badge-attendee';
+        const badge = `<span class="${badgeClass}">${badgeLabel}</span>`;
 
         const metaParts = [];
         if (item._type === 'organizer' && item.venue) metaParts.push(item.venue);

@@ -1,6 +1,30 @@
 {
   "news": [
     {
+      "id": "young-marsilius-fellowship-2026",
+      "title": "Selected as Young Marsilius Fellow",
+      "date": "2026-07-20",
+      "type": "award",
+      "description": "Selected as one of 13 Young Marsilius Fellows (sixth cohort) at Heidelberg University's Marsilius-Kolleg for interdisciplinary research and science communication. Fellowship period: October 2026 – September 2027.",
+      "link": "https://www.marsilius-kolleg.uni-heidelberg.de/en/research/young-marsilius-fellows/young-marsilius-fellowships",
+      "image": "assets/img/icons/marsilius_kolleg_logo.svg",
+      "tags": ["fellowship", "marsilius-kolleg", "interdisciplinary-research"],
+      "homepage": true,
+      "expires": "2026-10-31"
+    },
+    {
+      "id": "ellis-membership-2026",
+      "title": "Joined the ELLIS Society",
+      "date": "2026-07-20",
+      "type": "award",
+      "description": "Accepted as a member of the ELLIS Society (European Laboratory for Learning and Intelligent Systems), the European network of excellence in machine learning research.",
+      "link": "https://ellis.eu/members/members-list",
+      "image": "assets/img/icons/ellis_logo.png",
+      "tags": ["ellis", "membership", "machine-learning"],
+      "homepage": true,
+      "expires": "2026-09-30"
+    },
+    {
       "id": "icml-2026",
       "title": "Attending ICML 2026",
       "date": "2026-06-23",
