@@ -1,6 +1,18 @@
 {
   "news": [
     {
+      "id": "eccv-2026-best-presentation-award",
+      "title": "Best Presentation Award at ECCV 2026 Workshop",
+      "date": "2026-10-05",
+      "type": "award",
+      "description": "Received the Best Presentation Award at the 2nd Data Curation and Augmentation in Medical Imaging Workshop at ECCV 2026 for \"Building Foreign Object Segmentation Datasets for Chest X-Rays with Synthetic-trained Proposals\".",
+      "link": "https://openreview.net/pdf?id=RoWwewngwy",
+      "image": "assets/img/thumbnails/building_foreign_object_segmentation_datasets_for_chest_x_rays_with_synthetic_trained_proposals.jpg",
+      "tags": ["eccv", "award", "foreign-object-segmentation"],
+      "homepage": true,
+      "expires": "2026-12-31"
+    },
+    {
       "id": "young-marsilius-fellowship-2026",
       "title": "Selected as Young Marsilius Fellow",
       "date": "2026-07-20",

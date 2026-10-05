@@ -109,6 +109,13 @@
     "title": "Awards & Recognition",
     "entries": [
       {
+        "title": "Best Presentation Award - \"Building Foreign Object Segmentation Datasets for Chest X-Rays with Synthetic-trained Proposals\"",
+        "organization": "2nd Data Curation and Augmentation in Medical Imaging Workshop, ECCV",
+        "year": "2026",
+        "type": "presentation award",
+        "link": "https://openreview.net/pdf?id=RoWwewngwy"
+      },
+      {
         "title": "2nd Place - Automated Lesion Segmentation in Whole-Body PET/CT Challenge (autoPET III)",
         "organization": "autoPET III Challenge",
         "year": "2024",
@@ -179,8 +186,8 @@
     ]
   },
   "invited_talks": {
-  "title": "Invited Talks & Presentations",
-  "entries": [
+    "title": "Invited Talks & Presentations",
+    "entries": [
       {
         "title": "Panel: Language Model Reliability & Safety",
         "event": "KAIST @ ICML 2026",
@@ -219,8 +226,7 @@
       }
     ]
   },
-  "community_engagement": 
-    {
+  "community_engagement": {
     "title": "Community Engagement & Service",
     "entries": [
       {
@@ -261,5 +267,4 @@
       }
     ]
   }
-
 }

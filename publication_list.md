@@ -8,65 +8,67 @@
 
 3. *The Data Manifold Under the Microscope*, Marios Koulakis,  **_Constantin Seibold_** , ICML, 2026, [[Paper]](https://openreview.net/pdf?id=Kk08XcQCl2)
 
-4. *Does Biomedical Training Lead to Better Medical Performance?*, Amin Dada, Osman Alperen Koraş, Marie Bauer, Jean-Philippe Corbeil, Amanda Butler Contreras,  **_Constantin Seibold_** , Kaleb E Smith, Jens Kleesiek, Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM), 2025, [[Paper]](https://arxiv.org/pdf/2404.04067)
+4. *Building Foreign Object Segmentation Datasets for Chest X-Rays with Synthetic-trained Proposals*,  **_Constantin Seibold_** , David Vinu, Matthias A. Fink, ECCV Workshop on Data Curation and Augmentation in Medical Imaging (DCA-MI), 2026 [Best Presentation Award], [[Paper]](https://openreview.net/pdf?id=RoWwewngwy)
 
-5. *Improving Medical Visual Instruction Tuning with Labeled Datasets*, Amin Dada, Amanda Butler Contreras,  **_Constantin Seibold_** , Osman Alperen Koraş, Julius Keyl, Aokun Chen, Cheng Peng, Alexander Brehmer, Kaleb E Smith, Jiang Bian, Yonghui Wu, Jens Kleesiek, International Workshop on Foundation Models for General Medical AI (MedAGI), 2025
+5. *Does Biomedical Training Lead to Better Medical Performance?*, Amin Dada, Osman Alperen Koraş, Marie Bauer, Jean-Philippe Corbeil, Amanda Butler Contreras,  **_Constantin Seibold_** , Kaleb E Smith, Jens Kleesiek, Proceedings of the Fourth Workshop on Generation, Evaluation and Metrics (GEM), 2025, [[Paper]](https://arxiv.org/pdf/2404.04067)
 
-6. *CT-GRAPH: Hierarchical Graph Attention Network for Anatomy-Guided CT Report Generation*, Hamza Kalisch, Fabian Hörst, Jens Kleesiek, Ken Herrmann,  **_Constantin Seibold_** , ICCVW, 2025, [[Paper]](https://arxiv.org/abs/2508.05375)
+6. *Improving Medical Visual Instruction Tuning with Labeled Datasets*, Amin Dada, Amanda Butler Contreras,  **_Constantin Seibold_** , Osman Alperen Koraş, Julius Keyl, Aokun Chen, Cheng Peng, Alexander Brehmer, Kaleb E Smith, Jiang Bian, Yonghui Wu, Jens Kleesiek, International Workshop on Foundation Models for General Medical AI (MedAGI), 2025
 
-7. *Is Visual in-Context Learning for Compositional Medical Tasks within Reach?*, Simon Reiß, Zdravko Marinov, Alexander Jaus,  **_Constantin Seibold_** , M. Saquib Sarfraz, Erik Rodner, Rainer Stiefelhagen, ICCV, 2025, [[Paper]](https://arxiv.org/abs/2507.00868)
+7. *CT-GRAPH: Hierarchical Graph Attention Network for Anatomy-Guided CT Report Generation*, Hamza Kalisch, Fabian Hörst, Jens Kleesiek, Ken Herrmann,  **_Constantin Seibold_** , ICCVW, 2025, [[Paper]](https://arxiv.org/abs/2508.05375)
 
-8. *Towards unifying anatomy segmentation: automated generation of a full-body CT dataset via knowledge aggregation and anatomical guidelines*, Alexander Jaus†,  **_Constantin Seibold_**† , Kelsey Hermann, Alexandra Walter, Kristina Giske, Johannes Haubold, Jens Kleesiek, Rainer Stiefelhagen, ICIP, 2024, [[Paper]](https://arxiv.org/pdf/2307.13375)
+8. *Is Visual in-Context Learning for Compositional Medical Tasks within Reach?*, Simon Reiß, Zdravko Marinov, Alexander Jaus,  **_Constantin Seibold_** , M. Saquib Sarfraz, Erik Rodner, Rainer Stiefelhagen, ICCV, 2025, [[Paper]](https://arxiv.org/abs/2507.00868)
 
-9. *FootCapture: Towards an AR-based System for 3D Foot Object Acquisition through Photogrammetry*, Valentin Khan-Blouki, Franziska Seiz, Nicolas Walter, Alexander Jaus, Zdravko Marinov, Gijs Luijten, Jan Egger,  **_Constantin Seibold_** , Dirk Solte, Jens Kleesiek, Rainer Stiefelhagen, MIDL, 2024, [[Paper]](https://openreview.net/pdf?id=6EaycEaPoh)
+9. *Towards unifying anatomy segmentation: automated generation of a full-body CT dataset via knowledge aggregation and anatomical guidelines*, Alexander Jaus†,  **_Constantin Seibold_**† , Kelsey Hermann, Alexandra Walter, Kristina Giske, Johannes Haubold, Jens Kleesiek, Rainer Stiefelhagen, ICIP, 2024, [[Paper]](https://arxiv.org/pdf/2307.13375)
 
-10. *Style Transfer and Pseudo-Label Filtering Improve Transferability in Cell Organelle Segmentation Scenarios*, Dmitrii Seletkov, Simon Reiß, Alexander Freytag,  **_Constantin Seibold_** , Rainer Stiefelhagen, ISBI, 2024
+10. *FootCapture: Towards an AR-based System for 3D Foot Object Acquisition through Photogrammetry*, Valentin Khan-Blouki, Franziska Seiz, Nicolas Walter, Alexander Jaus, Zdravko Marinov, Gijs Luijten, Jan Egger,  **_Constantin Seibold_** , Dirk Solte, Jens Kleesiek, Rainer Stiefelhagen, MIDL, 2024, [[Paper]](https://openreview.net/pdf?id=6EaycEaPoh)
 
-11. *Enhancing Contrastive Training for Semi-Supervised Chest X-Ray Analysis Through Gaussian Mixture Models*, Phuong Quynh Le, Jens Kleesiek,  **_Constantin Seibold_** , ISBI, 2024
+11. *Style Transfer and Pseudo-Label Filtering Improve Transferability in Cell Organelle Segmentation Scenarios*, Dmitrii Seletkov, Simon Reiß, Alexander Freytag,  **_Constantin Seibold_** , Rainer Stiefelhagen, ISBI, 2024
 
-12. *IKIM at MEDIQA-M3G 2024: Multilingual Visual Question-Answering for Dermatology through VLM Fine-tuning and LLM Translations*, Marie Bauer, Amin Dada,  **_Constantin Seibold_** , Jens Kleesiek, Proceedings of the 6th Clinical Natural Language Processing Workshop, 2024 [First Place Solution: Spanish, Chinese]
+12. *Enhancing Contrastive Training for Semi-Supervised Chest X-Ray Analysis Through Gaussian Mixture Models*, Phuong Quynh Le, Jens Kleesiek,  **_Constantin Seibold_** , ISBI, 2024
 
-13. *Autopet III challenge: Incorporating anatomical knowledge into nnUNet for lesion segmentation in PET/CT*, Hamza Kalisch, Fabian Hörst, Ken Herrmann, Jens Kleesiek,  **_Constantin Seibold_** , MICCAI - AutoPET III, 2024, [[Paper]](https://arxiv.org/pdf/2409.12155)
+13. *IKIM at MEDIQA-M3G 2024: Multilingual Visual Question-Answering for Dermatology through VLM Fine-tuning and LLM Translations*, Marie Bauer, Amin Dada,  **_Constantin Seibold_** , Jens Kleesiek, Proceedings of the 6th Clinical Natural Language Processing Workshop, 2024 [First Place Solution: Spanish, Chinese]
 
-14. *Every Component Counts: Rethinking the Measure of Success for Medical Semantic Segmentation in Multi-Instance Segmentation Tasks*, Alexander Jaus,  **_Constantin Seibold_** , Simon Reiß, Zdravko Marinov, Keyi Li, Zeling Ye, Stefan Krieg, Jens Kleesiek, Rainer Stiefelhagen, AAAI, 2024, [[Paper]](https://arxiv.org/pdf/2410.18684)
+14. *Autopet III challenge: Incorporating anatomical knowledge into nnUNet for lesion segmentation in PET/CT*, Hamza Kalisch, Fabian Hörst, Ken Herrmann, Jens Kleesiek,  **_Constantin Seibold_** , MICCAI - AutoPET III, 2024, [[Paper]](https://arxiv.org/pdf/2409.12155)
 
-15. *Spacewalker: Traversing Representation Spaces for Fast Interactive Exploration and Annotation of Unstructured Data*, Lukas Heine, Fabian Hörst, Jana Fragemann, Gijs Luijten, Miriam Balzer, Jan Egger, Fin Bahnsen, Saquib Sarfraz, Jens Kleesiek,  **_Constantin Seibold_** , MLVis@EuroVis, 2024, [[Paper]](https://arxiv.org/pdf/2409.16793)
+15. *Every Component Counts: Rethinking the Measure of Success for Medical Semantic Segmentation in Multi-Instance Segmentation Tasks*, Alexander Jaus,  **_Constantin Seibold_** , Simon Reiß, Zdravko Marinov, Keyi Li, Zeling Ye, Stefan Krieg, Jens Kleesiek, Rainer Stiefelhagen, AAAI, 2024, [[Paper]](https://arxiv.org/pdf/2410.18684)
 
-16. *Anatomy-guided Pathology Segmentation*, Alexander Jaus,  **_Constantin Seibold_** , Simon Reiß, Lukas Heine, Anton Schily, Moon Kim, Fin Hendrik Bahnsen, Ken Herrmann, Rainer Stiefelhagen, Jens Kleesiek, MICCAI, 2024, [[Paper]](https://arxiv.org/pdf/2407.05844)
+16. *Spacewalker: Traversing Representation Spaces for Fast Interactive Exploration and Annotation of Unstructured Data*, Lukas Heine, Fabian Hörst, Jana Fragemann, Gijs Luijten, Miriam Balzer, Jan Egger, Fin Bahnsen, Saquib Sarfraz, Jens Kleesiek,  **_Constantin Seibold_** , MLVis@EuroVis, 2024, [[Paper]](https://arxiv.org/pdf/2409.16793)
 
-17. *Multimodal Interactive Lung Lesion Segmentation: A Framework for Annotating PET/CT Images based on Physiological and Anatomical Cues*, Verena Jasmin Hallitschke, Tobias Schlumberger, Philipp Kataliakos, Zdravko Marinov, Moon Kim, Lars Heiliger,  **_Constantin Seibold_** , Jens Kleesiek, Rainer Stiefelhagen, ISBI, 2023 [Oral Paper], [[Paper]](https://arxiv.org/pdf/2301.09914)
+17. *Anatomy-guided Pathology Segmentation*, Alexander Jaus,  **_Constantin Seibold_** , Simon Reiß, Lukas Heine, Anton Schily, Moon Kim, Fin Hendrik Bahnsen, Ken Herrmann, Rainer Stiefelhagen, Jens Kleesiek, MICCAI, 2024, [[Paper]](https://arxiv.org/pdf/2407.05844)
 
-18. *Decoupled Semantic Prototypes enable learning from diverse annotation types for semi-weakly segmentation in expert-driven domains*, Simon Reiß,  **_Constantin Seibold_** , Alexander Freytag, Erik Rodner, Rainer Stiefelhagen, CVPR, 2023
+18. *Multimodal Interactive Lung Lesion Segmentation: A Framework for Annotating PET/CT Images based on Physiological and Anatomical Cues*, Verena Jasmin Hallitschke, Tobias Schlumberger, Philipp Kataliakos, Zdravko Marinov, Moon Kim, Lars Heiliger,  **_Constantin Seibold_** , Jens Kleesiek, Rainer Stiefelhagen, ISBI, 2023 [Oral Paper], [[Paper]](https://arxiv.org/pdf/2301.09914)
 
-19. *On the Impact of Cross-Domain Data on German Language Models*, Amin Dada, Aokun Chen, Cheng Peng, Kaleb E Smith, Ahmad Idrissi-Yaghir,  **_Constantin Seibold_** , Jianning Li, Lars Heiliger, Christoph M Friedrich, Daniel Truhn, Jan Egger, Jiang Bian, Jens Kleesiek, Yonghui Wu, EMNLP, 2023, [[Paper]](https://arxiv.org/pdf/2310.07321)
+19. *Decoupled Semantic Prototypes enable learning from diverse annotation types for semi-weakly segmentation in expert-driven domains*, Simon Reiß,  **_Constantin Seibold_** , Alexander Freytag, Erik Rodner, Rainer Stiefelhagen, CVPR, 2023
 
-20. *Flying guide dog: Walkable path discovery for the visually impaired utilizing drones and transformer-based semantic segmentation*, Haobin Tan, Chang Chen, Xinyu Luo, Jiaming Zhang,  **_Constantin Seibold_** , Kailun Yang, Rainer Stiefelhagen, IEEE ROBIO, 2022, [[Paper]](https://arxiv.org/abs/2108.07007)
+20. *On the Impact of Cross-Domain Data on German Language Models*, Amin Dada, Aokun Chen, Cheng Peng, Kaleb E Smith, Ahmad Idrissi-Yaghir,  **_Constantin Seibold_** , Jianning Li, Lars Heiliger, Christoph M Friedrich, Daniel Truhn, Jan Egger, Jiang Bian, Jens Kleesiek, Yonghui Wu, EMNLP, 2023, [[Paper]](https://arxiv.org/pdf/2310.07321)
 
-21. *Reference-guided Pseudo-Label Generation for Medical Semantic Segmentation*,  **_Constantin Seibold_** , Simon Reiß, Jens Kleesiek, Rainer Stiefelhagen, AAAI, 2022, [[Paper]](https://arxiv.org/abs/2112.00735)
+21. *Flying guide dog: Walkable path discovery for the visually impaired utilizing drones and transformer-based semantic segmentation*, Haobin Tan, Chang Chen, Xinyu Luo, Jiaming Zhang,  **_Constantin Seibold_** , Kailun Yang, Rainer Stiefelhagen, IEEE ROBIO, 2022, [[Paper]](https://arxiv.org/abs/2108.07007)
 
-22. *Hierarchical nearest neighbor graph embedding for efficient dimensionality reduction*, Saquib Sarfraz, Marios Koulakis,  **_Constantin Seibold_** , Rainer Stiefelhagen, CVPR, 2022, [[Paper]](https://arxiv.org/abs/2203.12997)
+22. *Reference-guided Pseudo-Label Generation for Medical Semantic Segmentation*,  **_Constantin Seibold_** , Simon Reiß, Jens Kleesiek, Rainer Stiefelhagen, AAAI, 2022, [[Paper]](https://arxiv.org/abs/2112.00735)
 
-23. *Towards Automatic Parsing of Structured Visual Content through the Use of Synthetic Data*, Lukas Scholch, Jonas Steinhauser, Maximilian Beichter,  **_Constantin Seibold_** , Kailun Yang, Merlin Knäble, Thorsten Schwarz, Alexander Mädche, Rainer Stiefelhagen, ICPR, 2022, [[Paper]](https://arxiv.org/abs/2204.14136)
+23. *Hierarchical nearest neighbor graph embedding for efficient dimensionality reduction*, Saquib Sarfraz, Marios Koulakis,  **_Constantin Seibold_** , Rainer Stiefelhagen, CVPR, 2022, [[Paper]](https://arxiv.org/abs/2203.12997)
 
-24. *Deep Learning-basierte Synthese virtueller monoenergetischer Bilder zur Optimierung einer automatisierten Detektion von Lungenarterienembolien in konventionellen CT-Scans*, Matthias A Fink,  **_Constantin Seibold_** , Hans-Ulrich Kauczor, Rainer Stiefelhagen, Jens Kleesiek, RöFo-Fortschritte auf dem Gebiet der Röntgenstrahlen und der bildgebenden Verfahren, 2022
+24. *Towards Automatic Parsing of Structured Visual Content through the Use of Synthetic Data*, Lukas Scholch, Jonas Steinhauser, Maximilian Beichter,  **_Constantin Seibold_** , Kailun Yang, Merlin Knäble, Thorsten Schwarz, Alexander Mädche, Rainer Stiefelhagen, ICPR, 2022, [[Paper]](https://arxiv.org/abs/2204.14136)
 
-25. *Breaking with Fixed Set Pathology Recognition through Report-Guided Contrastive Training*,  **_Constantin Seibold_** , Simon Reiß, Saquib Sarfraz, Rainer Stiefelhagen, Jens Kleesiek, MICCAI, 2022, [[Paper]](https://arxiv.org/abs/2205.07139)
+25. *Deep Learning-basierte Synthese virtueller monoenergetischer Bilder zur Optimierung einer automatisierten Detektion von Lungenarterienembolien in konventionellen CT-Scans*, Matthias A Fink,  **_Constantin Seibold_** , Hans-Ulrich Kauczor, Rainer Stiefelhagen, Jens Kleesiek, RöFo-Fortschritte auf dem Gebiet der Röntgenstrahlen und der bildgebenden Verfahren, 2022
 
-26. *Graph-constrained Contrastive Regularization for Semi-weakly Volumetric Segmentation*, Simon Reiß,  **_Constantin Seibold_** , Alexander Freytag, Erik Rodner, Rainer Stiefelhagen, ECCV, 2022
+26. *Breaking with Fixed Set Pathology Recognition through Report-Guided Contrastive Training*,  **_Constantin Seibold_** , Simon Reiß, Saquib Sarfraz, Rainer Stiefelhagen, Jens Kleesiek, MICCAI, 2022, [[Paper]](https://arxiv.org/abs/2205.07139)
 
-27. *Detailed Annotations of Chest X-Rays via CT Projection for Report Understanding*,  **_Constantin Seibold_** , Simon Reiß, Saquib Sarfraz, Matthias A Fink, Victoria Mayer, Jan Sellner, Moon Sung Kim, Klaus H Maier-Hein, Jens Kleesiek, Rainer Stiefelhagen, BMVC, 2022, [[Paper]](https://arxiv.org/pdf/2210.03416)
+27. *Graph-constrained Contrastive Regularization for Semi-weakly Volumetric Segmentation*, Simon Reiß,  **_Constantin Seibold_** , Alexander Freytag, Erik Rodner, Rainer Stiefelhagen, ECCV, 2022
 
-28. *Every annotation counts: Multi-label deep supervision for medical image segmentation*, Simon Reiß,  **_Constantin Seibold_** , Alexander Freytag, Erik Rodner, Rainer Stiefelhagen, CVPR, 2021, [[Paper]](https://arxiv.org/abs/2104.13243)
+28. *Detailed Annotations of Chest X-Rays via CT Projection for Report Understanding*,  **_Constantin Seibold_** , Simon Reiß, Saquib Sarfraz, Matthias A Fink, Victoria Mayer, Jan Sellner, Moon Sung Kim, Klaus H Maier-Hein, Jens Kleesiek, Rainer Stiefelhagen, BMVC, 2022, [[Paper]](https://arxiv.org/pdf/2210.03416)
 
-29. *Prediction of low-keV monochromatic images from polyenergetic CT scans for improved automatic detection of pulmonary embolism*,  **_Constantin Seibold_** , Matthias A Fink, Charlotte Goos, Hans-Ulrich Kauczor, Heinz-Peter Schlemmer, Rainer Stiefelhagen, Jens Kleesiek, ISBI, 2021, [[Paper]](https://arxiv.org/abs/2102.01445)
+29. *Every annotation counts: Multi-label deep supervision for medical image segmentation*, Simon Reiß,  **_Constantin Seibold_** , Alexander Freytag, Erik Rodner, Rainer Stiefelhagen, CVPR, 2021, [[Paper]](https://arxiv.org/abs/2104.13243)
 
-30. *Pose2Drone: A Skeleton-Pose-based Framework for Human-Drone Interaction*, Zdravko Marinov, Stanka Vasileva, Qing Wang,  **_Constantin Seibold_** , Jiaming Zhang, Rainer Stiefelhagen, EUSIPCO, 2021, [[Paper]](https://arxiv.org/abs/2105.13204)
+30. *Prediction of low-keV monochromatic images from polyenergetic CT scans for improved automatic detection of pulmonary embolism*,  **_Constantin Seibold_** , Matthias A Fink, Charlotte Goos, Hans-Ulrich Kauczor, Heinz-Peter Schlemmer, Rainer Stiefelhagen, Jens Kleesiek, ISBI, 2021, [[Paper]](https://arxiv.org/abs/2102.01445)
 
-31. *Let's Play for Action: Recognizing Activities of Daily Living by Learning from Life Simulation Video Games*, Alina Roitberg, David Schneider, Aulia Djamal,  **_Constantin Seibold_** , Simon Reiß, Rainer Stiefelhagen, IROS, 2021, [[Paper]](https://arxiv.org/abs/2107.05617)
+31. *Pose2Drone: A Skeleton-Pose-based Framework for Human-Drone Interaction*, Zdravko Marinov, Stanka Vasileva, Qing Wang,  **_Constantin Seibold_** , Jiaming Zhang, Rainer Stiefelhagen, EUSIPCO, 2021, [[Paper]](https://arxiv.org/abs/2105.13204)
 
-32. *Self-Guided Multiple Instance Learning for Weakly Supervised Thoracic Disease Classification and Localization in Chest Radiographs*,  **_Constantin Seibold_** , Jens Kleesiek, Heinz-Peter Schlemmer, Rainer Stiefelhagen, ACCV, 2020, [[Paper]](https://arxiv.org/abs/2010.00127)
+32. *Let's Play for Action: Recognizing Activities of Daily Living by Learning from Life Simulation Video Games*, Alina Roitberg, David Schneider, Aulia Djamal,  **_Constantin Seibold_** , Simon Reiß, Rainer Stiefelhagen, IROS, 2021, [[Paper]](https://arxiv.org/abs/2107.05617)
 
-33. *Content and Colour Distillation for Learning Image Translations with the Spatial Profile Loss*, Saquib Sarfraz,  **_Constantin Seibold_** , Haroon Khalid, Rainer Stiefelhagen, BMVC, 2019 [Best Industry Paper], [[Paper]](https://arxiv.org/pdf/1908.00274)
+33. *Self-Guided Multiple Instance Learning for Weakly Supervised Thoracic Disease Classification and Localization in Chest Radiographs*,  **_Constantin Seibold_** , Jens Kleesiek, Heinz-Peter Schlemmer, Rainer Stiefelhagen, ACCV, 2020, [[Paper]](https://arxiv.org/abs/2010.00127)
+
+34. *Content and Colour Distillation for Learning Image Translations with the Spatial Profile Loss*, Saquib Sarfraz,  **_Constantin Seibold_** , Haroon Khalid, Rainer Stiefelhagen, BMVC, 2019 [Best Industry Paper], [[Paper]](https://arxiv.org/pdf/1908.00274)
 
 ## Journal Publications
 

@@ -1451,6 +1451,31 @@
                 "Deep Learning Theory"
             ],
             "abstract": "A significant gap exists between theory and practice in deep learning. Many generalization and approximation error bounds rely on the manifold hypothesis and depend on geometric regularity properties, including intrinsic dimension, curvature, and reach of the data manifold. To address the lack of simple yet realistic datasets and accompanying geometric tools, this work introduces a benchmarking framework for studying data geometry. It repurposes and extends the dSprites and COIL-20 datasets with additional transformation dimensions and finer sampling resolution, enabling accurate finite-difference estimates of geometric quantities such as curvature, reach, and volume. As illustrative applications, two established manifold learning bounds are assessed, and manifold geometry evolution across network layers in beta-VAEs is analyzed."
+        },
+        {
+            "title": "Building Foreign Object Segmentation Datasets for Chest X-Rays with Synthetic-trained Proposals",
+            "authors": [
+                "Constantin Seibold",
+                "David Vinu",
+                "Matthias A. Fink"
+            ],
+            "venue": "ECCV Workshop on Data Curation and Augmentation in Medical Imaging (DCA-MI)",
+            "conference": "conference",
+            "image": "assets/img/thumbnails/building_foreign_object_segmentation_datasets_for_chest_x_rays_with_synthetic_trained_proposals.jpg",
+            "arxivLink": "https://openreview.net/pdf?id=RoWwewngwy",
+            "codeLink": "https://github.com/ConstantinSeibold/CXR_SynthFB",
+            "paperLink": "",
+            "dataLink": "",
+            "award": "Best Presentation Award",
+            "date": "2026",
+            "tags": [
+                "Synthetic Data",
+                "Chest X-Ray",
+                "Foreign Objects",
+                "Object Proposals",
+                "Data Curation"
+            ],
+            "abstract": "Foreign objects and support devices such as catheters, lines, retained surgical items, and ingested objects are among the most common abnormal findings on chest radiographs, and their misplacement is frequent and time-critical. Support lines are malpositioned in 3–14% of cases. Pixel-level masks for these objects barely exist, and every cheap label-free route (i.e. foundation segmenters, unsupervised discovery, ...) breaks on thin, rare, or unmentioned devices. We train CheXtra, a class-agnostic object-proposal generator that locates foreign-object regions for a human to verify and refine. We composite procedurally rendered foreign objects onto real, device-free radiographs, which yields exact masks for diverse appearances. Against thirteen off-the-shelf, unsupervised, and cross-domain proposers on two unseen real chest-X-ray datasets, CheXtra is the only label-free method working on both domains, at Average Recall 0.50 and 0.58. The strongest baseline reaches 0.72 on one domain and falls to 0.05 on the other. At the few-proposal budget a curator uses, CheXtra recalls thin catheters at 0.44, against 0.01 or below for every off-the-shelf method. Ablations identify device-appearance diversity as the dominant transfer factor, with no consistent benefit from anatomical placement realism and limited impact of corpus scaling. A human-in-the-loop engine, Chevron, allows reassembling of fragmentations into masks and class-assignment of proposals by clustering, retrieval and manual curation."
         }
     ]
 }
