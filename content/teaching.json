@@ -7,6 +7,12 @@
         "logo": "assets/img/icons/Ruprecht-Karls-Universität_Heidelberg_Logo.svg.png",
         "entries": [
           {
+            "title": "Proseminar/Hauptseminar: Data Privacy in the Face of Machine Learning",
+            "period": "Winter Semester 2026/27",
+            "link": "https://www.cl.uni-heidelberg.de/courses/ws26/data_privacy_in_the_face_of_machine_learning/",
+            "type": "seminar"
+          },
+          {
             "title": "Project Seminar: Identifying Structure in Data",
             "period": "Summer Semester 2026",
             "link": "https://www.cl.uni-heidelberg.de/courses/ss26/identifying_structure_in_data/",
