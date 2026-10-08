@@ -109,6 +109,13 @@
     "title": "Awards & Recognition",
     "entries": [
       {
+        "title": "Top Reviewer",
+        "organization": "NeurIPS 2026",
+        "year": "2026",
+        "type": "reviewer award",
+        "link": "https://neurips.cc/Conferences/2026"
+      },
+      {
         "title": "Best Presentation Award - \"Building Foreign Object Segmentation Datasets for Chest X-Rays with Synthetic-trained Proposals\"",
         "organization": "2nd Data Curation and Augmentation in Medical Imaging Workshop, ECCV",
         "year": "2026",

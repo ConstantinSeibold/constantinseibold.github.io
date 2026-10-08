@@ -1,6 +1,18 @@
 {
   "news": [
     {
+      "id": "neurips-2026-top-reviewer",
+      "title": "Top Reviewer at NeurIPS 2026",
+      "date": "2026-10-08",
+      "type": "award",
+      "description": "Recognized as a Top Reviewer for NeurIPS 2026 by the conference program chairs.",
+      "link": "https://neurips.cc/Conferences/2026",
+      "image": "assets/img/icons/cv.svg",
+      "tags": ["neurips", "award", "reviewing"],
+      "homepage": true,
+      "expires": "2026-12-31"
+    },
+    {
       "id": "eccv-2026-best-presentation-award",
       "title": "Best Presentation Award at ECCV 2026 Workshop",
       "date": "2026-10-05",
