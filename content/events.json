@@ -5,6 +5,16 @@
   },
   "organized": [
     {
+      "title": "Promotionskongress Workshop: Wissenschaftliches Forschen und Schreiben zur KI in der Radiologie",
+      "role": "Workshop Lead",
+      "date": "2026-10",
+      "venue": "Promotionskongress 2026, Medizinische Fakultät Heidelberg",
+      "location": "Heidelberg, Germany",
+      "description": "Interactive workshop for medical doctoral students on how to conduct and write up research at the interface of AI and radiology, built around fundamentals and case studies.",
+      "url": "https://www.medizinische-fakultaet-hd.uni-heidelberg.de/fakultaet/akademische-laufbahn/promotion/promotion-zum-dr-med-dent/promotionskongress",
+      "tags": ["Workshop", "Doctoral Training", "AI in Radiology"]
+    },
+    {
       "title": "KAIST @ ICML Panel: Language Model Reliability & Safety",
       "role": "Panelist",
       "date": "2026-07",
@@ -27,6 +37,13 @@
     }
   ],
   "attending": [
+    {
+      "name": "ECCV 2026",
+      "location": "Malmö, Sweden",
+      "date": "2026-09",
+      "url": "https://eccv.ecva.net/",
+      "note": "Presented \"Building Foreign Object Segmentation Datasets for Chest X-Rays with Synthetic-trained Proposals\" at the 2nd Data Curation and Augmentation in Medical Imaging Workshop (Best Presentation Award)."
+    },
     {
       "name": "ICML 2026",
       "location": "Seoul, Korea",
